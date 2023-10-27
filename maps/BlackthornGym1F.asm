@@ -85,10 +85,26 @@ BlackthornGymClairScript:
 	end
 
 .GotTM24:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .ClairRematchAsk								  
 	writetext BlackthornGymClairText_League
 	waitbutton
 	closetext
 	end
+	
+.ClairRematchAsk
+	writetext ClairRematchAskText
+	yesorno
+	iftrue .ClairRematch
+	closetext
+	end
+	
+.ClairRematch:
+	winlosstext Clair_RematchDefeat, 0
+	loadtrainer CLAIR, CLAIR2
+	startbattle
+	reloadmapafterbattle
+	end			  
 
 TrainerCooltrainermPaul:
 	trainer COOLTRAINERM, PAUL, EVENT_BEAT_COOLTRAINERM_PAUL, CooltrainermPaulSeenText, CooltrainermPaulBeatenText, 0, .Script
@@ -231,7 +247,7 @@ BlackthornGymClairText_YouKeptMeWaiting:
 
 BlackthornGymText_ReceivedTM24:
 	text "<PLAYER> received"
-	line "TM24."
+	line "TM24 DRAGONBREATH."
 	done
 
 BlackthornGymClairText_DescribeTM24:
@@ -282,6 +298,21 @@ BlackthornGymClairText_League:
 	para "Give it every-"
 	line "thing you've got."
 	done
+	
+ClairRematchAskText:
+	text "Hello <PLAY_G>."
+	line "I heard you've"
+	cont "become quite"
+	
+	para "the CHAMPION."
+	line "How about you"
+	cont "prove it to me?"
+	done
+	
+Clair_RematchDefeat:				
+	text "I lost again?!"
+	line "This cant be!"
+	done				
 
 CooltrainermPaulSeenText:
 	text "Your first battle"

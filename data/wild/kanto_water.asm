@@ -90,14 +90,14 @@ KantoWaterWildMons:
 	db 4 percent ; encounter rate
 	db 10, GOLDEEN
 	db 5, GOLDEEN
-	db 10, SEAKING
+	db 15, SQUIRTLE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_25
 	db 4 percent ; encounter rate
 	db 10, GOLDEEN
 	db 5, GOLDEEN
-	db 10, SEAKING
+	db 15, SQUIRTLE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_26

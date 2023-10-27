@@ -118,20 +118,255 @@ Script_WalkToBattleTowerElevator:
 	warpcheck
 	end
 
-Script_GivePlayerHisPrize:
-	setval BATTLETOWERACTION_1C
-	special BattleTowerAction
-	setval BATTLETOWERACTION_GIVEREWARD
-	special BattleTowerAction
-	ifequal POTION, Script_YourPackIsStuffedFull
-	getitemname STRING_BUFFER_4, USE_SCRIPT_VAR
-	giveitem ITEM_FROM_MEM, 5
-	writetext Text_PlayerGotFive
-	setval BATTLETOWERACTION_1D
-	special BattleTowerAction
-	closetext
-	end
+;Script_GivePlayerHisPrize:
+	;setval BATTLETOWERACTION_1C
+	;special BattleTowerAction
+	;setval BATTLETOWERACTION_GIVEREWARD
+	;special BattleTowerAction
+	;ifequal POTION, Script_YourPackIsStuffedFull
+	;getitemname STRING_BUFFER_4, USE_SCRIPT_VAR
+	;giveitem ITEM_FROM_MEM, 5
+	;writetext Text_PlayerGotFive
+	;setval BATTLETOWERACTION_1D
+	;special BattleTowerAction
+	;closetext
+	;end
 
+Script_GivePlayerHisPrize:
+    setval BATTLETOWERACTION_1C
+    special BattleTowerAction
+    random 18 ; any number really
+    ifequal 0, MasterBall
+    ifequal 1, Revive
+    ifequal 2, MaxPotion
+    ifequal 3, FullRestore
+    ifequal 4, HpUp
+    ifequal 5, Protein
+    ifequal 6, Iron
+    ifequal 7, Carbos
+    ifequal 8, Calcium
+    ifequal 9, RareCandy
+    ifequal 10, FullHeal
+    ifequal 11, PP_Up
+    ifequal 12, DireHit
+    ifequal 13, GuardSpec
+    ifequal 14, BerserkGene
+    ifequal 15, NormalBox
+    ifequal 16, GorgeousBox
+    ifequal 17, GoldLeaf
+    ifequal 18, SilverLeaf
+    end
+	
+MasterBall:
+	checkitem MASTER_BALL, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, MASTER_BALL
+    giveitem MASTER_BALL, 1
+    writetext Text_PlayerGotOne
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+Revive:
+	checkitem REVIVE, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, REVIVE
+    giveitem REVIVE, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+
+MaxPotion:
+	checkitem MAX_POTION, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, MAX_POTION
+    giveitem MAX_POTION, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+FullRestore:
+    checkitem FULL_RESTORE, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, FULL_RESTORE
+    giveitem FULL_RESTORE, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+HpUp:
+    checkitem HP_UP, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, HP_UP
+    giveitem HP_UP, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+
+Protein:
+    checkitem PROTEIN, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, PROTEIN
+    giveitem PROTEIN, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+Iron:
+    checkitem IRON, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, IRON
+    giveitem IRON, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+
+Carbos:
+    checkitem CARBOS, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, CARBOS
+    giveitem CARBOS, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+
+Calcium:
+    checkitem CALCIUM, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, CALCIUM
+    giveitem CALCIUM, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+RareCandy:
+    checkitem RARE_CANDY, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, RARE_CANDY
+    giveitem RARE_CANDY, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+FullHeal:
+    checkitem FULL_HEAL, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, FULL_HEAL
+    giveitem FULL_HEAL, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+PP_Up:
+    checkitem PP_UP, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, PP_UP
+    giveitem PP_UP, 5
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+DireHit:
+	checkitem DIRE_HIT, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, DIRE_HIT
+    giveitem DIRE_HIT, 5
+    writetext Text_PlayerGotOne
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+GuardSpec:
+	checkitem GUARD_SPEC, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, GUARD_SPEC
+    giveitem GUARD_SPEC, 5
+    writetext Text_PlayerGotOne
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+
+BerserkGene:
+    checkitem BERSERK_GENE, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, BERSERK_GENE
+    giveitem BERSERK_GENE, 1
+    writetext Text_PlayerGotFive
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+NormalBox:
+    checkitem NORMAL_BOX, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, NORMAL_BOX
+    giveitem NORMAL_BOX, 1
+    writetext Text_PlayerGotOne
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+GorgeousBox:
+    checkitem GORGEOUS_BOX, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, GORGEOUS_BOX
+    giveitem GORGEOUS_BOX, 1
+    writetext Text_PlayerGotOne
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+GoldLeaf:
+	checkitem GOLD_LEAF, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, GOLD_LEAF
+    giveitem GOLD_LEAF, 5
+    writetext Text_PlayerGotOne
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+SilverLeaf:
+	checkitem SILVER_LEAF, 99
+	iftrue Script_YourPackIsStuffedFull
+    getitemname STRING_BUFFER_3, SILVER_LEAF
+    giveitem SILVER_LEAF, 5
+    writetext Text_PlayerGotOne
+    setval BATTLETOWERACTION_1D
+    special BattleTowerAction
+    closetext
+    end
+	
+ 
 Script_YourPackIsStuffedFull:
 	writetext Text_YourPackIsStuffedFull
 	waitbutton
@@ -527,6 +762,15 @@ Text_PlayerGotFive:
 	text "<PLAYER> got five"
 	line "@"
 	text_ram wStringBuffer4
+	text "!@"
+	sound_item
+	text_promptbutton
+	text_end
+
+Text_PlayerGotOne:
+	text "<PLAYER> got a"
+	line "@"
+	text_ram wStringBuffer3
 	text "!@"
 	sound_item
 	text_promptbutton

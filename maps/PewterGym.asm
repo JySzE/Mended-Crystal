@@ -33,11 +33,26 @@ PewterGymBrockScript:
 	end
 
 .FightDone:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .BrockRematchAsk		
 	writetext BrockFightDoneText
 	waitbutton
 	closetext
 	end
 
+.BrockRematchAsk
+	writetext BrockRematchAskText
+	yesorno
+	iftrue .BrockRematch
+	closetext
+	end
+	
+.BrockRematch:
+	winlosstext Brock_RematchDefeat, 0
+	loadtrainer BROCK, BROCK2
+	startbattle
+	reloadmapafterbattle
+	
 TrainerCamperJerry:
 	trainer CAMPER, JERRY, EVENT_BEAT_CAMPER_JERRY, CamperJerrySeenText, CamperJerryBeatenText, 0, .Script
 
@@ -140,10 +155,26 @@ BrockFightDoneText:
 
 	para "Just wait and see."
 	line "I'm going to be-"
-	cont "come a lot strong-"
-	cont "er too."
+	cont "come a lot"
+	cont "stronger too."
 	done
-
+	
+BrockRematchAskText:
+	text "BROCK: Welcome"
+	line "back <PLAY_G>!"
+	
+	para "I've heard of"
+	line "your great feats"
+	
+	para "Let's have a"
+	line "rematch right now!"
+	done
+	
+Brock_RematchDefeat:
+	text "BROCK: You're"
+	line "stronger than I"
+	cont "expected."
+	done
 CamperJerrySeenText:
 	text "The trainers of"
 	line "this GYM use rock-"

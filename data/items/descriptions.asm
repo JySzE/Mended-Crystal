@@ -100,7 +100,7 @@ ItemDescriptions:
 	dw WhtApricornDesc
 	dw BlackbeltDesc
 	dw BlkApricornDesc
-	dw TeruSama7Desc
+	dw LinkCordDesc
 	dw PnkApricornDesc
 	dw BlackGlassesDesc
 	dw SlowpokeTailDesc
@@ -147,9 +147,9 @@ ItemDescriptions:
 	dw DragonFangDesc
 	dw TeruSama14Desc
 	dw LeftoversDesc
-	dw TeruSama15Desc
-	dw TeruSama16Desc
-	dw TeruSama17Desc
+	dw OldAmberDesc
+	dw DomeFossilDesc
+	dw HelixFossilDesc
 	dw MysteryBerryDesc
 	dw DragonScaleDesc
 	dw BerserkGeneDesc
@@ -644,9 +644,10 @@ BlkApricornDesc:
 	db   "A black APRICORN."
 	next "@"
 
-TeruSama7Desc:
-	db   "?@"
-
+LinkCordDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
+	
 PnkApricornDesc:
 	db   "A pink APRICORN."
 	next "@"
@@ -823,15 +824,18 @@ LeftoversDesc:
 	db   "Restores HP during"
 	next "battle. (HOLD)@"
 
-TeruSama15Desc:
-	db   "?@"
-
-TeruSama16Desc:
-	db   "?@"
-
-TeruSama17Desc:
-	db   "?@"
-
+OldAmberDesc:
+	db   "A fossilized resin"
+	next "of a ancient tree.@"
+	
+DomeFossilDesc:
+	db   "A fossil of an" 
+	next "ancient #MON.@"
+	
+HelixFossilDesc:
+	db   "A fossil of an" 
+	next "ancient #MON.@"
+	
 MysteryBerryDesc:
 	db   "A self-restore"
 	next "for PP. (HOLD)@"

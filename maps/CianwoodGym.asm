@@ -67,12 +67,27 @@ CianwoodGymChuckScript:
 	end
 
 .AlreadyGotTM:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .ChuckRematchAsk
 	writetext ChuckAfterText
 	waitbutton
 .BagFull:
 	closetext
 	end
+	
+.ChuckRematchAsk
+	writetext ChuckRematchAskText
+	yesorno
+	iftrue .ChuckRematch
+	closetext
+	end
 
+.ChuckRematch:
+	winlosstext Chuck_RematchDefeat, 0
+	loadtrainer CHUCK, CHUCK2
+	startbattle
+	reloadmapafterbattle
+	end
 CianwoodGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
 	ifequal 6, .GoldenrodRockets
@@ -238,6 +253,18 @@ ChuckAfterText:
 	cont "hours a day!"
 	done
 
+ChuckRematchAskText:
+	text "Welcome back!"
+	line "I hope you're"
+	cont "not getting rusty"
+
+	para "Lets spar now!"
+	done
+
+Chuck_RematchDefeat:
+	text "I still need"
+	line "to train more…"
+	done
 BlackbeltYoshiSeenText:
 	text "My #MON and I"
 	line "are bound togeth-"

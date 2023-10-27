@@ -14,6 +14,8 @@ SECTION "Evolutions and Attacks", ROMX
 
 INCLUDE "data/pokemon/evos_attacks_pointers.asm"
 
+EvosAttacks::
+
 BulbasaurEvosAttacks:
 	db EVOLVE_LEVEL, 16, IVYSAUR
 	db 0 ; no more evolutions
@@ -803,6 +805,7 @@ PoliwagEvosAttacks:
 
 PoliwhirlEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, POLIWRATH
+	db EVOLVE_ITEM, LINK_CORD, POLITOED
 	db EVOLVE_TRADE, KINGS_ROCK, POLITOED
 	db 0 ; no more evolutions
 	db 1, BUBBLE
@@ -834,6 +837,7 @@ AbraEvosAttacks:
 	db 0 ; no more level-up moves
 
 KadabraEvosAttacks:
+	db EVOLVE_ITEM, LINK_CORD, ALAKAZAM
 	db EVOLVE_TRADE, -1, ALAKAZAM
 	db 0 ; no more evolutions
 	db 1, TELEPORT
@@ -878,6 +882,7 @@ MachopEvosAttacks:
 	db 0 ; no more level-up moves
 
 MachokeEvosAttacks:
+	db EVOLVE_ITEM, LINK_CORD, MACHAMP
 	db EVOLVE_TRADE, -1, MACHAMP
 	db 0 ; no more evolutions
 	db 1, LOW_KICK
@@ -992,6 +997,7 @@ GeodudeEvosAttacks:
 	db 0 ; no more level-up moves
 
 GravelerEvosAttacks:
+	db EVOLVE_ITEM, LINK_CORD, GOLEM
 	db EVOLVE_TRADE, -1, GOLEM
 	db 0 ; no more evolutions
 	db 1, TACKLE
@@ -1056,6 +1062,7 @@ RapidashEvosAttacks:
 
 SlowpokeEvosAttacks:
 	db EVOLVE_LEVEL, 37, SLOWBRO
+	db EVOLVE_ITEM, LINK_CORD, SLOWKING
 	db EVOLVE_TRADE, KINGS_ROCK, SLOWKING
 	db 0 ; no more evolutions
 	db 1, CURSE
@@ -1246,6 +1253,7 @@ GastlyEvosAttacks:
 	db 0 ; no more level-up moves
 
 HaunterEvosAttacks:
+	db EVOLVE_ITEM, LINK_CORD, GENGAR
 	db EVOLVE_TRADE, -1, GENGAR
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
@@ -1275,6 +1283,7 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
+	db EVOLVE_ITEM, LINK_CORD, STEELIX
 	db EVOLVE_TRADE, METAL_COAT, STEELIX
 	db 0 ; no more evolutions
 	db 1, TACKLE
@@ -1585,6 +1594,7 @@ HorseaEvosAttacks:
 	db 0 ; no more level-up moves
 
 SeadraEvosAttacks:
+	db EVOLVE_ITEM, LINK_CORD, KINGDRA
 	db EVOLVE_TRADE, DRAGON_SCALE, KINGDRA
 	db 0 ; no more evolutions
 	db 1, BUBBLE
@@ -1667,6 +1677,7 @@ MrMimeEvosAttacks:
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
+	db EVOLVE_ITEM, LINK_CORD, SCIZOR
 	db EVOLVE_TRADE, METAL_COAT, SCIZOR
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
@@ -1795,8 +1806,8 @@ EeveeEvosAttacks:
 	db EVOLVE_ITEM, THUNDERSTONE, JOLTEON
 	db EVOLVE_ITEM, WATER_STONE, VAPOREON
 	db EVOLVE_ITEM, FIRE_STONE, FLAREON
-	db EVOLVE_HAPPINESS, TR_MORNDAY, ESPEON
-	db EVOLVE_HAPPINESS, TR_NITE, UMBREON
+	db EVOLVE_ITEM, SUN_STONE, ESPEON
+	db EVOLVE_ITEM, MOON_STONE, UMBREON
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
@@ -1851,6 +1862,7 @@ FlareonEvosAttacks:
 	db 0 ; no more level-up moves
 
 PorygonEvosAttacks:
+	db EVOLVE_ITEM, UP_GRADE, PORYGON2
 	db EVOLVE_TRADE, UP_GRADE, PORYGON2
 	db 0 ; no more evolutions
 	db 1, CONVERSION2
@@ -3319,7 +3331,7 @@ LugiaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, AEROBLAST
 	db 11, SAFEGUARD
-	db 22, GUST
+	db 22, AEROBLAST
 	db 33, RECOVER
 	db 44, HYDRO_PUMP
 	db 55, RAIN_DANCE
@@ -3333,7 +3345,7 @@ HoOhEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SACRED_FIRE
 	db 11, SAFEGUARD
-	db 22, GUST
+	db 22, SACRED_FIRE
 	db 33, RECOVER
 	db 44, FIRE_BLAST
 	db 55, SUNNY_DAY

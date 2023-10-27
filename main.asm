@@ -134,6 +134,7 @@ INCLUDE "engine/battle/trainer_huds.asm"
 INCLUDE "data/trainers/class_names.asm"
 INCLUDE "engine/battle/ai/redundant.asm"
 INCLUDE "engine/events/move_deleter.asm"
+INCLUDE "engine/events/move_relearner.asm"
 INCLUDE "engine/link/mystery_gift_2.asm"
 INCLUDE "engine/items/tmhm.asm"
 INCLUDE "engine/pokemon/print_move_description.asm"
@@ -540,6 +541,13 @@ SECTION "mobile5C", ROMX
 
 INCLUDE "mobile/mobile_5c.asm"
 
+SECTION "Battle Weather Images", ROMX
+
+INCLUDE "gfx/weather_images.asm"
+
+SECTION "Time Of Day Images", ROMX
+
+INCLUDE "gfx/timeofday_images.asm"
 
 SECTION "Crystal Phone Text 2", ROMX
 

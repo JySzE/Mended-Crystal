@@ -73,12 +73,27 @@ GoldenrodGymWhitneyScript:
 	end
 
 .GotAttract:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .WhitneyRematchAsk
 	writetext WhitneyGoodCryText
 	waitbutton
 .NoRoomForAttract:
 	closetext
 	end
+	
+.WhitneyRematchAsk
+	writetext WhitneyRematchAskText
+	yesorno
+	iftrue .WhitneyRematch
+	closetext
+	end
 
+.WhitneyRematch:
+	winlosstext Whitney_RematchDefeat, 0
+	loadtrainer WHITNEY, WHITNEY2
+	startbattle
+	reloadmapafterbattle
+	end
 GoldenrodGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
 	ifequal 6, .GoldenrodRockets
@@ -268,6 +283,19 @@ WhitneyGoodCryText:
 	line "again! Bye-bye!"
 	done
 
+WhitneyRematchAskText:
+	text "Hello <PLAY_G>!"
+	line "What brings you"
+	cont "here?"
+	
+	para "Want a rematch"
+	line "of my cute #MON?"
+	done
+	
+Whitney_RematchDefeat:
+	text "Ah, I lost again."
+	line "…Sob…"
+	done
 LassCarrieSeenText:
 	text "Don't let my"
 	line "#MON's cute"

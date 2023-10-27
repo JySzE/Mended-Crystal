@@ -41,12 +41,29 @@ OlivineGymJasmineScript:
 	end
 
 .GotIronTail:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .JasmineRematchAsk
 	writetext Jasmine_GoodLuck
 	waitbutton
+	closetext
+	end
 .NoRoomForIronTail:
 	closetext
 	end
+	
+.JasmineRematchAsk
+	writetext JasmineRematchAskText
+	yesorno
+	iftrue .JasmineRematch
+	closetext
+	end
 
+.JasmineRematch:
+	winlosstext Jasmine_RematchDefeat, 0
+	loadtrainer JASMINE, JASMINE2
+	startbattle
+	reloadmapafterbattle
+	end
 OlivineGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
 	ifequal 6, .GoldenrodRockets
@@ -161,7 +178,18 @@ Jasmine_GoodLuck:
 	line "how to say this,"
 	cont "but good luck…"
 	done
+	
+JasmineRematchAskText:
+	text "Oh… Hello…"
+	
+	para "A rematch? Are"
+	line "you sure?"
+	done
 
+Jasmine_RematchDefeat:
+	text "Im still not"
+	line "good enough…"
+	done
 OlivineGymGuideText:
 	text "JASMINE uses the"
 	line "newly discovered"

@@ -32,8 +32,12 @@ SpriteMons:
 	db LAPRAS
 	db RHYDON
 	db MOLTRES
+	db ARTICUNO
+	db ZAPDOS
 	db SNORLAX
 	db GYARADOS
 	db LUGIA
 	db HO_OH
+	db MEW
+	db MEWTWO
 	assert_table_length NUM_POKEMON_SPRITES

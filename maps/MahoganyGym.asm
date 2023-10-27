@@ -51,8 +51,26 @@ MahoganyGymPryceScript:
 	end
 
 PryceScript_Defeat:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .PryceRematchAsk		
 	writetext PryceText_CherishYourPokemon
 	waitbutton
+	closetext
+	end
+	
+.PryceRematchAsk
+	writetext PryceRematchAskText
+	yesorno
+	iftrue .PryceRematch
+	closetext
+	end
+
+.PryceRematch:
+	winlosstext Pryce_RematchDefeat, 0
+	loadtrainer PRYCE, PRYCE2
+	startbattle
+	reloadmapafterbattle
+	end
 MahoganyGym_NoRoomForIcyWind:
 	closetext
 	end
@@ -238,6 +256,21 @@ PryceText_CherishYourPokemon:
 	line "together!"
 	done
 
+PryceRematchAskText:
+	text "Nice of you to"
+	line "visit us."
+	
+	para "I heard you've"
+	line "grown stronger."
+	
+	para "Care to prove"
+	line "that?"
+	done
+
+Pryce_RematchDefeat:
+	text "Your bond seems"
+	line "strong."
+	done
 BoarderRonaldSeenText:
 	text "I'll freeze your"
 	line "#MON, so you"

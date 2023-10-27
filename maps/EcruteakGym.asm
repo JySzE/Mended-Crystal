@@ -62,12 +62,27 @@ EcruteakGymMortyScript:
 	end
 
 .GotShadowBall:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .MortyRematchAsk
 	writetext MortyFightDoneText
 	waitbutton
+	
+.MortyRematchAsk
+	writetext MortyRematchAskText
+	yesorno
+	iftrue .MortyRematch
+	closetext
+	end
 .NoRoomForShadowBall:
 	closetext
 	end
-
+	
+.MortyRematch:
+	winlosstext Morty_RematchDefeat, 0
+	loadtrainer MORTY, MORTY2
+	startbattle
+	reloadmapafterbattle
+	end
 EcruteakGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
 	ifequal 6, .GoldenrodRockets
@@ -273,6 +288,25 @@ MortyFightDoneText:
 	para "I envy you for"
 	line "that…"
 	done
+	
+MortyRematchAskText:
+	text "Greetings <PLAYER>"
+	line "It really shows"
+	cont "that your bond"
+	
+	para "with your #MON"
+	line "grows ever"
+	cont "stronger."
+	
+	para "How about you"
+	line "show me how strong"
+	cont "is this bond?"
+	done
+	
+Morty_RematchDefeat:
+	text "Im not good"
+	line "enough yet…"
+	done					
 
 SageJeffreySeenText:
 	text "I spent the spring"

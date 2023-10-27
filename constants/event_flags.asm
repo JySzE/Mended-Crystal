@@ -26,7 +26,7 @@
 	const EVENT_GOT_HM04_STRENGTH
 	const EVENT_GOT_HM05_FLASH
 	const EVENT_GOT_HM06_WHIRLPOOL
-	const_skip ; unused
+	const EVENT_FOUGHT_MOLTRES
 ; Rods
 	const EVENT_GOT_OLD_ROD
 	const EVENT_GOT_GOOD_ROD
@@ -65,7 +65,7 @@
 	const EVENT_LAKE_OF_RAGE_EXPLAINED_WEIRD_MAGIKARP
 	const EVENT_LAKE_OF_RAGE_ASKED_FOR_MAGIKARP
 	const EVENT_LAKE_OF_RAGE_ELIXIR_ON_STANDBY
-	const_skip ; unused
+	const EVENT_VICTORY_ROAD_MOLTRES
 	const_skip ; unused
 	const EVENT_HEALED_MOOMOO
 	const EVENT_GOT_TM13_SNORE_FROM_MOOMOO_FARM
@@ -136,9 +136,9 @@
 	const EVENT_TIN_TOWER_5F_HIDDEN_FULL_RESTORE
 	const EVENT_TIN_TOWER_5F_HIDDEN_CARBOS
 	const EVENT_BURNED_TOWER_1F_HIDDEN_ETHER
-	const_skip ; unused in Crystal
-	const_skip ; unused in Crystal
-	const_skip ; unused in Crystal
+	const EVENT_GAVE_SCIENTIST_OLD_AMBER
+	const EVENT_GAVE_SCIENTIST_DOME_FOSSIL
+	const EVENT_GAVE_SCIENTIST_HELIX_FOSSIL
 	const EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL
 	const EVENT_OLIVINE_LIGHTHOUSE_5F_HIDDEN_HYPER_POTION
 	const EVENT_TEAM_ROCKET_BASE_B1F_HIDDEN_REVIVE
@@ -281,7 +281,7 @@
 	const EVENT_GAVE_KURT_PNK_APRICORN
 ; Phone events
 	const EVENT_JACK_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_FOUGHT_ZAPDOS
 	const EVENT_BEVERLY_ASKED_FOR_PHONE_NUMBER
 	const_skip ; unused in Crystal
 	const EVENT_HUEY_ASKED_FOR_PHONE_NUMBER
@@ -293,15 +293,15 @@
 	const EVENT_GOT_CALCIUM_FROM_ERIN
 	const EVENT_KENJI_ON_BREAK
 	const EVENT_GAVEN_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_FOUGHT_MEWTWO
 	const EVENT_BETH_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_FOUGHT_MEW
 	const EVENT_JOSE_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_SILVER_CAVE_ROOM_1_MEWTWO
 	const EVENT_REENA_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_SILVER_CAVE_ROOM_3_MEW
 	const EVENT_JOEY_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_MEWTWO_IN_CAVE
 	const EVENT_WADE_ASKED_FOR_PHONE_NUMBER
 	const_skip ; unused in Crystal
 	const EVENT_RALPH_ASKED_FOR_PHONE_NUMBER
@@ -319,9 +319,9 @@
 	const EVENT_ARNIE_ASKED_FOR_PHONE_NUMBER
 	const_skip ; unused in Crystal
 	const EVENT_ALAN_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
-	const_skip ; unused
-	const_skip ; unused
+	const EVENT_FOUGHT_ARTICUNO ;const_skip ; unused in Crystal
+	const EVENT_ICE_PATH_B3F_ARTICUNO ;const_skip ; unused in Crystal
+	const EVENT_ROCK_TUNNEL_B1F_ZAPDOS ;const_skip ; unused in Crystal
 	const EVENT_DANA_ASKED_FOR_PHONE_NUMBER
 	const_skip ; unused in Crystal
 	const EVENT_CHAD_ASKED_FOR_PHONE_NUMBER

@@ -37,11 +37,26 @@ VermilionGymSurgeScript:
 	end
 
 .FightDone:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .SurgeRematchAsk
 	writetext LtSurgeFightDoneText
 	waitbutton
 	closetext
 	end
 
+.SurgeRematchAsk
+	writetext SurgeRematchAskText
+	yesorno
+	iftrue .SurgeRematch
+	closetext
+	end
+	
+.SurgeRematch:
+	winlosstext Surge_RematchDefeat, 0
+	loadtrainer LT_SURGE, LT_SURGE2
+	startbattle
+	reloadmapafterbattle
+	end
 TrainerGentlemanGregory:
 	trainer GENTLEMAN, GREGORY, EVENT_BEAT_GENTLEMAN_GREGORY, GentlemanGregorySeenText, GentlemanGregoryBeatenText, 0, .Script
 
@@ -158,7 +173,20 @@ LtSurgeFightDoneText:
 	para "My #MON and I"
 	line "are still at it!"
 	done
+	
+SurgeRematchAskText:
+	text "SURGE: Hey, kid!"
+	line "Still slugging and"
+	cont "chugging away?"
+	
+	para "I bet I can still"
+	line "take you on!"
+	done
 
+Surge_RematchDefeat:
+	text "You're still"
+	line "holding up kid!"	
+	done
 GentlemanGregorySeenText:
 	text "You're here to"
 	line "defeat LT.SURGE?"

@@ -67,7 +67,7 @@ KantoGrassWildMons:
 	db 12, ZUBAT
 	db 15, MACHOKE
 	db 12, MAROWAK
-	db 12, MAROWAK
+	db 15, CHARMANDER
 	; day
 	db 10, CUBONE
 	db 11, GEODUDE
@@ -75,7 +75,7 @@ KantoGrassWildMons:
 	db 12, ZUBAT
 	db 15, MACHOKE
 	db 12, MAROWAK
-	db 12, MAROWAK
+	db 15, CHARMANDER
 	; nite
 	db 12, ZUBAT
 	db 11, GEODUDE
@@ -83,7 +83,7 @@ KantoGrassWildMons:
 	db 17, HAUNTER
 	db 15, ZUBAT
 	db 15, ZUBAT
-	db 15, ZUBAT
+	db 15, CHARMANDER
 	end_grass_wildmons
 
 	def_grass_wildmons ROCK_TUNNEL_B1F
@@ -95,7 +95,7 @@ KantoGrassWildMons:
 	db 12, ZUBAT
 	db 15, MAROWAK
 	db 15, KANGASKHAN
-	db 15, KANGASKHAN
+	db 15, CHARMANDER
 	; day
 	db 12, CUBONE
 	db 14, GEODUDE
@@ -103,7 +103,7 @@ KantoGrassWildMons:
 	db 12, ZUBAT
 	db 15, MAROWAK
 	db 15, KANGASKHAN
-	db 15, KANGASKHAN
+	db 15, CHARMANDER
 	; nite
 	db 12, ZUBAT
 	db 14, GEODUDE
@@ -111,7 +111,7 @@ KantoGrassWildMons:
 	db 15, ZUBAT
 	db 15, HAUNTER
 	db 15, GOLBAT
-	db 15, GOLBAT
+	db 15, CHARMANDER
 	end_grass_wildmons
 
 	def_grass_wildmons VICTORY_ROAD
@@ -207,7 +207,7 @@ KantoGrassWildMons:
 	db 7, BUTTERFREE
 	db 7, LEDIAN
 	db 4, PIKACHU
-	db 4, PIKACHU
+	db 15, BULBASAUR
 	; day
 	db 3, CATERPIE
 	db 3, PIDGEY
@@ -215,7 +215,7 @@ KantoGrassWildMons:
 	db 7, BUTTERFREE
 	db 7, PIDGEOTTO
 	db 4, PIKACHU
-	db 4, PIKACHU
+	db 15, BULBASAUR
 	; nite
 	db 3, HOOTHOOT
 	db 3, SPINARAK
@@ -223,7 +223,7 @@ KantoGrassWildMons:
 	db 7, NOCTOWL
 	db 7, ARIADOS
 	db 4, NOCTOWL
-	db 4, NOCTOWL
+	db 15, BULBASAUR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_3
@@ -235,7 +235,7 @@ KantoGrassWildMons:
 	db 10, RATICATE
 	db 10, ARBOK
 	db 10, SANDSHREW
-	db 10, SANDSHREW
+	db 15, CHARMANDER
 	; day
 	db 5, SPEAROW
 	db 5, RATTATA
@@ -243,7 +243,7 @@ KantoGrassWildMons:
 	db 10, RATICATE
 	db 10, ARBOK
 	db 10, SANDSHREW
-	db 10, SANDSHREW
+	db 15, CHARMANDER
 	; nite
 	db 5, RATTATA
 	db 10, RATTATA
@@ -251,7 +251,7 @@ KantoGrassWildMons:
 	db 6, ZUBAT
 	db 5, RATTATA
 	db 6, CLEFAIRY
-	db 6, CLEFAIRY
+	db 15, CHARMANDER
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_4
@@ -263,7 +263,7 @@ KantoGrassWildMons:
 	db 10, RATICATE
 	db 10, ARBOK
 	db 10, SANDSHREW
-	db 10, SANDSHREW
+	db 15, CHARMANDER
 	; day
 	db 5, SPEAROW
 	db 5, RATTATA
@@ -271,7 +271,7 @@ KantoGrassWildMons:
 	db 10, RATICATE
 	db 10, ARBOK
 	db 10, SANDSHREW
-	db 10, SANDSHREW
+	db 15, CHARMANDER
 	; nite
 	db 5, RATTATA
 	db 10, RATTATA
@@ -279,7 +279,7 @@ KantoGrassWildMons:
 	db 6, ZUBAT
 	db 5, RATTATA
 	db 6, CLEFAIRY
-	db 6, CLEFAIRY
+	db 15, CHARMANDER
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_5
@@ -346,7 +346,7 @@ KantoGrassWildMons:
 	db 18, SNUBBULL
 	db 18, RATICATE
 	db 18, JIGGLYPUFF
-	db 16, ABRA
+	db 16, VULPIX
 	db 16, ABRA
 	; day
 	db 17, RATTATA
@@ -354,7 +354,7 @@ KantoGrassWildMons:
 	db 18, SNUBBULL
 	db 18, RATICATE
 	db 18, JIGGLYPUFF
-	db 16, ABRA
+	db 16, VULPIX
 	db 16, ABRA
 	; nite
 	db 17, MEOWTH
@@ -362,7 +362,7 @@ KantoGrassWildMons:
 	db 18, HOUNDOUR
 	db 18, PERSIAN
 	db 18, JIGGLYPUFF
-	db 16, ABRA
+	db 16, VULPIX
 	db 16, ABRA
 	end_grass_wildmons
 
@@ -374,7 +374,7 @@ KantoGrassWildMons:
 	db 16, ABRA
 	db 17, GROWLITHE
 	db 16, JIGGLYPUFF
-	db 18, KADABRA
+	db 18, VULPIX
 	db 18, KADABRA
 	; day
 	db 17, SNUBBULL
@@ -382,7 +382,7 @@ KantoGrassWildMons:
 	db 16, ABRA
 	db 17, GROWLITHE
 	db 16, JIGGLYPUFF
-	db 18, KADABRA
+	db 18, VULPIX
 	db 18, KADABRA
 	; nite
 	db 17, MEOWTH
@@ -401,7 +401,7 @@ KantoGrassWildMons:
 	db 15, SPEAROW
 	db 15, RATICATE
 	db 15, FEAROW
-	db 15, FEAROW
+	db 15, MANKEY
 	db 18, MAROWAK
 	db 18, MAROWAK
 	; day
@@ -409,7 +409,7 @@ KantoGrassWildMons:
 	db 15, SPEAROW
 	db 15, RATICATE
 	db 15, FEAROW
-	db 15, FEAROW
+	db 15, MANKEY
 	db 18, MAROWAK
 	db 18, MAROWAK
 	; nite
@@ -683,7 +683,7 @@ KantoGrassWildMons:
 	db 4, DODUO
 	db 6, PONYTA
 	db 7, FEAROW
-	db 7, FEAROW
+	db 15, BULBASAUR
 	; day
 	db 3, RATTATA
 	db 3, SPEAROW
@@ -691,7 +691,7 @@ KantoGrassWildMons:
 	db 4, DODUO
 	db 6, PONYTA
 	db 7, FEAROW
-	db 7, FEAROW
+	db 15, BULBASAUR
 	; nite
 	db 3, RATTATA
 	db 3, POLIWAG
@@ -699,7 +699,7 @@ KantoGrassWildMons:
 	db 4, POLIWAG
 	db 6, RATTATA
 	db 7, RATTATA
-	db 7, RATTATA
+	db 15, BULBASAUR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_24

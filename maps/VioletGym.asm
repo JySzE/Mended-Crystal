@@ -47,12 +47,28 @@ VioletGymFalknerScript:
 	end
 
 .SpeechAfterTM:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .FalknerRematchAsk
 	writetext FalknerFightDoneText
 	waitbutton
 .NoRoomForMudSlap:
 	closetext
 	end
+	
+.FalknerRematchAsk
+	writetext FalknerRematchAskText
+	yesorno
+	iftrue .FalknerRematch
+	closetext
+	end
 
+.FalknerRematch:
+	winlosstext Falkner_RematchDefeat, 0
+	loadtrainer FALKNER, FALKNER2
+	startbattle
+	reloadmapafterbattle
+	end
+	
 VioletGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
 	ifequal 6, .GoldenrodRockets
@@ -173,10 +189,10 @@ FalknerTMMudSlapText:
 	para "instantly learn a"
 	line "new move."
 
-	para "Think before you"
-	line "act--a TM can be"
-	cont "used only once."
-
+	para "A TM can be used"
+	line "as many times as"
+	cont "you like."
+	
 	para "TM31 contains"
 	line "MUD-SLAP."
 
@@ -205,6 +221,20 @@ FalknerFightDoneText:
 
 	para "the greatest bird"
 	line "master!"
+	done
+
+FalknerRematchAskText:
+	text "Greetings."
+	line "While you were"
+	cont "away i was doing"
+	
+	para "my best to improve"
+	line "Care to show you?"
+	done
+	
+Falkner_RematchDefeat:
+	text "Darn! im still not"
+	line "good enough…"	  
 	done
 
 BirdKeeperRodSeenText:

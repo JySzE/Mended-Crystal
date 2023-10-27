@@ -917,7 +917,7 @@ BenFernText3B:
 LuckyNumberShow1:
 	call StartRadioStation
 	callfar CheckLuckyNumberShowFlag
-	jr nc, .dontreset
+	jr nz, .dontreset
 	callfar ResetLuckyNumberShowFlag
 .dontreset
 	ld hl, LC_Text1
@@ -1707,7 +1707,7 @@ BuenasPassword21:
 BuenasPasswordCheckTime:
 	call UpdateTime
 	ldh a, [hHours]
-	cp NITE_HOUR
+	cp 18
 	ret
 
 BuenasPasswordChannelName:

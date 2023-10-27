@@ -10,9 +10,11 @@ FishGroups:
 ; entries correspond to FISHGROUP_* constants
 	table_width FISHGROUP_DATA_LENGTH, FishGroups
 	fishgroup 50 percent + 1, .Shore_Old,            .Shore_Good,            .Shore_Super
+	fishgroup 50 percent + 1, .Shore_2_Old,          .Shore_2_Good,          .Shore_2_Super
 	fishgroup 50 percent + 1, .Ocean_Old,            .Ocean_Good,            .Ocean_Super
 	fishgroup 50 percent + 1, .Lake_Old,             .Lake_Good,             .Lake_Super
 	fishgroup 50 percent + 1, .Pond_Old,             .Pond_Good,             .Pond_Super
+    fishgroup 50 percent + 1, .Pond_2_Old,           .Pond_2_Good,         .Pond_2_Super
 	fishgroup 50 percent + 1, .Dratini_Old,          .Dratini_Good,          .Dratini_Super
 	fishgroup 50 percent + 1, .Qwilfish_Swarm_Old,   .Qwilfish_Swarm_Good,   .Qwilfish_Swarm_Super
 	fishgroup 50 percent + 1, .Remoraid_Swarm_Old,   .Remoraid_Swarm_Good,   .Remoraid_Swarm_Super
@@ -35,6 +37,21 @@ FishGroups:
 	db 100 percent,     time_group 0
 .Shore_Super:
 	db  40 percent,     KRABBY,     40
+	db  70 percent,     time_group 1
+	db  90 percent + 1, KRABBY,     40
+	db 100 percent,     KINGLER,    40
+
+.Shore_2_Old:
+	db  05 percent + 1, TOTODILE,   5
+	db  85 percent + 1, MAGIKARP,   10
+	db 100 percent,     KRABBY,     10
+.Shore_2_Good:
+	db  35 percent,     MAGIKARP,   20
+	db  70 percent,     KRABBY,     20
+	db  90 percent + 1, KRABBY,     20
+	db 100 percent,     time_group 0
+.Shore_2_Super:
+	db  20 percent,     KRABBY,     40
 	db  70 percent,     time_group 1
 	db  90 percent + 1, KRABBY,     40
 	db 100 percent,     KINGLER,    40
@@ -83,6 +100,21 @@ FishGroups:
 	db  70 percent,     time_group 7
 	db  90 percent + 1, MAGIKARP,   40
 	db 100 percent,     POLIWAG,    40
+	
+.Pond_2_Old:
+	db  70 percent + 1, MAGIKARP,   10
+	db  85 percent + 1, MAGIKARP,   10
+	db 100 percent,     POLIWAG,    10
+.Pond_2_Good:
+	db  35 percent,     MAGIKARP,   20
+	db  70 percent,     POLIWAG,    20
+	db  90 percent + 1, POLIWAG,    20
+	db 100 percent,     time_group 6
+.Pond_2_Super:
+	db  40 percent,     POLIWAG,    40
+	db  70 percent,     time_group 7
+	db  90 percent + 1, MAGIKARP,   40
+	db 100 percent,     REMORAID,   40
 
 .Dratini_Old:
 	db  70 percent + 1, MAGIKARP,   10

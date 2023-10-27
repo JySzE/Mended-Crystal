@@ -113,7 +113,7 @@ ItemEffects:
 	dw NoEffect            ; WHT_APRICORN
 	dw NoEffect            ; BLACKBELT_I
 	dw NoEffect            ; BLK_APRICORN
-	dw NoEffect            ; ITEM_64
+	dw EvoStoneEffect      ; LINK_CORD
 	dw NoEffect            ; PNK_APRICORN
 	dw NoEffect            ; BLACKGLASSES
 	dw NoEffect            ; SLOWPOKETAIL
@@ -160,9 +160,9 @@ ItemEffects:
 	dw NoEffect            ; DRAGON_FANG
 	dw NoEffect            ; ITEM_91
 	dw NoEffect            ; LEFTOVERS
-	dw NoEffect            ; ITEM_93
-	dw NoEffect            ; ITEM_94
-	dw NoEffect            ; ITEM_95
+	dw NoEffect            ; OLD_AMBER
+	dw NoEffect            ; DOME_FOSSIL
+	dw NoEffect            ; HELIX_FOSSIL
 	dw RestorePPEffect     ; MYSTERYBERRY
 	dw NoEffect            ; DRAGON_SCALE
 	dw NoEffect            ; BERSERK_GENE
@@ -185,7 +185,7 @@ ItemEffects:
 	dw EvoStoneEffect      ; SUN_STONE
 	dw NoEffect            ; POLKADOT_BOW
 	dw NoEffect            ; ITEM_AB
-	dw NoEffect            ; UP_GRADE
+	dw EvoStoneEffect      ; UP_GRADE
 	dw RestoreHPEffect     ; BERRY
 	dw RestoreHPEffect     ; GOLD_BERRY
 	dw SquirtbottleEffect  ; SQUIRTBOTTLE
@@ -522,6 +522,19 @@ PokeBallEffect:
 	call PrintText
 
 	call ClearSprites
+
+	ld a, [wTempSpecies]
+	ld l, a
+	ld a, [wCurPartyLevel]
+	ld h, a
+	push hl
+	farcall ApplyExperienceAfterEnemyCaught
+	pop hl
+	ld a, l
+	ld [wCurPartySpecies], a
+	ld [wTempSpecies], a
+	ld a, h
+	ld [wCurPartyLevel], a
 
 	ld a, [wEnemyMonSpecies]
 	ld [wTempSpecies], a
@@ -2069,6 +2082,8 @@ UseRepel:
 
 	ld a, b
 	ld [wRepelEffect], a
+	ld a, [wCurItem]
+	ld [wRepelType], a
 	jp UseItemText
 
 RepelUsedEarlierIsStillInEffectText:

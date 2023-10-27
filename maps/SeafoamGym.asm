@@ -38,11 +38,26 @@ SeafoamGymBlaineScript:
 	end
 
 .FightDone:
+	checkevent EVENT_OPENED_MT_SILVER
+	iftrue .BlaineRematchAsk
 	writetext BlaineFightDoneText
 	waitbutton
 	closetext
 	end
+	
+.BlaineRematchAsk
+	writetext BlaineRematchAskText
+	yesorno
+	iftrue .BlaineRematch
+	closetext
+	end
 
+.BlaineRematch:
+	winlosstext Blaine_RematchDefeat, 0
+	loadtrainer BLAINE, BLAINE2
+	startbattle
+	reloadmapafterbattle
+	end
 SeafoamGymGuideScript:
 	faceplayer
 	opentext
@@ -123,6 +138,22 @@ BlaineFightDoneText:
 	line "Just you watch!"
 	done
 
+BlaineRematchAskText:
+	text "BLAINE: Hello"
+	line "kid!" 
+	
+	para "I still need"
+	line "more time to"
+	cont "rebuild my GYM."
+	
+	para "How about a"
+	line "rematch here?"
+	done
+	
+Blaine_RematchDefeat:
+	text "BLAINE: Our fire"
+	line "died out."
+	done
 SeafoamGymGuideWinText:
 	text "Yo!"
 

@@ -739,14 +739,12 @@ wDexListingCursorBackup:: db
 wBackupDexListingCursor:: db
 wBackupDexListingPage:: db
 wDexCurLocation:: db
-if DEF(_CRYSTAL11)
 wPokedexStatus:: db
-wPokedexDataEnd::
-else
+wPokedexShinyToggle::
+; bit 0: set if displaying shiny palettes
+	db
 wPokedexDataEnd::
 	ds 1
-endc
-	ds 2
 
 NEXTU
 ; pokegear
@@ -1533,14 +1531,7 @@ wCreditsLYOverride:: db
 NEXTU
 ; pokedex
 wPrevDexEntryJumptableIndex:: db
-if DEF(_CRYSTAL11)
 wPrevDexEntryBackup:: db
-else
-; BUG: Crystal 1.0 reused the same byte in WRAM for
-; wPokedexStatus and wPrevDexEntryBackup.
-wPokedexStatus::
-wPrevDexEntryBackup:: db
-endc
 wUnusedPokedexByte:: db
 
 NEXTU
@@ -2375,7 +2366,7 @@ wSpriteFlags:: db
 
 wHandlePlayerStep:: db
 
-	ds 1
+wCurIconMonHasItemOrMail:: db
 
 wPartyMenuActionText:: db
 
@@ -3262,7 +3253,7 @@ wPhoneList:: ds CONTACT_LIST_SIZE + 1
 	ds 22
 
 wLuckyNumberShowFlag:: db
-	ds 1
+wRepelType:: db
 wLuckyIDNumber:: dw
 
 wRepelEffect:: db ; If a Repel is in use, it contains the nr of steps it's still active
