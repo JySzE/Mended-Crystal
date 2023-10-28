@@ -75,7 +75,7 @@ in a less convoluted and more logical experience.
 
 - [Color party menu icons by species](https://github.com/pret/pokecrystal/wiki/Color-party-menu-icons-by-species)
 
-- [New Lapras OW swimming sprite from DamienDoury's Repo](https://github.com/DamienDoury/pokecrystal/blob/master/gfx/sprites/surf.png)
+- [New Lapras OW swimming sprite edited by DamienDoury originally by FrenchOrange](https://github.com/DamienDoury/pokecrystal/blob/master/gfx/sprites/surf.png)
 
 - [Short beeping noise for low HP](https://github.com/pret/pokecrystal/wiki/Short-beeping-noise-for-low-HP)
 
