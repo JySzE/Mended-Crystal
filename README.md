@@ -1,5 +1,8 @@
 # Pokémon Mended Crystal 
 
+![Mended Crystal](https://github.com/JySzE/mended-crystal/assets/70117278/ea6aeb21-cf2f-447c-9b9b-8952907746d0)
+
+
 Mended Crystal is heavily inspired by [**UberMedic7's Patched-Crystal**](https://github.com/UberMedic7/patched-crystal), There are distinct differences and you can compare them both.
 
 Mended Crystal is a romhack of Pokemon Crystal. Its main goal is to improve rather than change the feel of what gen 2 pokemon is. 
