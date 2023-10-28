@@ -131,7 +131,7 @@ in a less convoluted and more logical experience.
 
 ## Where do I find all 251 Pokemon? 
 
-There is a [**Encounters & Evolutions**](Encounters & Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
+There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
 
 That one is a secret and can be found by natural playing the game in a very obvious way. (no its not a roaming mon fear not)
 
@@ -143,7 +143,9 @@ You can find fossils by smashing rocks with rock smash! You can then revive said
 
 Pokemon that would normally evolve via trading now can be evolved without any trading using the new item "Link Cord". 
 
-It works like an evolutionary stone, You can find a complete list of all the Pokemon that use the item Link Cord inside the [**Encounters & Evolutions**](Encounters & Evolutions.md).
+You can purchase the item "Link Cord" at the Goldenrod Department Store 4F.
+
+It works like an evolutionary stone, You can find a complete list here: [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md).
 
 ## Is it possible to Trade & Battle in this? 
 
