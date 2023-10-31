@@ -277,6 +277,7 @@ ShellderEggMoves:
 GastlyEggMoves:
 	db PSYWAVE
 	db PERISH_SONG
+	db PERISH_SONG
 	db HAZE
 	db -1 ; end
 
@@ -442,7 +443,7 @@ DratiniEggMoves:
 
 ChikoritaEggMoves:
 	db VINE_WHIP
-	db LEECH_SEED
+	db SYNTHESIS
 	db COUNTER
 	db ANCIENTPOWER
 	db FLAIL

@@ -2073,13 +2073,17 @@ ChikoritaEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 8, RAZOR_LEAF
-	db 12, REFLECT
+	db 12, LEECH_SEED
 	db 15, POISONPOWDER
-	db 22, SYNTHESIS
+	db 18, REFLECT
+	db 22, GIGA_DRAIN
+	db 25, ANCIENTPOWER
 	db 29, BODY_SLAM
+	db 32, GROWTH
 	db 36, LIGHT_SCREEN
 	db 43, SAFEGUARD
 	db 50, SOLARBEAM
+	db 54, OUTRAGE
 	db 0 ; no more level-up moves
 
 BayleefEvosAttacks:
@@ -2087,32 +2091,36 @@ BayleefEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 1, RAZOR_LEAF
-	db 1, REFLECT
 	db 8, RAZOR_LEAF
-	db 12, REFLECT
+	db 12, LEECH_SEED
 	db 15, POISONPOWDER
-	db 23, SYNTHESIS
-	db 31, BODY_SLAM
+	db 20, REFLECT
+	db 25, GIGA_DRAIN
+	db 28, ANCIENTPOWER
+	db 33, BODY_SLAM
+	db 35, GROWTH
 	db 39, LIGHT_SCREEN
-	db 47, SAFEGUARD
-	db 55, SOLARBEAM
+	db 46, SAFEGUARD
+	db 53, SOLARBEAM
+	db 57, OUTRAGE
 	db 0 ; no more level-up moves
 
 MeganiumEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 1, RAZOR_LEAF
-	db 1, REFLECT
 	db 8, RAZOR_LEAF
-	db 12, REFLECT
+	db 12, LEECH_SEED
 	db 15, POISONPOWDER
-	db 23, SYNTHESIS
-	db 31, BODY_SLAM
-	db 41, LIGHT_SCREEN
-	db 51, SAFEGUARD
-	db 61, SOLARBEAM
+	db 20, REFLECT
+	db 25, GIGA_DRAIN
+	db 28, ANCIENTPOWER
+	db 36, BODY_SLAM
+	db 38, GROWTH
+	db 42, LIGHT_SCREEN
+	db 49, SAFEGUARD
+	db 56, SOLARBEAM
+	db 60, OUTRAGE
 	db 0 ; no more level-up moves
 
 CyndaquilEvosAttacks:
