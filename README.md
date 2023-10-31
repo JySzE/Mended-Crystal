@@ -132,6 +132,10 @@ in a less convoluted and more logical experience.
 
   - This last one can be a controversial change.. but its a logical one if you evaluate the move pool and stats of ghost and dark type pokemon. I consider this a bug fix.
 
+- Chikorita, Bayleef and Meganium all got very minor buffs to defense and special defense.
+
+- Chikorita, Bayleef and Meganium all got revised evolution movesets and egg moves. Chikorita is now actually fun and no longer subpar.
+
 ## Where do I find all 251 Pokemon? 
 
 There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
