@@ -277,7 +277,6 @@ ShellderEggMoves:
 GastlyEggMoves:
 	db PSYWAVE
 	db PERISH_SONG
-	db PERISH_SONG
 	db HAZE
 	db -1 ; end
 
