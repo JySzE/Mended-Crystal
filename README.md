@@ -24,7 +24,7 @@ in a less convoluted and more logical experience.
 
 - [Unlimited TM usage](https://github.com/pret/pokecrystal/wiki/Infinitely-reusable-TMs)
 
-- [All Gym Leaders are now available for a rematch with stronger teams once you gain access to MT. Silver teams have been tweaked to be as similar to their HG/SS teams as possible](https://github.com/UberMedic7/patched-crystal)
+- [All Gym Leaders are now available for a rematch with stronger teams once you gain access to MT. Silver, teams have been tweaked to be as similar to their HG/SS teams as possible](https://github.com/UberMedic7/patched-crystal)
 
 - [Gain experience from catching Pokemon](https://github.com/pret/pokecrystal/wiki/Gain-experience-from-catching-Pok%C3%A9mon)
 
@@ -34,9 +34,9 @@ in a less convoluted and more logical experience.
 
 - [Colored trainer card badges for Both Johto and Kanto](https://github.com/pret/pokecrystal/wiki/Colored-trainer-card-badges)
 
-- [There's a Move Relearner NPC at Move Deleter's home now to teach your pokemon forgotten moves.](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Relearner)
+- [There's a Move Relearner NPC at Move Deleter's home now to teach your pokemon forgotten moves](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Relearner)
 
-- [Berry and apricorn trees now drop between 3 to 5 berries/apricorns.](https://github.com/pret/pokecrystal/wiki/Harvest-multiple-items-from-fruit-trees)
+- [Berry and apricorn trees now drop between 3 to 5 berries/apricorns](https://github.com/pret/pokecrystal/wiki/Harvest-multiple-items-from-fruit-trees)
 
 - [Kurt Makes Pokeballs Instantly](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
 
@@ -87,9 +87,9 @@ in a less convoluted and more logical experience.
 
 - [Use unique colors for each thrown Poke Ball](https://github.com/pret/pokecrystal/wiki/Use-unique-colors-for-each-thrown-Pok%C3%A9-Ball)
 
-- [You can challenge all Gym Leaders to a rematch as many times as you want after you gain access to MT. Silver.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/trainers/parties.asm)
+- [You can challenge all Gym Leaders to a rematch as many times as you want after you gain access to MT. Silver](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/trainers/parties.asm)
 
-- [Lugia and Ho-Oh now possess their signature moves when you encounter them instead of Gust.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/pokemon/evos_attacks.asm)
+- [Lugia and Ho-Oh now possess their signature moves when you encounter them instead of Gust](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/pokemon/evos_attacks.asm)
 
 - [Removed the Kanto Legendary Birds from the "Often flees" group](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/wild/flee_mons.asm)
 
@@ -97,9 +97,9 @@ in a less convoluted and more logical experience.
 
 - [Tri-Attack can no longer inflict BRN on FIRE types and FRZ on ICE types](https://github.com/pret/pokecrystal/wiki/Prevent-Steel%E2%80%90types-from-being-poisoned-by-Twineedle)
 
-- [M09 (Psych Up) and Twisted Spoon removed from the Mahogany mart and instead placed in the Saffron one.](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L370)
+- [M09 (Psych Up) and Twisted Spoon removed from the Mahogany mart and instead placed in the Saffron one](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L370)
 
-- Both the Battle Tower and Buena's Password are packed with new rewards
+- Both the Battle Tower and Buena's Password are packed with new rewards.
 
 - [Battle Tower rewards are the following:](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/maps/BattleTower1F.asm#L134)
 
@@ -130,7 +130,7 @@ in a less convoluted and more logical experience.
   - 8 Blue Card points: Silver Leaf
   - 9 Blue Card points: Mysteryberry, Gold Berry, Berry Juice, Lucky Punch, Mirage Mail
 
-- [Ghost type attacks are now special and Dark type attacks are now physical.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/constants/type_constants.asm)
+- [Ghost type attacks are now special and Dark type attacks are now physical](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/constants/type_constants.asm)
 
   - This last one can be a controversial change.. but its a logical one if you evaluate the move pool and stats of ghost and dark type pokemon. I consider this a bug fix.
 
