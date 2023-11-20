@@ -104,14 +104,12 @@ ENDM
 .LoadBallsOntoMachine:
 	ld a, [wPartyCount]
 	ld b, a
-.party_loop
-	call .PlaceHealingMachineTile
 	push de
 	ld de, SFX_SECOND_PART_OF_ITEMFINDER
 	call PlaySFX
 	pop de
-	ld c, 30
-	call DelayFrames
+.party_loop
+	call .PlaceHealingMachineTile
 	dec b
 	jr nz, .party_loop
 	ret
