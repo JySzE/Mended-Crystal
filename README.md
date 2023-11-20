@@ -138,7 +138,9 @@ in a less convoluted and more logical experience.
 
 - Chikorita, Bayleef and Meganium all got revised evolution movesets and egg moves. Chikorita is now actually fun and no longer subpar.
 
-- [Change the speed of healing at a Pokemon Center (Animation is now instant)](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#change-the-speed-of-healing-at-a-pok%C3%A9mon-center)
+- [Change the speed of healing at a Pokemon Center](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#change-the-speed-of-healing-at-a-pok%C3%A9mon-center)
+
+-[Tiles are now still animated even if a text box is open](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#animate-tiles-even-when-textboxes-are-open)
 
 ## Where do I find all 251 Pokemon? 
 
