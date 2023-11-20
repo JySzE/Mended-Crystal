@@ -142,6 +142,15 @@ in a less convoluted and more logical experience.
 
 - [Tiles are now still animated even if a text box is open](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#animate-tiles-even-when-textboxes-are-open)
 
+- [Pokemon can now use Field moves without learning them](https://github.com/pret/pokecrystal/wiki/Allow-using-a-field-move-if-the-Pokemon-can-learn-it)
+   - Requires you to have the HM or TM + the required badge and situation to use field moves.
+   - Requires you to have a Pokemon in party that can learn the TM or HM.
+   - Do not fear if they do not show up in your pokemon sub menu. Only field moves you manually have to call with no physical interactive object will show up in the sub menu and only when allowed (like fly, flash, sweet scent etc..)
+   - For example Fly will only show up when outside and will NOT show up in the submenu if inside a cave or building.
+   - For example Surf, Whirpool and Waterfall will never show up in the submenu and will work aslong as you have the HM, Badge required and have a Pokemon in party that can learn it. Simply press A at the object and it will work.
+   - For example Headbutt will not show up in the pokemon submenu and only requires you have the TM and a pokemon in party that can learn it. Simply go up to a tree and press A.
+   - You are still free to teach your pokemon any TM or HM field move you want! This is simply a nice way of not having to waste a move slot or keep a HM slave around. :)
+
 ## Where do I find all 251 Pokemon? 
 
 There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
