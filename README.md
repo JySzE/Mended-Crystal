@@ -155,6 +155,8 @@ in a less convoluted and more logical experience.
 
 - [Removed the artificial save delay (But keeps overwrite confirmation)](https://github.com/pret/pokecrystal/wiki/Remove-the-artificial-save-delay)
 
+- Make ALL eggs 30% easier to hatch
+
 ## Where do I find all 251 Pokemon? 
 
 There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
