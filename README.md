@@ -157,6 +157,8 @@ in a less convoluted and more logical experience.
 
 - Make ALL eggs 30% easier to hatch
 
+- [Johto & Kanto Gyms, Rival, E4, & Red All got level increases, smaller teams were given a new addition to make it more consistent](https://github.com/JySzE/mended-crystal/commit/3d3082e8abe5f5008f67165698636fd859a2a65f)
+
 ## Where do I find all 251 Pokemon? 
 
 There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
