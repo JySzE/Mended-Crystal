@@ -151,7 +151,7 @@ in a less convoluted and more logical experience.
    - For example Headbutt will not show up in the pokemon submenu and only requires you have the TM and a pokemon in party that can learn it. Simply go up to a tree and press A.
    - You are still free to teach your pokemon any TM or HM field move you want! This is simply a nice way of not having to waste a move slot or keep a HM slave around. :)
 
-- [Add a new text scrolling speed (instant speed)](https://github.com/pret/pokecrystal/wiki/Add-a-new-text-scrolling-speed)
+- [Add a new text scrolling speed (instant speed "NONE" is now default)](https://github.com/pret/pokecrystal/wiki/Add-a-new-text-scrolling-speed)
 
 - [Removed the artificial save delay (But keeps overwrite confirmation)](https://github.com/pret/pokecrystal/wiki/Remove-the-artificial-save-delay)
 
