@@ -159,6 +159,19 @@ in a less convoluted and more logical experience.
 
 - [Johto & Kanto Gyms, Rival, E4, & Red All got level increases, smaller teams were given a new addition to make it more consistent](/data/trainers/parties.asm)
 
+- [All random trainers have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/trainers/parties.asm)
+
+| Level Range | % Increase | New Range Rounded |
+|:-----------:|:----------:|:-----------------:|
+| 01 - 05     | + 10%      | 01 - 06           |
+| 06 - 10     | + 10%      | 07 - 11           |
+| 11 - 15     | + 12%      | 12 - 17           |
+| 16 - 20     | + 15%      | 18 - 23           |
+| 21 - 25     | + 18%      | 25 - 30           |
+| 26 - 30     | + 21%      | 31 - 36           |
+| 31 - 35     | + 24%      | 38 - 43           |
+| 36 - 40     | + 27%      | 46 - 51           |
+
 ## Where do I find all 251 Pokemon? 
 
 There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
