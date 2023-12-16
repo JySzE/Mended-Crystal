@@ -52,9 +52,9 @@ if __name__ == "__main__":
     output_file_path = "output.asm"
     excluded_trainers = ["FALKNER@", "BUGSY@", "WHITNEY@", "MORTY@",
                          "CHUCK@", "JASMINE@", "PRYCE@", "CLAIR@",
-                         "?@", "RIVAL1@", "WILL@", "CAL@","KOGA@",
-                         "BRUNO@", "KAREN@", "LANCE@", "BROCK@",
-                         "MISTY@", "LT.SURGE@", "ERIKA@", "JANINE@",
+                         "?@", "WILL@", "CAL@","KOGA@","BRUNO@",
+                         "KAREN@", "LANCE@", "BROCK@", "MISTY@",
+                         "LT.SURGE@", "ERIKA@", "JANINE@", 
                          "SABRINA@", "BLAINE@", "RED@", "BLUE@"]
 
     process_file(input_file_path, output_file_path, excluded_trainers)
