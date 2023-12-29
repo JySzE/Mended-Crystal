@@ -172,6 +172,8 @@ in a less convoluted and more logical experience.
 | 31 - 35     | + 24%      | 38 - 43           |
 | 36 - 40     | + 27%      | 46 - 51           |
 
+[Modify existing gender formula](https://github.com/pret/pokecrystal/wiki/Modify-existing-gender-formula)
+
 ## Where do I find all 251 Pokemon? 
 
 There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
