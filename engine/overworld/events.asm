@@ -138,38 +138,56 @@ UnusedWait30Frames: ; unreferenced
 	ret
 
 HandleMap:
+	call ResetOverworldDelay
 	call HandleMapTimeAndJoypad
-	call HandleCmdQueue
+	farcall HandleCmdQueue ; no need to farcall
 	call MapEvents
 
 ; Not immediately entering a connected map will cause problems.
 	ld a, [wMapStatus]
 	cp MAPSTATUS_HANDLE
 	ret nz
+
 	call HandleMapObjects
 	call NextOverworldFrame
 	call HandleMapBackground
 	call CheckPlayerState
-	xor a
 	ret
 
 MapEvents:
 	ld a, [wMapEventStatus]
-	and a
-	ret nz
+	ld hl, .Jumptable
+	rst JumpTable
+	ret
+
+.Jumptable:
+; entries correspond to MAPEVENTS_* constants
+	dw .events
+	dw .no_events
+
+.events:
 	call PlayerEvents
 	call DisableEvents
 	farcall ScriptEvents
 	ret
 
+.no_events:
+	ret
+
+MaxOverworldDelay:
+	db 2
+
+ResetOverworldDelay:
+	ld a, [MaxOverworldDelay]
+	ld [wOverworldDelay], a
+	ret
+
 NextOverworldFrame:
-	; If we haven't already performed a delay outside DelayFrame as a result
-	; of a busy LY overflow, perform that now.
-	ld a, [hDelayFrameLY]
-	inc a
-	jp nz, DelayFrame
-	xor a
-	ld [hDelayFrameLY], a
+	ld a, [wOverworldDelay]
+	and a
+	ret z
+	ld c, a
+	call DelayFrames
 	ret
 
 HandleMapTimeAndJoypad:
@@ -1014,7 +1032,7 @@ EdgeWarpScript:
 	reloadend MAPSETUP_CONNECTION
 
 ChangeDirectionScript:
-	callasm UnfreezeAllObjects
+	deactivatefacing 3
 	callasm EnableWildEncounters
 	end
 
