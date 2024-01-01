@@ -33,7 +33,7 @@ BattleIntroSlidingPics:
 .loop2
 	ldh a, [rLY]
 	cp $60
-	jr nz, .loop2
+	jr c, .loop2
 	ld a, d
 	ldh [hSCX], a
 	call .subfunction5
