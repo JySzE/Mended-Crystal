@@ -19,7 +19,7 @@ There are no fakemons or original characters in this romhack, infact NONE of the
 - You can obtain all 251 Pokemon without the need to do trades with other people, version exclusives can now be found in the wild and certain evolution methods have been altered as to aid 
 in a less convoluted and more logical experience. 
 
-- [60fps & Running Shoes](https://github.com/vulcandth/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)
+- [60fps & Running Shoes [60fps branch only]](https://github.com/vulcandth/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)
 
 - [Unlimited TM usage](https://github.com/pret/pokecrystal/wiki/Infinitely-reusable-TMs)
 
