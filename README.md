@@ -1,7 +1,6 @@
 # Pokémon Mended Crystal 
 
-![278832192-ea6aeb21-cf2f-447c-9b9b-8952907746d0](https://github.com/JySzE/mended-crystal/assets/70117278/fdf1413e-f99c-4fa7-9126-d897c5d9edc5)
-
+![284440153-fdf1413e-f99c-4fa7-9126-d897c5d9edc5](https://github.com/JySzE/Mended-Crystal/assets/70117278/8c78b3e2-d2bc-47f0-b3a3-fceb3b7b0c1e)
 
 Mended Crystal is heavily inspired by [**UberMedic7's Patched-Crystal**](https://github.com/UberMedic7/patched-crystal), There are distinct differences and you can compare them both.
 
