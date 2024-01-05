@@ -4959,7 +4959,7 @@ BattleMenu:
 	jr .loop
 
 BattleMenu_Fight:
-     call ClearSprites
+    call ClearSprites
 	xor a
 	ld [wNumFleeAttempts], a
 	call SafeLoadTempTilemapToTilemap
@@ -5022,6 +5022,7 @@ BattleMenu_Pack:
 	jr .got_item
 
 .contest
+    call ClearSprites
 	ld a, PARK_BALL
 	ld [wCurItem], a
 	call DoItemEffect
