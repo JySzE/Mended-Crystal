@@ -107,11 +107,9 @@ RockItemEncounter:
 	db 4, NUGGET
 	db 4, STAR_PIECE
 	db 4, BIG_PEARL
+	db 8, DOME_FOSSIL
+	db 8, HELIX_FOSSIL
+	db 8, OLD_AMBER
 	db 10, BRICK_PIECE
 	db 10, PEARL
-	db 25, HARD_STONE
-	db 25, SOFT_SAND
-	db 30, DOME_FOSSIL
-	db 30, HELIX_FOSSIL
-	db 30, OLD_AMBER	
 	db -1
