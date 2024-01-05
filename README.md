@@ -53,18 +53,16 @@ in a less convoluted and more logical experience.
 
 - [Items given from smashing rocks](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/engine/events/checkforhiddenitems.asm#L104C3-L104C3)
 
+   - Metal Coat
+   - Thick Club
    - Nugget
    - Star Piece
    - Big Pearl
-   - Pearl
-   - Brick Piece
-   - Metal Coat
-   - Hard Stone
-   - Soft Sand
-   - Thick Club
    - Dome Fossil
    - Helix Fossil
    - Old Amber
+   - Brick Piece
+   - Pearl
 
 - [Color Pokemon pictures shown in overworld](https://github.com/pret/pokecrystal/wiki/Color-Pok%C3%A9mon-pictures-shown-in-overworld)
 
