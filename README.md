@@ -23,8 +23,6 @@ in a less convoluted and more logical experience.
 
 - [Unlimited TM usage](https://github.com/pret/pokecrystal/wiki/Infinitely-reusable-TMs)
 
-- [All Gym Leaders are now available for a rematch with stronger teams once you gain access to MT. Silver, teams have been tweaked to be as similar to their HG/SS teams as possible](https://github.com/UberMedic7/patched-crystal)
-
 - [Gain experience from catching Pokemon](https://github.com/pret/pokecrystal/wiki/Gain-experience-from-catching-Pok%C3%A9mon)
 
 - [Third trainer card page for Kanto badges](https://github.com/pret/pokecrystal/wiki/Add-a-third-trainer-card-page-for-Kanto-badges)
