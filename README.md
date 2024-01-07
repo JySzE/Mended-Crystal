@@ -165,7 +165,7 @@ in a less convoluted and more logical experience.
 | 21 - 25     | + 18%      | 25 - 30           |
 | 26 - 30     | + 21%      | 31 - 36           |
 | 31 - 35     | + 24%      | 38 - 43           |
-| 36 - 40     | + 27%      | 46 - 51           |
+| 36 - 40     | + 20%      | 43 - 48           |
 
 - [Modify existing gender formula](https://github.com/pret/pokecrystal/wiki/Modify-existing-gender-formula)
 
