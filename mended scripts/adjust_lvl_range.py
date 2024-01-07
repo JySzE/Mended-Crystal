@@ -13,7 +13,7 @@ def process_file(file_path, output_path, excluded_identifiers):
         (21, 25, 0.18),# Level 21 to 25 increase value by rounded 18%
         (26, 30, 0.21),# Level 26 to 30 increase value by rounded 21%
         (31, 35, 0.24),# Level 31 to 35 increase value by rounded 24%
-        (36, 40, 0.27),# Level 36 to 40 increase value by rounded 27%
+        (36, 40, 0.20),# Level 43 to 48 increase value by rounded 20%
     ]
 
     with open(file_path, 'r') as file:
