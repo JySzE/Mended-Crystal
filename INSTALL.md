@@ -150,15 +150,3 @@ To build **mended-crystal.gbc**:
 ```bash
 make
 ```
-
-### Build with a local rgbds version
-
-If you have different projects that require different versions of `rgbds`, it might not be convenient to install rgbds 0.7.0 globally. Instead, you can put its files in a directory within mended-crystal, such as `mended-crystal/rgbds-0.7.0/`. Then specify it when you run `make`:
-
-```bash
-make RGBDS=rgbds-0.7.0/
-```
-
-```bash
-make RGBDS=rgbds-0.7.0/ crystal11
-```
