@@ -127,11 +127,11 @@ in a less convoluted and more logical experience.
 
 - [Ghost type attacks are now special and Dark type attacks are now physical](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/constants/type_constants.asm)
 
-  - This last one can be a controversial change.. but its a logical one if you evaluate the move pool and stats of ghost and dark type pokemon. I consider this a bug fix.
-
 - Chikorita, Bayleef and Meganium all got very minor buffs to defense and special defense.
 
 - Chikorita, Bayleef and Meganium all got revised evolution movesets and egg moves. Chikorita is now actually fun and no longer subpar.
+
+- Lapras can now learn waterfall (the fact it couldnt learn this and the overworld sprite for surfing is lapras always bothered me)
 
 - [Change the speed of healing at a Pokemon Center](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#change-the-speed-of-healing-at-a-pok%C3%A9mon-center)
 
@@ -167,7 +167,69 @@ in a less convoluted and more logical experience.
 | 31 - 35     | + 24%      | 38 - 43           |
 | 36 - 40     | + 20%      | 43 - 48           |
 
+- [Johto Grass Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/johto_grass.asm)
+
+| Level Range | % Increase | New Range Rounded |
+|:-----------:|:----------:|:-----------------:|
+| 01 - 02     | + 85%      | 02 - 04           |
+| 03 - 03     | + 55%      | 05 - 05           |
+| 04 - 06     | + 0%       | 04 - 06           |
+| 07 - 10     | + 10%      | 08 - 11           |
+| 11 - 15     | + 12%      | 12 - 17           |
+| 16 - 20     | + 15%      | 18 - 23           |
+| 21 - 25     | + 18%      | 25 - 30           |
+| 26 - 30     | + 21%      | 31 - 36           |
+| 31 - 35     | + 24%      | 38 - 43           |
+| 36 - 40     | + 20%      | 43 - 48           |
+
+- [Johto Water Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/johto_water.asm)
+
+| Level Range | New Range |
+|:-----------:|:-----------------:|
+| 01 - 10     | 18 - 20  |
+| 15 - 15     | 25 - 26  |
+| 20 - 20     | 30 - 32  |
+| 35 - 35     | 44 - 46  |
+| 40 - 40     | 50 - 52  |
+
+- [Kanto Grass Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/kanto_grass.asm)
+
+| Level Range | New Range |
+|:-----------:|:-----------------:|
+| 01 - 15     | 36 - 38  |
+| 16 - 20     | 38 - 42  |
+| 21 - 25     | 38 - 42  |
+| 26 - 30     | 42 - 44  |
+| 31 - 45     | 42 - 44  |
+| 36 - 40     | 44 - 46  |
+| 41 - 45     | 44 - 46  |
+
+- [Kanto Water Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/kanto_water.asm)
+
+| Level Range | New Range |
+|:-----------:|:-----------------:|
+| 05 - 15     | 36 - 38  |
+| 20 - 20     | 40 - 42  |
+| 30 - 35     | 42 - 44  |
+
+
+- [Johto Grass Swarm Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](data/wild/swarm_grass.asm)
+
+| Level Range | New Range |
+|:-----------:|:-----------------:|
+| 1 - 4       | 05 - 05  |
+| 10 - 14     | 16 - 18  |
+
+- [Johto Tree Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/treemons.asm)
+
+| Level  | New  |
+|:-----------:|:-----------------:|
+| 10     | 15  |
+| 15     | 20  |
+
 - [Modify existing gender formula](https://github.com/pret/pokecrystal/wiki/Modify-existing-gender-formula)
+
+- [Add 4th Stats Page [Met, DVs, Hidden Power] Thanks getkosiorekt](https://github.com/pret/pokecrystal/wiki/Add-a-fourth-stats-page)
 
 ## Where do I find all 251 Pokemon? 
 
