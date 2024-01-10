@@ -12,7 +12,7 @@ RockTunnelB1F_MapScripts:
 .Zapdos:
     checkevent EVENT_FOUGHT_ZAPDOS
     iftrue .NoAppear
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .Appear
 	sjump .NoAppear
 	
