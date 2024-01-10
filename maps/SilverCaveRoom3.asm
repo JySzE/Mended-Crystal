@@ -40,7 +40,6 @@ Red:
 	waitbutton
 	closetext
 	winlosstext RedWinLossText, RedWinLossText
-	setevent EVENT_MEWTWO_IN_CAVE
 	loadtrainer RED, RED1
 	startbattle
 	dontrestartmapmusic
@@ -50,6 +49,7 @@ Red:
 	writetext RedLeavesText
 	waitbutton
 	closetext
+	setevent EVENT_MEWTWO_IN_CAVE
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
 	disappear SILVERCAVEROOM3_RED
