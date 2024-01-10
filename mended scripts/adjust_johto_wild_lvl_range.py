@@ -6,8 +6,9 @@ def adjust_level(level, percentage):
 def process_file(file_path, output_path):
     # Define level ranges and their corresponding adjustment percentages
     level_ranges = [
-        (1, 3, 55),   # Level 01 to 05 increase value by rounded 55%
-        (4, 6, 5),   # Level 01 to 05 increase value by rounded 5%
+        (1, 2, 85),   # Level 01 to 02 increase value by rounded 85%
+        (3, 3, 55),   # Level 03 to 03 increase value by rounded 55%
+        (4, 6, 5),    # Level 04 to 06 increase value by rounded 5%
         (7, 10, 10),  # Level 06 to 10 increase value by rounded 10%
         (11, 15, 12), # Level 11 to 15 increase value by rounded 12%
         (16, 20, 15), # Level 16 to 20 increase value by rounded 15%
@@ -43,5 +44,5 @@ if __name__ == "__main__":
     output_file_path = "output.asm"
 
     process_file(input_file_path, output_file_path)
-    print("Processing completed. Check output.asm for the modified data.")
+    print("Processing completed.")
 

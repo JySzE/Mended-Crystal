@@ -1182,26 +1182,26 @@ JohtoGrassWildMons:
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 5, GEODUDE
-	db 3, ZUBAT
-	db 3, GEODUDE
+	db 4, ZUBAT
 	db 4, GEODUDE
-	db 3, TEDDIURSA
+	db 4, GEODUDE
+	db 4, TEDDIURSA
 	db 4, ZUBAT
 	db 4, DUNSPARCE
 	; day
 	db 5, GEODUDE
-	db 3, ZUBAT
-	db 3, GEODUDE
+	db 4, ZUBAT
 	db 4, GEODUDE
-	db 3, ZUBAT
+	db 4, GEODUDE
+	db 4, ZUBAT
 	db 5, PHANPY
 	db 4, DUNSPARCE
 	; nite
 	db 5, GEODUDE
-	db 3, ZUBAT
-	db 3, GEODUDE
+	db 4, ZUBAT
 	db 4, GEODUDE
-	db 3, ZUBAT
+	db 4, GEODUDE
+	db 4, ZUBAT
 	db 4, ZUBAT
 	db 4, DUNSPARCE
 	end_grass_wildmons
@@ -1237,27 +1237,27 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_29
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, PIDGEY
-	db 3, SENTRET
+	db 4, PIDGEY
+	db 4, SENTRET
 	db 5, PIDGEY
 	db 5, SENTRET
-	db 3, RATTATA
+	db 4, RATTATA
 	db 5, HOPPIP
 	db 5, HOPPIP
 	; day
-	db 3, PIDGEY
-	db 3, SENTRET
+	db 4, PIDGEY
+	db 4, SENTRET
 	db 5, PIDGEY
 	db 5, SENTRET
-	db 3, RATTATA
+	db 4, RATTATA
 	db 5, HOPPIP
 	db 5, HOPPIP
 	; nite
-	db 3, HOOTHOOT
-	db 3, RATTATA
+	db 4, HOOTHOOT
+	db 4, RATTATA
 	db 5, HOOTHOOT
 	db 5, RATTATA
-	db 3, RATTATA
+	db 4, RATTATA
 	db 5, HOOTHOOT
 	db 5, HOOTHOOT
 	end_grass_wildmons
@@ -1657,29 +1657,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_46
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, GEODUDE
-	db 3, SPEAROW
+	db 4, GEODUDE
+	db 4, SPEAROW
 	db 5, GEODUDE
 	db 5, RATTATA
-	db 3, PHANPY
-	db 3, RATTATA
-	db 3, RATTATA
+	db 4, PHANPY
+	db 4, RATTATA
+	db 4, RATTATA
 	; day
-	db 3, GEODUDE
-	db 3, SPEAROW
+	db 4, GEODUDE
+	db 4, SPEAROW
 	db 5, GEODUDE
 	db 5, RATTATA
-	db 3, RATTATA
-	db 3, RATTATA
-	db 3, RATTATA
+	db 4, RATTATA
+	db 4, RATTATA
+	db 4, RATTATA
 	; nite
-	db 3, GEODUDE
-	db 3, RATTATA
+	db 4, GEODUDE
+	db 4, RATTATA
 	db 5, GEODUDE
 	db 5, RATTATA
-	db 3, RATTATA
-	db 3, RATTATA
-	db 3, RATTATA
+	db 4, RATTATA
+	db 4, RATTATA
+	db 4, RATTATA
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_OUTSIDE
