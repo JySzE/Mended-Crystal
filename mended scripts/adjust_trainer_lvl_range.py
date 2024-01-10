@@ -58,4 +58,4 @@ if __name__ == "__main__":
                          "SABRINA@", "BLAINE@", "RED@", "BLUE@"]
 
     process_file(input_file_path, output_file_path, excluded_trainers)
-    print("Processing completed. Check output.asm for the modified data.")
+    print("Processing completed.")

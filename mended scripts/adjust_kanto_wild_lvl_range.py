@@ -9,7 +9,7 @@ def process_file(file_path, output_path):
     # Define level ranges and their corresponding adjustment percentages and random maximum value ranges
     level_ranges = [
         (1, 15,  9999, (36, 38)), # Level 01 to 15 increase value by rounded 9999%, random cap between 36 and 38
-        (16, 20, 9999, (38, 42)), # These are examples on what I did for kanto grass mons
+        (16, 20, 9999, (38, 42)), 
         (21, 25, 9999, (38, 42)),
         (26, 30, 9999, (42, 44)), 
         (31, 35, 9999, (42, 44)),  
