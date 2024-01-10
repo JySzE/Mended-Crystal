@@ -43,9 +43,9 @@ Fossils can be found by smashing rocks and revived at the Ruins of Alph Research
 
 | **Pokemon** |   **Route**  | **Requires** |
 |:-----------:|:------------:|:------------:|
-|    Zapdos   |  Rock Tunnel |     None     |
-|   Moltres   | Victory Road |     None     |
-|   Articuno  |   Ice Path   |     None     |
+|    Zapdos   |  Rock Tunnel |Defeat Elite 4|
+|   Moltres   | Victory Road |Defeat Elite 4|
+|   Articuno  |   Ice Path   |Defeat Elite 4|
 |    Mewtwo   |  Silver Cave |  Defeat Red  |
 |     Mew     |    Secret    |     ????     |
 
