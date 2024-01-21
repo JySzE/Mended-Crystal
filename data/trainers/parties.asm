@@ -471,7 +471,7 @@ YoungsterGroup:
 
 	; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
-	db  2, PIDGEY
+	db  4, PIDGEY
 	db  4, RATTATA
 	db -1 ; end
 
@@ -1645,8 +1645,8 @@ SabrinaGroup:
 BugCatcherGroup:
 	; BUG_CATCHER (1)
 	db "DON@", TRAINERTYPE_NORMAL
-	db  3, CATERPIE
-	db  3, CATERPIE
+	db  4, CATERPIE
+	db  4, CATERPIE
 	db -1 ; end
 
 	; BUG_CATCHER (2)
@@ -1664,10 +1664,10 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (4)
 	db "WADE@", TRAINERTYPE_NORMAL
-	db  2, CATERPIE
-	db  2, CATERPIE
-	db  3, WEEDLE
-	db  2, CATERPIE
+	db  4, CATERPIE
+	db  4, CATERPIE
+	db  4, WEEDLE
+	db  4, CATERPIE
 	db -1 ; end
 
 	; BUG_CATCHER (5)
@@ -2714,7 +2714,7 @@ FirebreatherGroup:
 JugglerGroup:
 	; JUGGLER (1)
 	db "IRWIN@", TRAINERTYPE_NORMAL
-	db  2, VOLTORB
+	db  4, VOLTORB
 	db  7, VOLTORB
 	db 11, VOLTORB
 	db 16, VOLTORB
@@ -3235,16 +3235,16 @@ ExecutiveFGroup:
 SageGroup:
 	; SAGE (1)
 	db "CHOW@", TRAINERTYPE_NORMAL
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
+	db  4, BELLSPROUT
+	db  4, BELLSPROUT
+	db  4, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (2)
 	db "NICO@", TRAINERTYPE_NORMAL
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
+	db  4, BELLSPROUT
+	db  4, BELLSPROUT
+	db  4, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (3)
@@ -3274,9 +3274,9 @@ SageGroup:
 
 	; SAGE (7)
 	db "EDMOND@", TRAINERTYPE_NORMAL
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
+	db  4, BELLSPROUT
+	db  4, BELLSPROUT
+	db  4, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (8)
