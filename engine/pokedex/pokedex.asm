@@ -60,8 +60,7 @@ Pokedex:
 	call ClearSprites
 	ld a, [wCurDexMode]
 	ld [wLastDexMode], a
-	
-	ld a, [wPokedexShinyToggle]
+
 	xor a
 	ld [wPokedexShinyToggle], a
 
