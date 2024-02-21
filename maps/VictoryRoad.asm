@@ -13,21 +13,15 @@ VictoryRoad_MapScripts:
 	scene_script VictoryRoadNoop2Scene, SCENE_VICTORYROAD_NOOP
 
 	def_callbacks
-	;callback MAPCALLBACK_OBJECTS, .Moltres 
-	
-VictoryRoadNoop1Scene:
-	end
+	callback MAPCALLBACK_OBJECTS, .CheckMoltres 
 
-VictoryRoadNoop2Scene:
-	end
-
-.Moltres:
+.CheckMoltres:
 	checkevent EVENT_FOUGHT_MOLTRES
 	iftrue .NoAppear
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .Appear
 	sjump .NoAppear
-	
+
 .Appear
 	appear VICTORYROAD_MOLTRES
 	endcallback
@@ -49,6 +43,12 @@ Moltres:
 	startbattle
 	disappear VICTORYROAD_MOLTRES
 	reloadmapafterbattle
+	end
+
+VictoryRoadNoop1Scene:
+	end
+
+VictoryRoadNoop2Scene:
 	end
 
 VictoryRoadRivalLeft:

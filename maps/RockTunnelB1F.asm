@@ -9,7 +9,9 @@ RockTunnelB1F_MapScripts:
 
 	def_callbacks
 
-.Zapdos:
+	callback MAPCALLBACK_OBJECTS, .CheckZapdos
+
+.CheckZapdos:
     checkevent EVENT_FOUGHT_ZAPDOS
     iftrue .NoAppear
 	checkevent EVENT_BEAT_ELITE_FOUR

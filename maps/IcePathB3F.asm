@@ -8,7 +8,9 @@ IcePathB3F_MapScripts:
 
 	def_callbacks
 
-.Articuno:
+	callback MAPCALLBACK_OBJECTS, .CheckArticuno
+
+.CheckArticuno:
     checkevent EVENT_FOUGHT_ARTICUNO
     iftrue .NoAppear
 	checkevent EVENT_BEAT_ELITE_FOUR
