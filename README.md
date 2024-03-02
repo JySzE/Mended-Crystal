@@ -86,6 +86,8 @@ in a less convoluted and more logical experience.
 
 - [Lugia and Ho-Oh now possess their signature moves when you encounter them instead of Gust](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/pokemon/evos_attacks.asm)
 
+- Celebi event restored with new dialogue
+
 - [Removed the Kanto Legendary Birds from the "Often flees" group](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/wild/flee_mons.asm)
 
 - [Evolutionary stones along with a new item the "Link Cord" can now be bought at the Goldenrod Department Store 4F for 4000 each](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L127)
