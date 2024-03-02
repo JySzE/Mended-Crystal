@@ -716,18 +716,29 @@ GoldenrodPokecenter1FLassText:
 GoldenrodPokeCenter1FLinkReceptionistPleaseAcceptGSBallText:
 	text "<PLAYER>, isn't it?"
 
-	para "Congratulations!"
+	para "Great!"
 
-	para "As a special deal,"
-	line "a GS BALL has been"
-	cont "sent just for you!"
+	para "Prof. Elm finished"
+	line "studying this BALL"
+	cont "a long time ago."
 
-	para "Please accept it!"
+	para "It's been in my"
+	line "care ever since."
+
+	para "I was told to"
+	line "deliver it to you."
+	cont "The new CHAMPION."
+
+	para "He said only"
+	line "a true CHAMPION"
+	cont "could make use"
+	cont "of this BALL."
+
 	done
 
 GoldenrodPokeCenter1FLinkReceptionistPleaseDoComeAgainText:
-	text "Please do come"
-	line "again!"
+	text "Give the Professor"
+	line "my best!"
 	done
 
 GoldenrodPokecomCenterSignText: ; unreferenced
