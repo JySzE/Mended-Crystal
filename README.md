@@ -86,7 +86,7 @@ in a less convoluted and more logical experience.
 
 - [Lugia and Ho-Oh now possess their signature moves when you encounter them instead of Gust](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/pokemon/evos_attacks.asm)
 
-- Celebi event restored with new dialogue
+- [Celebi event restored with new dialogue](https://github.com/pret/pokecrystal/wiki/Restore-the-GS-Ball-Celebi-Event)
 
 - [Removed the Kanto Legendary Birds from the "Often flees" group](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/wild/flee_mons.asm)
 
