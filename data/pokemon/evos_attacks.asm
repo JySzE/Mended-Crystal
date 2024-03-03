@@ -3339,10 +3339,11 @@ LugiaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, AEROBLAST
 	db 11, SAFEGUARD
-	db 22, AEROBLAST
+	db 22, GUST
 	db 33, RECOVER
 	db 44, HYDRO_PUMP
 	db 55, RAIN_DANCE
+	db 60, AEROBLAST
 	db 66, SWIFT
 	db 77, WHIRLWIND
 	db 88, ANCIENTPOWER
@@ -3353,10 +3354,11 @@ HoOhEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SACRED_FIRE
 	db 11, SAFEGUARD
-	db 22, SACRED_FIRE
+	db 22, GUST
 	db 33, RECOVER
 	db 44, FIRE_BLAST
 	db 55, SUNNY_DAY
+	db 60, SACRED_FIRE
 	db 66, SWIFT
 	db 77, WHIRLWIND
 	db 88, ANCIENTPOWER
