@@ -135,7 +135,7 @@ in a less convoluted and more logical experience.
 
 - Chikorita, Bayleef and Meganium all got revised evolution movesets and egg moves. Chikorita is now actually fun and no longer subpar.
 
-- Lapras can now learn waterfall. (the fact it couldnt learn this and the overworld sprite for surfing is lapras always bothered me)
+- Lapras can now learn waterfall. (The fact it couldnt learn this and the overworld sprite for surfing is lapras always bothered me)
 
 - [Gyarados can now learn fly.](https://i.imgur.com/5t4irK1.jpeg)
 
@@ -160,7 +160,7 @@ in a less convoluted and more logical experience.
 
 - [Johto & Kanto Gyms, Rival, E4, & Red All got level increases, smaller teams were given a new addition to make it more consistent.](/data/trainers/parties.asm)
 
-- [All random trainers have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/trainers/parties.asm)
+- [All random trainers have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/trainers/parties.asm)
 
 | Level Range | % Increase | New Range Rounded |
 |:-----------:|:----------:|:-----------------:|
@@ -173,7 +173,7 @@ in a less convoluted and more logical experience.
 | 31 - 35     | + 24%      | 38 - 43           |
 | 36 - 40     | + 20%      | 43 - 48           |
 
-- [Johto Grass Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/johto_grass.asm)
+- [Johto Grass Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/johto_grass.asm)
 
 | Level Range | % Increase | New Range Rounded |
 |:-----------:|:----------:|:-----------------:|
@@ -188,7 +188,7 @@ in a less convoluted and more logical experience.
 | 31 - 35     | + 24%      | 38 - 43           |
 | 36 - 40     | + 20%      | 43 - 48           |
 
-- [Johto Water Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/johto_water.asm)
+- [Johto Water Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/johto_water.asm)
 
 | Level Range | New Range |
 |:-----------:|:-----------------:|
@@ -198,7 +198,7 @@ in a less convoluted and more logical experience.
 | 35 - 35     | 44 - 46  |
 | 40 - 40     | 50 - 52  |
 
-- [Kanto Grass Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/kanto_grass.asm)
+- [Kanto Grass Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/kanto_grass.asm)
 
 | Level Range | New Range |
 |:-----------:|:-----------------:|
@@ -210,7 +210,7 @@ in a less convoluted and more logical experience.
 | 36 - 40     | 44 - 46  |
 | 41 - 45     | 44 - 46  |
 
-- [Kanto Water Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/kanto_water.asm)
+- [Kanto Water Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/kanto_water.asm)
 
 | Level Range | New Range |
 |:-----------:|:-----------------:|
@@ -219,14 +219,14 @@ in a less convoluted and more logical experience.
 | 30 - 35     | 42 - 44  |
 
 
-- [Johto Grass Swarm Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](data/wild/swarm_grass.asm)
+- [Johto Grass Swarm Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](data/wild/swarm_grass.asm)
 
 | Level Range | New Range |
 |:-----------:|:-----------------:|
 | 1 - 4       | 05 - 05  |
 | 10 - 14     | 16 - 18  |
 
-- [Johto Tree Mons have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/wild/treemons.asm)
+- [Johto Tree Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/treemons.asm)
 
 | Level  | New  |
 |:-----------:|:-----------------:|
