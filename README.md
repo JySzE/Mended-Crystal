@@ -12,44 +12,44 @@ There are no fakemons or original characters in this romhack, infact NONE of the
 
 # Here are the romhacks improvements and features:
 
-- [All bug fixes documented in pret repo have been fixes (exept the optional trading compatability ones)](https://github.com/pret/pokecrystal/blob/master/docs/bugs_and_glitches.md)
+- [All bug fixes documented in pret repo have been fixed. (exept the optional trading compatability ones)](https://github.com/pret/pokecrystal/blob/master/docs/bugs_and_glitches.md)
 
 - Altered Title Screen!
 
 - You can obtain all 251 Pokemon without the need to do trades with other people, version exclusives can now be found in the wild and certain evolution methods have been altered as to aid 
 in a less convoluted and more logical experience. 
 
-- [60fps & Running Shoes [60fps branch only]](https://github.com/vulcandth/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)
+- [60fps & Running Shoes. [60fps branch only]](https://github.com/vulcandth/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)
 
-- [Unlimited TM usage](https://github.com/pret/pokecrystal/wiki/Infinitely-reusable-TMs)
+- [Unlimited TM usage.](https://github.com/pret/pokecrystal/wiki/Infinitely-reusable-TMs)
 
-- [Gain experience from catching Pokemon](https://github.com/pret/pokecrystal/wiki/Gain-experience-from-catching-Pok%C3%A9mon)
+- [Gain experience from catching Pokemon.](https://github.com/pret/pokecrystal/wiki/Gain-experience-from-catching-Pok%C3%A9mon)
 
-- [Third trainer card page for Kanto badges](https://github.com/pret/pokecrystal/wiki/Add-a-third-trainer-card-page-for-Kanto-badges)
+- [Third trainer card page for Kanto badges.](https://github.com/pret/pokecrystal/wiki/Add-a-third-trainer-card-page-for-Kanto-badges)
 
-- [Show the tops of leaders heads on the trainer card for Johto and Kanto](https://github.com/pret/pokecrystal/wiki/Show-the-tops-of-leaders-heads-on-the-trainer-card)
+- [Show the tops of leaders heads on the trainer card for Johto and Kanto.](https://github.com/pret/pokecrystal/wiki/Show-the-tops-of-leaders-heads-on-the-trainer-card)
 
-- [Colored trainer card badges for Both Johto and Kanto](https://github.com/pret/pokecrystal/wiki/Colored-trainer-card-badges)
+- [Colored trainer card badges for Both Johto and Kanto.](https://github.com/pret/pokecrystal/wiki/Colored-trainer-card-badges)
 
-- [There's a Move Relearner NPC at Move Deleter's home now to teach your pokemon forgotten moves](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Relearner)
+- [There's a Move Relearner NPC at Move Deleter's home now to teach your pokemon forgotten moves.](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Relearner)
 
-- [Berry and apricorn trees now drop between 3 to 5 berries/apricorns](https://github.com/pret/pokecrystal/wiki/Harvest-multiple-items-from-fruit-trees)
+- [Berry and apricorn trees now drop between 3 to 5 berries/apricorns.](https://github.com/pret/pokecrystal/wiki/Harvest-multiple-items-from-fruit-trees)
 
-- [Kurt Makes Pokeballs Instantly](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
+- [Kurt Makes Pokeballs Instantly.](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
 
-- [Simplify the Clock Reset Procedure (Down + B at title screen)](https://github.com/pret/pokecrystal/wiki/Simplify-the-Clock-Reset-Procedure)
+- [Simplify the Clock Reset Procedure. (Down + B at title screen)](https://github.com/pret/pokecrystal/wiki/Simplify-the-Clock-Reset-Procedure)
 
-- [Show an icon for the current weather during battle](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-weather)
+- [Show an icon for the current weather during battle.](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-weather)
 
-- [Show an icon for the current Time of Day (not very useful most of the time but neat)](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-Time-of-Day)
+- [Show an icon for the current Time of Day. (not very useful most of the time but neat)](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-Time-of-Day)
 
-- [Show move names when you receive a TM or HM](https://github.com/pret/pokecrystal/wiki/Show-move-names-when-you-receive-a-TM-or-HM)
+- [Show move names when you receive a TM or HM.](https://github.com/pret/pokecrystal/wiki/Show-move-names-when-you-receive-a-TM-or-HM)
 
-- [Reviving Pokemon from Fossils (Gen I)](https://github.com/pret/pokecrystal/wiki/Reviving-Pok%C3%A9mon-from-Fossils-(Gen-I))
+- [Reviving Pokemon from Fossils. (Gen I)](https://github.com/pret/pokecrystal/wiki/Reviving-Pok%C3%A9mon-from-Fossils-(Gen-I))
 
-- [Smashing rocks has a chance to contain items](https://github.com/pret/pokecrystal/wiki/Smashing-rocks-has-a-chance-to-contain-items)
+- [Smashing rocks has a chance to contain items.](https://github.com/pret/pokecrystal/wiki/Smashing-rocks-has-a-chance-to-contain-items)
 
-- [Items given from smashing rocks](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/engine/events/checkforhiddenitems.asm#L104C3-L104C3)
+- [Items given from smashing rocks.](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/engine/events/checkforhiddenitems.asm#L104C3-L104C3)
 
    - Metal Coat
    - Thick Club
@@ -62,39 +62,41 @@ in a less convoluted and more logical experience.
    - Brick Piece
    - Pearl
 
-- [Color Pokemon pictures shown in overworld](https://github.com/pret/pokecrystal/wiki/Color-Pok%C3%A9mon-pictures-shown-in-overworld)
+- [Color Pokemon pictures shown in overworld.](https://github.com/pret/pokecrystal/wiki/Color-Pok%C3%A9mon-pictures-shown-in-overworld)
 
-- [Make the Lottery Corner generate a lucky number daily instead of weekly](https://github.com/pret/pokecrystal/wiki/Make-the-Lottery-Corner-generate-a-lucky-number-daily-instead-of-weekly)
+- [Make the Lottery Corner generate a lucky number daily instead of weekly.](https://github.com/pret/pokecrystal/wiki/Make-the-Lottery-Corner-generate-a-lucky-number-daily-instead-of-weekly)
 
-- [Add a new party menu icons](https://github.com/pret/pokecrystal/wiki/Add-a-new-party-menu-icon)
+- [Add a new party menu icons.](https://github.com/pret/pokecrystal/wiki/Add-a-new-party-menu-icon)
 
-  - [Icons from SoupPotato's Sour Crystal](https://github.com/SoupPotato/Sourcrystal/tree/master/gfx/icons)
+  - [Icons from SoupPotato's Sour Crystal.](https://github.com/SoupPotato/Sourcrystal/tree/master/gfx/icons)
 
-- [Color party menu icons by species](https://github.com/pret/pokecrystal/wiki/Color-party-menu-icons-by-species)
+- [Color party menu icons by species.](https://github.com/pret/pokecrystal/wiki/Color-party-menu-icons-by-species)
 
-- [New Lapras OW swimming sprite edited by DamienDoury originally by FrenchOrange](https://github.com/DamienDoury/pokecrystal/blob/master/gfx/sprites/surf.png)
+- [New Lapras OW swimming sprite edited by DamienDoury originally by FrenchOrange.](https://github.com/DamienDoury/pokecrystal/blob/master/gfx/sprites/surf.png)
 
-- [Short beeping noise for low HP](https://github.com/pret/pokecrystal/wiki/Short-beeping-noise-for-low-HP)
+- [Short beeping noise for low HP.](https://github.com/pret/pokecrystal/wiki/Short-beeping-noise-for-low-HP)
 
-- [Automatically reuse Repel](https://github.com/pret/pokecrystal/wiki/Automatically-reuse-Repel)
+- [Automatically reuse Repel.](https://github.com/pret/pokecrystal/wiki/Automatically-reuse-Repel)
 
-- [Option to show shiny colors in Pokedex (press select)](https://github.com/pret/pokecrystal/wiki/Option-to-show-shiny-colors-in-Pok%C3%A9dex)
+- [Option to show shiny colors in Pokedex. (press select)](https://github.com/pret/pokecrystal/wiki/Option-to-show-shiny-colors-in-Pok%C3%A9dex)
 
-- [Use unique colors for each thrown Poke Ball](https://github.com/pret/pokecrystal/wiki/Use-unique-colors-for-each-thrown-Pok%C3%A9-Ball)
+- [Use unique colors for each thrown Poke Ball.](https://github.com/pret/pokecrystal/wiki/Use-unique-colors-for-each-thrown-Pok%C3%A9-Ball)
 
-- [You can challenge all Gym Leaders to a rematch as many times as you want after you gain access to MT. Silver](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/trainers/parties.asm)
+- [You can challenge all Gym Leaders to a rematch as many times as you want after you gain access to MT. Silver.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/trainers/parties.asm)
 
-- [Lugia and Ho-Oh now possess their signature moves when you encounter them instead of Gust](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/pokemon/evos_attacks.asm)
+- [Lugia and Ho-Oh now possess their signature moves when you encounter them instead of Gust.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/pokemon/evos_attacks.asm)
 
-- [Celebi event restored with new dialogue](https://github.com/pret/pokecrystal/wiki/Restore-the-GS-Ball-Celebi-Event)
+- [Celebi event restored with new dialogue.](https://github.com/pret/pokecrystal/wiki/Restore-the-GS-Ball-Celebi-Event)
 
-- [Removed the Kanto Legendary Birds from the "Often flees" group](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/wild/flee_mons.asm)
+- [Removed the Kanto Legendary Birds from the "Often flees" group.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/wild/flee_mons.asm)
 
-- [Evolutionary stones along with a new item the "Link Cord" can now be bought at the Goldenrod Department Store 4F for 4000 each](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L127)
+- [Evolutionary stones along with a new item the "Link Cord" can now be bought at the Goldenrod Department Store 4F for 4000 each.](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L127)
 
-- [Tri-Attack can no longer inflict BRN on FIRE types and FRZ on ICE types](https://github.com/pret/pokecrystal/wiki/Prevent-Steel%E2%80%90types-from-being-poisoned-by-Twineedle)
+- [Tri-Attack can no longer inflict BRN on FIRE types and FRZ on ICE types.](https://github.com/pret/pokecrystal/wiki/Prevent-Steel%E2%80%90types-from-being-poisoned-by-Twineedle)
 
-- [M09 (Psych Up) and Twisted Spoon removed from the Mahogany mart and instead placed in the Saffron one](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L370)
+- TM09 (Psych Up) Can be found in the 3F Celadon Store.
+
+- Twisted Spoons can be found in the Saffron Mart.
 
 - Both the Battle Tower and Buena's Password are packed with new rewards.
 
@@ -127,19 +129,21 @@ in a less convoluted and more logical experience.
   - 8 Blue Card points: Silver Leaf
   - 9 Blue Card points: Mysteryberry, Gold Berry, Berry Juice, Lucky Punch, Mirage Mail
 
-- [Ghost type attacks are now special and Dark type attacks are now physical](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/constants/type_constants.asm)
+- [Ghost type attacks are now special and Dark type attacks are now physical.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/constants/type_constants.asm)
 
 - Chikorita, Bayleef and Meganium all got very minor buffs to defense and special defense.
 
 - Chikorita, Bayleef and Meganium all got revised evolution movesets and egg moves. Chikorita is now actually fun and no longer subpar.
 
-- Lapras can now learn waterfall (the fact it couldnt learn this and the overworld sprite for surfing is lapras always bothered me)
+- Lapras can now learn waterfall. (the fact it couldnt learn this and the overworld sprite for surfing is lapras always bothered me)
 
-- [Change the speed of healing at a Pokemon Center](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#change-the-speed-of-healing-at-a-pok%C3%A9mon-center)
+- [Gyarados can now learn fly.](https://i.imgur.com/5t4irK1.jpeg)
 
-- [Tiles are now still animated even if a text box is open](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#animate-tiles-even-when-textboxes-are-open)
+- [Change the speed of healing at a Pokemon Center.](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#change-the-speed-of-healing-at-a-pok%C3%A9mon-center)
 
-- [Pokemon can now use Field moves without learning them](https://github.com/pret/pokecrystal/wiki/Allow-using-a-field-move-if-the-Pokemon-can-learn-it)
+- [Tiles are now still animated even if a text box is open.](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#animate-tiles-even-when-textboxes-are-open)
+
+- [Pokemon can now use Field moves without learning them.](https://github.com/pret/pokecrystal/wiki/Allow-using-a-field-move-if-the-Pokemon-can-learn-it)
    - Requires you to have the HM or TM + the required badge and situation to use field moves.
    - Requires you to have a Pokemon in party that can learn the TM or HM.
    - Do not fear if they do not show up in your pokemon sub menu. Only field moves you manually have to call with no physical interactive object will show up in the sub menu and only when allowed (like fly, flash, sweet scent etc..)
@@ -148,13 +152,13 @@ in a less convoluted and more logical experience.
    - For example Headbutt will not show up in the pokemon submenu and only requires you have the TM and a pokemon in party that can learn it. Simply go up to a tree and press A.
    - You are still free to teach your pokemon any TM or HM field move you want! This is simply a nice way of not having to waste a move slot or keep a HM slave around. :)
 
-- [Add a new text scrolling speed (instant speed "NONE" is now default)](https://github.com/pret/pokecrystal/wiki/Add-a-new-text-scrolling-speed)
+- [Add a new text scrolling speed. (instant speed "NONE" is now default)](https://github.com/pret/pokecrystal/wiki/Add-a-new-text-scrolling-speed)
 
-- [Removed the artificial save delay (But keeps overwrite confirmation)](https://github.com/pret/pokecrystal/wiki/Remove-the-artificial-save-delay)
+- [Removed the artificial save delay. (But keeps overwrite confirmation)](https://github.com/pret/pokecrystal/wiki/Remove-the-artificial-save-delay)
 
-- Make ALL eggs 30% easier to hatch
+- Make ALL eggs 30% easier to hatch.
 
-- [Johto & Kanto Gyms, Rival, E4, & Red All got level increases, smaller teams were given a new addition to make it more consistent](/data/trainers/parties.asm)
+- [Johto & Kanto Gyms, Rival, E4, & Red All got level increases, smaller teams were given a new addition to make it more consistent.](/data/trainers/parties.asm)
 
 - [All random trainers have had buffs to their levels using this table to determine how to increase them (SUBJECT TO CHANGE):](/data/trainers/parties.asm)
 
@@ -229,9 +233,9 @@ in a less convoluted and more logical experience.
 | 10     | 15  |
 | 15     | 20  |
 
-- [Modify existing gender formula](https://github.com/pret/pokecrystal/wiki/Modify-existing-gender-formula)
+- [Modify existing gender formula.](https://github.com/pret/pokecrystal/wiki/Modify-existing-gender-formula)
 
-- [Add 4th Stats Page [Met, DVs, Hidden Power] Thanks getkosiorekt](https://github.com/pret/pokecrystal/wiki/Add-a-fourth-stats-page)
+- [Add 4th Stats Page [Met, DVs, Hidden Power] Thanks getkosiorekt.](https://github.com/pret/pokecrystal/wiki/Add-a-fourth-stats-page)
 
 ## Where do I find all 251 Pokemon? 
 
