@@ -139,7 +139,7 @@ BlaineFightDoneText:
 	done
 
 BlaineRematchAskText:
-	text "BLAINE: Hello"
+	text "BLAINE: Hey"
 	line "kid!" 
 	
 	para "I still need"
@@ -154,6 +154,7 @@ Blaine_RematchDefeat:
 	text "BLAINE: Our fire"
 	line "died out."
 	done
+	
 SeafoamGymGuideWinText:
 	text "Yo!"
 

@@ -228,8 +228,8 @@ FalknerRematchAskText:
 	line "While you were"
 	cont "away I was doing"
 	
-	para "my best to improve"
-	line "Care to show you?"
+	para "my best to improve."
+	line "Care to battle?"
 	done
 	
 Falkner_RematchDefeat:

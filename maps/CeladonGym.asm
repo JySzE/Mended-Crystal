@@ -209,7 +209,7 @@ ErikaRematchAskText:
 	cont "well I hope."
 	
 	para "A rematch?"
-	line "it wont be too"
+	line "It wont be too"
 	cont "bad I guess…"					  		
 	done
 	

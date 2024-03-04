@@ -209,7 +209,7 @@ SabrinaFightDoneText:
 	done
 	
 SabrinaRematchAskText:
-	text "SABRINA: I forsaw"
+	text "SABRINA: I foresaw"
 	line "your arrival…"
 	
 	para "You want us to"

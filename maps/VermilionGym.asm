@@ -187,6 +187,7 @@ Surge_RematchDefeat:
 	text "You're still"
 	line "holding up kid!"	
 	done
+	
 GentlemanGregorySeenText:
 	text "You're here to"
 	line "defeat LT.SURGE?"

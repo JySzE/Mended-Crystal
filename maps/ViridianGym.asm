@@ -168,6 +168,7 @@ Blue_RematchDefeat:
 	para "I cant keep losing"
 	line "to you!"
 	done
+
 ViridianGymGuideText:
 	text "Yo, CHAMP in"
 	line "making!"

@@ -256,7 +256,7 @@ ChuckAfterText:
 ChuckRematchAskText:
 	text "Welcome back!"
 	line "I hope you're"
-	cont "not getting rusty"
+	cont "not getting rusty."
 
 	para "Lets spar now!"
 	done
@@ -265,6 +265,7 @@ Chuck_RematchDefeat:
 	text "I still need"
 	line "to train more…"
 	done
+	
 BlackbeltYoshiSeenText:
 	text "My #MON and I"
 	line "are bound togeth-"

@@ -299,8 +299,8 @@ MistyFightDoneText:
 	done
 
 MistyRematchAskText:
-	text "MISTY: Hey there "
-	line "<PLAY_G> what "
+	text "MISTY: Hey there"
+	line "<PLAY_G> what"
 	cont "brings you here?"
 	
 	para "No matter, I want"

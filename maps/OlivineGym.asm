@@ -182,14 +182,15 @@ Jasmine_GoodLuck:
 JasmineRematchAskText:
 	text "Oh… Hello…"
 	
-	para "A rematch? Are"
-	line "you sure?"
+	para "A rematch?"
+	line "Are you sure?"
 	done
 
 Jasmine_RematchDefeat:
 	text "Im still not"
 	line "good enough…"
 	done
+	
 OlivineGymGuideText:
 	text "JASMINE uses the"
 	line "newly discovered"
