@@ -339,7 +339,7 @@ MartFuchsia:
 	db -1 ; end
 
 MartSaffron:
-	db 11 ; # items
+	db 10 ; # items
 	db GREAT_BALL
 	db ULTRA_BALL
 	db HYPER_POTION
@@ -348,7 +348,6 @@ MartSaffron:
 	db X_ATTACK
 	db X_DEFEND
 	db TWISTEDSPOON
-	db TM_PSYCH_UP
 	db UP_GRADE
 	db FLOWER_MAIL
 	db -1 ; end
