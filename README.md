@@ -23,6 +23,10 @@ in a less convoluted and more logical experience.
 
 - [Unlimited TM usage.](https://github.com/pret/pokecrystal/wiki/Infinitely-reusable-TMs)
 
+- [Generation 6 Experience System.](https://github.com/pret/pokecrystal/wiki/Generation-6-Experience-System#1-rework-the-exp-share-item)
+
+- [Make new battle text to distinguish status move misses and fails.](https://github.com/pret/pokecrystal/wiki/Make-new-battle-text-to-distinguish-status-move-misses-and-fails)
+
 - [Gain experience from catching Pokemon.](https://github.com/pret/pokecrystal/wiki/Gain-experience-from-catching-Pok%C3%A9mon)
 
 - [Third trainer card page for Kanto badges.](https://github.com/pret/pokecrystal/wiki/Add-a-third-trainer-card-page-for-Kanto-badges)
@@ -35,7 +39,11 @@ in a less convoluted and more logical experience.
 
 - [Berry and apricorn trees now drop between 3 to 5 berries/apricorns.](https://github.com/pret/pokecrystal/wiki/Harvest-multiple-items-from-fruit-trees)
 
+- [Correct grammar for plural trainers like Twins.](https://github.com/pret/pokecrystal/wiki/Correct-grammar-for-plural-trainers-like-Twins)
+
 - [Kurt Makes Pokeballs Instantly.](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
+
+- [New Berry Pocket (Berries & Apricorns)](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine)
 
 - [Simplify the Clock Reset Procedure. (Down + B at title screen)](https://github.com/pret/pokecrystal/wiki/Simplify-the-Clock-Reset-Procedure)
 
