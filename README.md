@@ -45,6 +45,8 @@ in a less convoluted and more logical experience.
 
 - [New Berry Pocket (Berries & Apricorns)](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine)
 
+- All indoor and outdoor pokemon sprites updated.
+
 - [Simplify the Clock Reset Procedure. (Down + B at title screen)](https://github.com/pret/pokecrystal/wiki/Simplify-the-Clock-Reset-Procedure)
 
 - [Show an icon for the current weather during battle.](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-weather)
