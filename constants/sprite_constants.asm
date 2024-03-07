@@ -104,6 +104,7 @@
 	const SPRITE_ENTEI ; 64
 	const SPRITE_RAIKOU ; 65
 	const SPRITE_STANDING_YOUNGSTER ; 66
+	const SPRITE_SLOWBRO
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
@@ -134,7 +135,7 @@ DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_EKANS ; 96
 	const SPRITE_PARAS ; 97
 	const SPRITE_TENTACOOL ; 98
-	const SPRITE_TAUROS ; 99
+	const SPRITE_MILTANK ; 99
 	const SPRITE_MACHOP ; 9a
 	const SPRITE_VOLTORB ; 9b
 	const SPRITE_LAPRAS ; 9c
@@ -149,6 +150,25 @@ DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_MEW
 	const SPRITE_MEWTWO
 	const SPRITE_MURKROW
+	const SPRITE_PIDGEY
+	const SPRITE_FARFETCH_D
+	const SPRITE_MEOWTH
+	const SPRITE_DRATINI
+	const SPRITE_SPEAROW
+	const SPRITE_RATTATA
+	const SPRITE_NIDORAN_M
+	const SPRITE_KANGASKHAN
+	const SPRITE_DODRIO
+	const SPRITE_BLISSEY
+	const SPRITE_PSYDUCK
+	const SPRITE_NIDORINO
+	const SPRITE_NIDORAN_F
+	const SPRITE_POLIWRATH
+	const SPRITE_BAYLEEF
+	const SPRITE_ABRA
+	const SPRITE_PERSIAN
+	const SPRITE_FEAROW
+	const SPRITE_ELECTRODE
 DEF NUM_POKEMON_SPRITES EQU const_value - SPRITE_POKEMON
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)
