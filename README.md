@@ -12,14 +12,14 @@ There are no fakemons or original characters in this romhack, infact NONE of the
 
 # Here are the romhacks improvements and features:
 
-- [All bug fixes documented in pret repo have been fixed. (exept the optional trading compatability ones)](https://github.com/pret/pokecrystal/blob/master/docs/bugs_and_glitches.md)
+- [All bug fixes documented in pret repo have been fixed. (except the optional trading compatability ones)](https://github.com/pret/pokecrystal/blob/master/docs/bugs_and_glitches.md)
 
 - Altered Title Screen!
 
 - You can obtain all 251 Pokemon without the need to do trades with other people, version exclusives can now be found in the wild and certain evolution methods have been altered as to aid 
 in a less convoluted and more logical experience. 
 
-- [60fps & Running Shoes. [60fps branch only]](https://github.com/vulcandth/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)
+- ~[60fps & Running Shoes. [60fps branch only]](https://github.com/vulcandth/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)~ **Branch scrapped.**
 
 - [Unlimited TM usage.](https://github.com/pret/pokecrystal/wiki/Infinitely-reusable-TMs)
 
