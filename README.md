@@ -43,7 +43,7 @@ in a less convoluted and more logical experience.
 
 - [Kurt Makes Pokeballs Instantly.](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
 
-- [New Berry Pocket (Berries & Apricorns)](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine)
+- [New Berry Pocket (Berries & Apricorns)](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine) [COMING SOON]
 
 - All indoor and outdoor pokemon sprites updated.
 
@@ -168,7 +168,7 @@ in a less convoluted and more logical experience.
 
 - Make ALL eggs 30% easier to hatch.
 
--[Display more information on the move screen](https://github.com/pret/pokecrystal/wiki/Display-more-information-on-the-move-screen)
+- [Display more information on the move screen](https://github.com/pret/pokecrystal/wiki/Display-more-information-on-the-move-screen)
 
 - [Johto & Kanto Gyms, Rival, E4, & Red All got level increases, smaller teams were given a new addition to make it more consistent.](/data/trainers/parties.asm)
 
