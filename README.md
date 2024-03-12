@@ -168,6 +168,8 @@ in a less convoluted and more logical experience.
 
 - Make ALL eggs 30% easier to hatch.
 
+-[Display more information on the move screen](https://github.com/pret/pokecrystal/wiki/Display-more-information-on-the-move-screen)
+
 - [Johto & Kanto Gyms, Rival, E4, & Red All got level increases, smaller teams were given a new addition to make it more consistent.](/data/trainers/parties.asm)
 
 - [All random trainers have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/trainers/parties.asm)
