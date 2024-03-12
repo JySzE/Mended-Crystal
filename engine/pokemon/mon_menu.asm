@@ -1179,12 +1179,33 @@ PrepareToPlaceMoveData:
 PlaceMoveData:
 	xor a
 	ldh [hBGMapMode], a
+
+; Print UI elements
 	hlcoord 0, 10
 	ld de, String_MoveType_Top
 	call PlaceString
 	hlcoord 0, 11
 	ld de, String_MoveType_Bottom
 	call PlaceString
+	hlcoord 12, 13
+	ld de, String_MoveAcc
+	call PlaceString
+
+; Print move accuracy
+	ld a, [wCurSpecies]
+	ld bc, MOVE_LENGTH
+	ld hl, (Moves + MOVE_ACC) - MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	Call ConvertPercentages
+	ld [wBuffer1], a
+	ld de, wBuffer1
+	lb bc, 1, 3
+	hlcoord 16, 13
+	call PrintNum
+
+; Print move type
 	hlcoord 12, 12
 	ld de, String_MoveAtk
 	call PlaceString
@@ -1192,6 +1213,8 @@ PlaceMoveData:
 	ld b, a
 	hlcoord 2, 12
 	predef PrintMoveType
+
+; Print move power
 	ld a, [wCurSpecies]
 	dec a
 	ld hl, Moves + MOVE_POWER
@@ -1212,6 +1235,7 @@ PlaceMoveData:
 	ld de, String_MoveNoPower
 	call PlaceString
 
+; Print move description
 .description
 	hlcoord 1, 14
 	predef PrintMoveDescription
@@ -1219,12 +1243,15 @@ PlaceMoveData:
 	ldh [hBGMapMode], a
 	ret
 
+; UI elements
 String_MoveType_Top:
 	db "┌─────┐@"
 String_MoveType_Bottom:
 	db "│TYPE/└@"
 String_MoveAtk:
 	db "ATK/@"
+String_MoveAcc:
+	db "ACC/@"
 String_MoveNoPower:
 	db "---@"
 
