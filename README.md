@@ -35,7 +35,7 @@ in a less convoluted and more logical experience.
 
 - [Colored trainer card badges for Both Johto and Kanto.](https://github.com/pret/pokecrystal/wiki/Colored-trainer-card-badges)
 
-- [There's a Move Relearner NPC at Move Deleter's home now to teach your pokemon forgotten moves.](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Relearner)
+- [There's a Move Relearner NPC at Move Deleter's home now to teach your pokemon forgotten moves.](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Reminder)
 
 - [Berry and apricorn trees now drop between 3 to 5 berries/apricorns.](https://github.com/pret/pokecrystal/wiki/Harvest-multiple-items-from-fruit-trees)
 
