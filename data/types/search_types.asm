@@ -14,8 +14,8 @@ PokedexTypeSearchConversionTable:
 	db PSYCHIC_TYPE
 	db BUG
 	db ROCK
-	db GHOST
-	db DRAGON
 	db DARK
+	db DRAGON
+	db GHOST
 	db STEEL
 	assert_table_length NUM_TYPES

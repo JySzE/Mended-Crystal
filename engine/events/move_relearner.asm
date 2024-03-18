@@ -349,7 +349,7 @@ ChooseMoveToLearn:
 	db "ROCK@@@"
 	db "BIRD@@@"
 	db "BUG@@@@"
-	db "GHOST@@"
+	db "DARK@@@"
 	db "STEEL@@"
 	db "NORMAL@" ;Repeat normals and curse are unused. 
 	db "NORMAL@"
@@ -368,7 +368,7 @@ ChooseMoveToLearn:
 	db "PSYCH@@"
 	db "ICE@@@@"
 	db "DRAGON@"
-	db "DARK@@@"
+	db "GHOST@@"
 
 .PrintMoveDesc
 	push de
