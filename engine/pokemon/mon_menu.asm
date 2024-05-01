@@ -8,6 +8,9 @@ HasNoItems:
 	ld a, [wNumBalls]
 	and a
 	ret nz
+	ld a, [wNumBerries]
+	and a
+	ret nz
 	ld hl, wTMsHMs
 	ld b, NUM_TMS + NUM_HMS
 .loop
@@ -624,10 +627,6 @@ MonMenu_Fly:
 
 .Error:
 	ld a, $0
-	ret
-
-.NoReload: ; unreferenced
-	ld a, $1
 	ret
 
 MonMenu_Flash:

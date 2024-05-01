@@ -1104,12 +1104,6 @@ StrengthFunction:
 	jr c, .Failed
 	jr .UseStrength
 
-.AlreadyUsingStrength: ; unreferenced
-	ld hl, .AlreadyUsingStrengthText
-	call MenuTextboxBackup
-	ld a, $80
-	ret
-
 .AlreadyUsingStrengthText:
 	text_far _AlreadyUsingStrengthText
 	text_end
@@ -1826,10 +1820,6 @@ RodNothingText:
 	text_far _RodNothingText
 	text_end
 
-UnusedNothingHereText: ; unreferenced
-	text_far _UnusedNothingHereText
-	text_end
-
 BikeFunction:
 	call .TryBike
 	and $7f
@@ -1931,10 +1921,6 @@ Script_GetOnBike_Register:
 	closetext
 	special UpdatePlayerSprite
 	end
-
-Overworld_DummyFunction: ; unreferenced
-	nop
-	ret
 
 Script_GetOffBike:
 	reloadmappart
