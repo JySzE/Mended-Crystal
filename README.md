@@ -43,7 +43,7 @@ in a less convoluted and more logical experience.
 
 - [Kurt Makes Pokeballs Instantly.](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
 
-- [New Berry Pocket (Berries & Apricorns)](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine) [COMING SOON]
+- [New Berry Pocket (Berries & Apricorns)](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine)
 
 - All indoor and outdoor pokemon sprites updated.
 
