@@ -12,7 +12,7 @@ Download and install [**Windows Subsystem for Linux**](https://docs.microsoft.co
 Update WSL's software before continuing. If you chose Debian, Ubuntu, or another distribution that uses `apt-get`, then enter this command:
 
 ```bash
-apt-get update && apt-get upgrade
+apt-get update && sudo apt-get upgrade
 ```
 
 WSL has its own file system that's not accessible from Windows, but Windows files *are* accessible from WSL. So you're going to want to install mended-crystal within Windows. You'll have to change the **current working directory** every time you open WSL.
