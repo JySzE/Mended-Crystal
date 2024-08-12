@@ -60,4 +60,5 @@ SpriteMons:
 	db PERSIAN
 	db FEAROW
 	db ELECTRODE
+	db AMPHAROS
 	assert_table_length NUM_POKEMON_SPRITES
