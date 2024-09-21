@@ -226,9 +226,9 @@ FalknerFightDoneText:
 FalknerRematchAskText:
 	text "Greetings."
 	line "While you were"
-	cont "away I was doing"
+	cont "away I did my"
 	
-	para "my best to improve."
+	para "best to improve."
 	line "Care to battle?"
 	done
 	
