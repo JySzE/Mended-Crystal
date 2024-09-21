@@ -1,6 +1,10 @@
 FleeMons:
 ; referenced by TryEnemyFlee and FastBallMultiplier
 
+;SometimesFleeMons: 10% Chance per turn
+;OftenFleeMons: 50% Chance per turn
+;AlwaysFleeMons: 100% Chance per turn
+
 SometimesFleeMons:
 	db MAGNEMITE
 	db GRIMER
@@ -15,6 +19,8 @@ SometimesFleeMons:
 	db UNOWN
 	db SNUBBULL
 	db HERACROSS
+	db RAIKOU
+	db ENTEI
 	db -1
 
 OftenFleeMons:
@@ -29,6 +35,6 @@ OftenFleeMons:
 	db -1
 
 AlwaysFleeMons:
-	db RAIKOU
-	db ENTEI
+	;db RAIKOU
+	;db ENTEI
 	db -1
