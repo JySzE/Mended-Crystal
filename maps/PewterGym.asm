@@ -34,7 +34,7 @@ PewterGymBrockScript:
 
 .FightDone:
 	checkevent EVENT_OPENED_MT_SILVER
-	iftrue .BrockRematchAsk		
+	iftrue .BrockRematchAsk
 	writetext BrockFightDoneText
 	waitbutton
 	closetext
@@ -52,7 +52,8 @@ PewterGymBrockScript:
 	loadtrainer BROCK, BROCK2
 	startbattle
 	reloadmapafterbattle
-	
+	end
+
 TrainerCamperJerry:
 	trainer CAMPER, JERRY, EVENT_BEAT_CAMPER_JERRY, CamperJerrySeenText, CamperJerryBeatenText, 0, .Script
 
