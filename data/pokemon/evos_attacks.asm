@@ -3251,9 +3251,9 @@ RaikouEvosAttacks:
 	db 1, BITE
 	db 1, LEER
 	db 11, THUNDERSHOCK
-	db 21, ROAR
+	db 21, SPARK
 	db 31, QUICK_ATTACK
-	db 41, SPARK
+	db 41, ROAR
 	db 51, REFLECT
 	db 61, CRUNCH
 	db 71, THUNDER
@@ -3264,9 +3264,9 @@ EnteiEvosAttacks:
 	db 1, BITE
 	db 1, LEER
 	db 11, EMBER
-	db 21, ROAR
+	db 21, STOMP
 	db 31, FIRE_SPIN
-	db 41, STOMP
+	db 41, ROAR
 	db 51, FLAMETHROWER
 	db 61, SWAGGER
 	db 71, FIRE_BLAST
