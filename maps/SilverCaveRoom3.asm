@@ -22,7 +22,12 @@ SilverCaveRoom3_MapScripts:
 .CheckMew:
     checkevent EVENT_FOUGHT_MEW
     iftrue .NoAppear
-    sjump .Appear
+    sjump .CheckRed
+
+.CheckRed:
+    checkevent EVENT_BEAT_RED
+    iftrue .Appear
+    sjump .NoAppear
 
 .Appear
 	appear SILVERCAVEROOM3_MEW
@@ -50,6 +55,7 @@ Red:
 	waitbutton
 	closetext
 	setevent EVENT_MEWTWO_IN_CAVE
+	setevent EVENT_BEAT_RED
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
 	disappear SILVERCAVEROOM3_RED

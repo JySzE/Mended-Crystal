@@ -303,7 +303,7 @@
 	const EVENT_JOEY_ASKED_FOR_PHONE_NUMBER
 	const EVENT_MEWTWO_IN_CAVE
 	const EVENT_WADE_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_BEAT_RED
 	const EVENT_RALPH_ASKED_FOR_PHONE_NUMBER
 	const_skip ; unused in Crystal
 	const EVENT_LIZ_ASKED_FOR_PHONE_NUMBER
