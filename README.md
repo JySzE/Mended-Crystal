@@ -249,6 +249,12 @@ in a less convoluted and more logical experience.
 
 - [Add 4th Stats Page [Met, DVs, Hidden Power] Thanks getkosiorekt.](https://github.com/pret/pokecrystal/wiki/Add-a-fourth-stats-page)
 
+- Lapras wild level is now 30 rather than 20 to better align with higher wild levels.
+
+- Entei and Raikou both now have only a 10% chance of fleeing per turn instead of 100%.
+
+- Entei and Raikou both now learn Roar at 41.
+
 ## Where do I find all 251 Pokemon? 
 
 There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
