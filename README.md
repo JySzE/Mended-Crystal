@@ -93,6 +93,7 @@ Here’s a summary of the features and improvements:
 - Entei and Raikou both now learn Roar at 41.
 - [Gyarados can learn Fly.](https://i.imgur.com/5t4irK1.jpeg)
 - Lapras can learn Waterfall.
+- Quagsire can learn Waterfall
 - TM09 (Psych Up) sold in the 3F Celadon Store.
 - Twisted Spoons can be found in the Saffron Mart.
 
@@ -310,6 +311,7 @@ Here’s a summary of the features and improvements:
 </details>
 
 - Lapras wild level is now 30.
+- Eevee you receive in goldenrod is now level 15 instead of 20.
 
 ### Trainer Levels
 
