@@ -1,288 +1,457 @@
-# Pokémon Mended Crystal 
+![Image of Pokémon Mended Crystal Title Screen](https://github.com/JySzE/Mended-Crystal/assets/70117278/8c78b3e2-d2bc-47f0-b3a3-fceb3b7b0c1e)
 
-![284440153-fdf1413e-f99c-4fa7-9126-d897c5d9edc5](https://github.com/JySzE/Mended-Crystal/assets/70117278/8c78b3e2-d2bc-47f0-b3a3-fceb3b7b0c1e)
+Mended Crystal is inspired by **UberMedic7's Patched-Crystal**. 
 
-Mended Crystal is heavily inspired by [**UberMedic7's Patched-Crystal**](https://github.com/UberMedic7/patched-crystal), There are distinct differences and you can compare them both.
+While there are notable differences, both projects enhance Pokémon Crystal while preserving the essence of Generation 2.
 
-Mended Crystal is a romhack of Pokemon Crystal. Its main goal is to improve rather than change the feel of what gen 2 pokemon is. 
+This ROM hack includes numerous quality of life changes without altering the original story. 
 
-Simple QOL improvements and mostly small cosmetic additions to help make gen 2 feel more effecient and fun to play.
+Here’s a summary of the features and improvements:
 
-There are no fakemons or original characters in this romhack, infact NONE of the original story is altered at all.
+## 1. Bug Fixes
 
-# Here are the romhacks improvements and features:
+- [All documented bugs from the pret repo fixed.](https://github.com/pret/pokecrystal/blob/master/docs/bugs_and_glitches.md)
 
-- [All bug fixes documented in pret repo have been fixed. (except the optional trading compatability ones)](https://github.com/pret/pokecrystal/blob/master/docs/bugs_and_glitches.md)
+## 2. Gameplay Improvements
 
-- Altered Title Screen!
+### General Improvements
 
-- You can obtain all 251 Pokemon without the need to do trades with other people, version exclusives can now be found in the wild and certain evolution methods have been altered as to aid 
-in a less convoluted and more logical experience. 
-
-- ~[60fps & Running Shoes. [60fps branch only]](https://github.com/vulcandth/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)~ **Branch scrapped.**
-
+- Obtain all 251 Pokémon without trading.
+- Altered evolution methods for version exclusives and trade evolutions.
 - [Unlimited TM usage.](https://github.com/pret/pokecrystal/wiki/Infinitely-reusable-TMs)
-
-- [Generation 6 Experience System.](https://github.com/pret/pokecrystal/wiki/Generation-6-Experience-System#1-rework-the-exp-share-item)
-
-- [Make new battle text to distinguish status move misses and fails.](https://github.com/pret/pokecrystal/wiki/Make-new-battle-text-to-distinguish-status-move-misses-and-fails)
-
-- [Gain experience from catching Pokemon.](https://github.com/pret/pokecrystal/wiki/Gain-experience-from-catching-Pok%C3%A9mon)
-
-- [Third trainer card page for Kanto badges.](https://github.com/pret/pokecrystal/wiki/Add-a-third-trainer-card-page-for-Kanto-badges)
-
-- [Show the tops of leaders heads on the trainer card for Johto and Kanto.](https://github.com/pret/pokecrystal/wiki/Show-the-tops-of-leaders-heads-on-the-trainer-card)
-
-- [Colored trainer card badges for Both Johto and Kanto.](https://github.com/pret/pokecrystal/wiki/Colored-trainer-card-badges)
-
-- [There's a Move Relearner NPC at Move Deleter's home now to teach your pokemon forgotten moves.](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Reminder)
-
-- [Berry and apricorn trees now drop between 3 to 5 berries/apricorns.](https://github.com/pret/pokecrystal/wiki/Harvest-multiple-items-from-fruit-trees)
-
+- [Generation 6 Experience System implemented.](https://github.com/pret/pokecrystal/wiki/Generation-6-Experience-System#1-rework-the-exp-share-item)
+- [Gain experience from catching Pokémon.](https://github.com/pret/pokecrystal/wiki/Gain-experience-from-catching-Pok%C3%A9mon)
+- [New battle text to clarify status move misses and fails.](https://github.com/pret/pokecrystal/wiki/Make-new-battle-text-to-distinguish-status-move-misses-and-fails)
+- [Modify existing gender formula.](https://github.com/pret/pokecrystal/wiki/Modify-existing-gender-formula)
+- [Link Cord for trade evolutions available at Goldenrod Dept. Store.](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L127)
+- [Smashing rocks now yields items, including fossils.](https://github.com/pret/pokecrystal/wiki/Smashing-rocks-has-a-chance-to-contain-items)
+- [New battle rewards from Battle Tower and Buena’s Password.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/trainers/parties.asm)
+- [New Berry Pocket for Berries and Apricorns.](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine)
+- [Move Relearner NPC added.](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Reminder)
 - [Correct grammar for plural trainers like Twins.](https://github.com/pret/pokecrystal/wiki/Correct-grammar-for-plural-trainers-like-Twins)
-
-- [Kurt Makes Pokeballs Instantly.](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
-
-- [New Berry Pocket (Berries & Apricorns)](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine)
-
-- All indoor and outdoor pokemon sprites updated.
-
-- [Simplify the Clock Reset Procedure. (Down + B at title screen)](https://github.com/pret/pokecrystal/wiki/Simplify-the-Clock-Reset-Procedure)
-
-- [Show an icon for the current weather during battle.](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-weather)
-
-- [Show an icon for the current Time of Day. (not very useful most of the time but neat)](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-Time-of-Day)
-
 - [Show move names when you receive a TM or HM.](https://github.com/pret/pokecrystal/wiki/Show-move-names-when-you-receive-a-TM-or-HM)
-
-- [Reviving Pokemon from Fossils. (Gen I)](https://github.com/pret/pokecrystal/wiki/Reviving-Pok%C3%A9mon-from-Fossils-(Gen-I))
-
-- [Smashing rocks has a chance to contain items.](https://github.com/pret/pokecrystal/wiki/Smashing-rocks-has-a-chance-to-contain-items)
-
-- [Items given from smashing rocks.](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/engine/events/checkforhiddenitems.asm#L104C3-L104C3)
-
-   - Metal Coat
-   - Thick Club
-   - Nugget
-   - Star Piece
-   - Big Pearl
-   - Dome Fossil
-   - Helix Fossil
-   - Old Amber
-   - Brick Piece
-   - Pearl
-
-- [Color Pokemon pictures shown in overworld.](https://github.com/pret/pokecrystal/wiki/Color-Pok%C3%A9mon-pictures-shown-in-overworld)
-
-- [Make the Lottery Corner generate a lucky number daily instead of weekly.](https://github.com/pret/pokecrystal/wiki/Make-the-Lottery-Corner-generate-a-lucky-number-daily-instead-of-weekly)
-
-- [Add a new party menu icons.](https://github.com/pret/pokecrystal/wiki/Add-a-new-party-menu-icon)
-
-  - [Icons from SoupPotato's Sour Crystal.](https://github.com/SoupPotato/Sourcrystal/tree/master/gfx/icons)
-
-- [Color party menu icons by species.](https://github.com/pret/pokecrystal/wiki/Color-party-menu-icons-by-species)
-
-- [New Lapras OW swimming sprite edited by DamienDoury originally by FrenchOrange.](https://github.com/DamienDoury/pokecrystal/blob/master/gfx/sprites/surf.png)
-
+- [Reviving Pokemon from Fossils.](https://github.com/pret/pokecrystal/wiki/Reviving-Pok%C3%A9mon-from-Fossils-(Gen-I))
+- [Lottery Corner generates a lucky number daily instead of weekly.](https://github.com/pret/pokecrystal/wiki/Make-the-Lottery-Corner-generate-a-lucky-number-daily-instead-of-weekly)
 - [Short beeping noise for low HP.](https://github.com/pret/pokecrystal/wiki/Short-beeping-noise-for-low-HP)
+- [Gym Leaders rematchs after you gain access to MT. Silver.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/trainers/parties.asm)
 
+### Convenience Features
+
+- [Kurt makes Poké Balls instantly.](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
+- [Simplified clock reset (Down + B at title screen).](https://github.com/pret/pokecrystal/wiki/Simplify-the-Clock-Reset-Procedure)
+- [Instant text scrolling speed set as new default.](https://github.com/pret/pokecrystal/wiki/Add-a-new-text-scrolling-speed)
+- [Removed save delay (overwrite confirmation retained).](https://github.com/pret/pokecrystal/wiki/Remove-the-artificial-save-delay)
 - [Automatically reuse Repel.](https://github.com/pret/pokecrystal/wiki/Automatically-reuse-Repel)
+- [Change the speed of healing at a Pokemon Center.](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#change-the-speed-of-healing-at-a-pok%C3%A9mon-center)
+- Make ALL eggs 30% easier to hatch.
+- [Pokemon can now use Field moves without learning them.](https://github.com/pret/pokecrystal/wiki/Allow-using-a-field-move-if-the-Pokemon-can-learn-it)
+- <details>
+  <summary>Field move details</summary>
+  <ul>
+    <li>Requires you to have the HM or TM + the required badge and situation to use field moves.</li>
+    <li>Requires you to have a Pokémon in the party that can learn the TM or HM.</li>
+    <li>Do not worry if they do not show up in your Pokémon submenu. Only field moves you manually have to call, with no physical interactive object, will show up in the submenu, and only when allowed (like Fly, Flash, Sweet Scent, etc.).</li>
+    <li>For example, Fly will only show up when outside and will NOT appear in the submenu if inside a cave or building.</li>
+    <li>For example, Surf, Whirlpool, and Waterfall will never show up in the submenu but will work as long as you have the HM, the required badge, and a Pokémon in the party that can learn it. Simply press 'A' at the object and it will work.</li>
+    <li>For example, Headbutt will not show up in the Pokémon submenu and only requires you to have the TM and a Pokémon in the party that can learn it. Simply go up to a tree and press 'A'.</li>
+    <li>You are still free to teach your Pokémon any TM or HM field move you want! This feature is simply a nice way to avoid wasting a move slot or keeping an HM slave in your team.</li>
+  </ul>
+</details>
 
+## 3. Cosmetic Changes
+
+- Altered title screen.
+- Updated generic Pokémon sprites (indoor and outdoor).
+- [Color Pokemon pictures shown in overworld.](https://github.com/pret/pokecrystal/wiki/Color-Pok%C3%A9mon-pictures-shown-in-overworld)
+- [New party menu icons.](https://github.com/pret/pokecrystal/wiki/Add-a-new-party-menu-icon)
+  - [Icons from SoupPotato's Sour Crystal.](https://github.com/SoupPotato/Sourcrystal/tree/master/gfx/icons)
+- [Party menu icons colored by species.](https://github.com/pret/pokecrystal/wiki/Color-party-menu-icons-by-species)
+- [New Lapras surfing sprite by DamienDoury.](https://github.com/DamienDoury/pokecrystal/blob/master/gfx/sprites/surf.png)
+- [Unique colors for each Poké Ball thrown.](https://github.com/pret/pokecrystal/wiki/Use-unique-colors-for-each-thrown-Pok%C3%A9-Ball)
+- [Current weather icons shown in battle.](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-weather)
+- [Time of day icons shown in battle.](https://github.com/pret/pokecrystal/wiki/Show-an-icon-for-the-current-Time-of-Day)
+- [Added a third trainer card page for Kanto badges.](https://github.com/pret/pokecrystal/wiki/Add-a-third-trainer-card-page-for-Kanto-badges)
+- [Colored trainer card badges for both Johto and Kanto.](https://github.com/pret/pokecrystal/wiki/Colored-trainer-card-badges)
+- [Show the tops of leaders heads on the trainer card for Johto and Kanto.](https://github.com/pret/pokecrystal/wiki/Show-the-tops-of-leaders-heads-on-the-trainer-card)
 - [Option to show shiny colors in Pokedex. (press select)](https://github.com/pret/pokecrystal/wiki/Option-to-show-shiny-colors-in-Pok%C3%A9dex)
+- [Tiles are now still animated even if a text box is open.](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#animate-tiles-even-when-textboxes-are-open)
+- [Display more information on the move screen.](https://github.com/pret/pokecrystal/wiki/Display-more-information-on-the-move-screen)
+- [Add 4th Stats Page [Met, DVs, Hidden Power] Thanks getkosiorekt.](https://github.com/pret/pokecrystal/wiki/Add-a-fourth-stats-page)
 
-- [Use unique colors for each thrown Poke Ball.](https://github.com/pret/pokecrystal/wiki/Use-unique-colors-for-each-thrown-Pok%C3%A9-Ball)
+## 4. Balance Adjustments
 
-- [You can challenge all Gym Leaders to a rematch as many times as you want after you gain access to MT. Silver.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/trainers/parties.asm)
-
-- [Lugia and Ho-Oh now possess their signature moves when you encounter them instead of Gust.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/pokemon/evos_attacks.asm)
-
-- [Celebi event restored with new dialogue.](https://github.com/pret/pokecrystal/wiki/Restore-the-GS-Ball-Celebi-Event)
-
-- [Removed the Kanto Legendary Birds from the "Often flees" group.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/wild/flee_mons.asm)
-
-- [Evolutionary stones along with a new item the "Link Cord" can now be bought at the Goldenrod Department Store 4F for 4000 each.](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L127)
-
-- [Tri-Attack can no longer inflict BRN on FIRE types and FRZ on ICE types.](https://github.com/pret/pokecrystal/wiki/Prevent-Steel%E2%80%90types-from-being-poisoned-by-Twineedle)
-
-- TM09 (Psych Up) Can be found in the 3F Celadon Store.
-
-- Twisted Spoons can be found in the Saffron Mart.
-
-- Both the Battle Tower and Buena's Password are packed with new rewards.
-
-- [Battle Tower rewards are the following:](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/maps/BattleTower1F.asm#L134)
-
-  - MasterBall x1
-  - Revive x5
-  - Max Potion x5
-  - Full Restore x5
-  - Hp Up x5
-  - Protein x5
-  - Iron x5
-  - Carbos x5
-  - Calcium x5
-  - Rare Candy x5 
-  - Full Heal x5
-  - PP Up x5
-  - Berserk Gene x5
-  - Normal Box x1
-  - Gorgeous Box x1
-  - Gold & Silver Leafs x5
-
-- [Tweaked Buena's Password rewards both in costs and actual rewards which are the following:](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/items/buena_prizes.asm)
-
-  - 2 Blue Card points: Ultra Ball, Full Restore
-  - 3 Blue Card points: Nugget, Rare Candy
-  - 5 Blue Card points: Protein, Iron, Carbos, Calcium, HP Up
-  - 6 Blue Card points: PP Up
-  - 7 Blue Card points: Gold Leaf
-  - 8 Blue Card points: Silver Leaf
-  - 9 Blue Card points: Mysteryberry, Gold Berry, Berry Juice, Lucky Punch, Mirage Mail
+### Type and stats
 
 - [Ghost type attacks are now special and Dark type attacks are now physical.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/constants/type_constants.asm)
-
 - Chikorita, Bayleef and Meganium all got very minor buffs to defense and special defense.
+- Chikorita, Bayleef and Meganium all got revised evolution movesets and egg moves.
 
-- Chikorita, Bayleef and Meganium all got revised evolution movesets and egg moves. Chikorita is now actually fun and no longer subpar.
+### Moves
 
-- Lapras can now learn waterfall. (The fact it couldnt learn this and the overworld sprite for surfing is lapras always bothered me)
+- [Lugia and Ho-Oh now have signature moves instead of Gust.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/pokemon/evos_attacks.asm)
+- [Tri-Attack can no longer inflict BRN on FIRE types and FRZ on ICE types.](https://github.com/pret/pokecrystal/wiki/Prevent-Steel%E2%80%90types-from-being-poisoned-by-Twineedle)
+- Entei and Raikou both now learn Roar at 41.
+- [Gyarados can learn Fly.](https://i.imgur.com/5t4irK1.jpeg)
+- Lapras can learn Waterfall.
+- TM09 (Psych Up) sold in the 3F Celadon Store.
+- Twisted Spoons can be found in the Saffron Mart.
 
-- [Gyarados can now learn fly.](https://i.imgur.com/5t4irK1.jpeg)
+### Wild Levels
 
-- [Change the speed of healing at a Pokemon Center.](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#change-the-speed-of-healing-at-a-pok%C3%A9mon-center)
+- <details>
+  <summary>Johto Grass Mons.</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Level Range</th>
+        <th>% Increase</th>
+        <th>New Range Rounded</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01 - 02</td>
+        <td>+ 85%</td>
+        <td>02 - 04</td>
+      </tr>
+      <tr>
+        <td>03 - 03</td>
+        <td>+ 55%</td>
+        <td>05 - 05</td>
+      </tr>
+      <tr>
+        <td>04 - 06</td>
+        <td>+ 0%</td>
+        <td>04 - 06</td>
+      </tr>
+      <tr>
+        <td>07 - 10</td>
+        <td>+ 10%</td>
+        <td>08 - 11</td>
+      </tr>
+      <tr>
+        <td>11 - 15</td>
+        <td>+ 12%</td>
+        <td>12 - 17</td>
+      </tr>
+      <tr>
+        <td>16 - 20</td>
+        <td>+ 15%</td>
+        <td>18 - 23</td>
+      </tr>
+      <tr>
+        <td>21 - 25</td>
+        <td>+ 18%</td>
+        <td>25 - 30</td>
+      </tr>
+      <tr>
+        <td>26 - 30</td>
+        <td>+ 21%</td>
+        <td>31 - 36</td>
+      </tr>
+      <tr>
+        <td>31 - 35</td>
+        <td>+ 24%</td>
+        <td>38 - 43</td>
+      </tr>
+      <tr>
+        <td>36 - 40</td>
+        <td>+ 20%</td>
+        <td>43 - 48</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
-- [Tiles are now still animated even if a text box is open.](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#animate-tiles-even-when-textboxes-are-open)
+- <details>
+  <summary>Johto Water Mons.</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Level Range</th>
+        <th>New Range</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01 - 10</td>
+        <td>18 - 20</td>
+      </tr>
+      <tr>
+        <td>15 - 15</td>
+        <td>25 - 26</td>
+      </tr>
+      <tr>
+        <td>20 - 20</td>
+        <td>30 - 32</td>
+      </tr>
+      <tr>
+        <td>35 - 35</td>
+        <td>44 - 46</td>
+      </tr>
+      <tr>
+        <td>40 - 40</td>
+        <td>50 - 52</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
-- [Pokemon can now use Field moves without learning them.](https://github.com/pret/pokecrystal/wiki/Allow-using-a-field-move-if-the-Pokemon-can-learn-it)
-   - Requires you to have the HM or TM + the required badge and situation to use field moves.
-   - Requires you to have a Pokemon in party that can learn the TM or HM.
-   - Do not fear if they do not show up in your pokemon sub menu. Only field moves you manually have to call with no physical interactive object will show up in the sub menu and only when allowed (like fly, flash, sweet scent etc..)
-   - For example Fly will only show up when outside and will NOT show up in the submenu if inside a cave or building.
-   - For example Surf, Whirpool and Waterfall will never show up in the submenu and will work aslong as you have the HM, Badge required and have a Pokemon in party that can learn it. Simply press A at the object and it will work.
-   - For example Headbutt will not show up in the pokemon submenu and only requires you have the TM and a pokemon in party that can learn it. Simply go up to a tree and press A.
-   - You are still free to teach your pokemon any TM or HM field move you want! This is simply a nice way of not having to waste a move slot or keep a HM slave around. :)
+- <details>
+  <summary>Kanto Grass Mons.</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Level Range</th>
+        <th>New Range</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01 - 15</td>
+        <td>36 - 38</td>
+      </tr>
+      <tr>
+        <td>16 - 20</td>
+        <td>38 - 42</td>
+      </tr>
+      <tr>
+        <td>21 - 25</td>
+        <td>38 - 42</td>
+      </tr>
+      <tr>
+        <td>26 - 30</td>
+        <td>42 - 44</td>
+      </tr>
+      <tr>
+        <td>31 - 45</td>
+        <td>42 - 44</td>
+      </tr>
+      <tr>
+        <td>36 - 40</td>
+        <td>44 - 46</td>
+      </tr>
+      <tr>
+        <td>41 - 45</td>
+        <td>44 - 46</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
-- [Add a new text scrolling speed. (instant speed "NONE" is now default)](https://github.com/pret/pokecrystal/wiki/Add-a-new-text-scrolling-speed)
+- <details>
+  <summary>Kanto Water Mons.</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Level Range</th>
+        <th>New Range</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>05 - 15</td>
+        <td>36 - 38</td>
+      </tr>
+      <tr>
+        <td>20 - 20</td>
+        <td>40 - 42</td>
+      </tr>
+      <tr>
+        <td>30 - 35</td>
+        <td>42 - 44</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
-- [Removed the artificial save delay. (But keeps overwrite confirmation)](https://github.com/pret/pokecrystal/wiki/Remove-the-artificial-save-delay)
+- <details>
+  <summary>Johto Grass Swarm Mons.</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Level Range</th>
+        <th>New Range</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01 - 04</td>
+        <td>05 - 05</td>
+      </tr>
+      <tr>
+        <td>10 - 14</td>
+        <td>16 - 18</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
-- Make ALL eggs 30% easier to hatch.
+- <details>
+  <summary>Johto Tree Mons.</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Level</th>
+        <th>New</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>10</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>20</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
-- [Display more information on the move screen](https://github.com/pret/pokecrystal/wiki/Display-more-information-on-the-move-screen)
+- Lapras wild level is now 30.
+
+### Trainer Levels
 
 - [Johto & Kanto Gyms, Rival, E4, & Red All got level increases, smaller teams were given a new addition to make it more consistent.](/data/trainers/parties.asm)
 
-- [All random trainers have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/trainers/parties.asm)
+- <details>
+  <summary>All random trainers.</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Level Range</th>
+        <th>% Increase</th>
+        <th>New Range Rounded</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01 - 05</td>
+        <td>+ 10%</td>
+        <td>01 - 06</td>
+      </tr>
+      <tr>
+        <td>06 - 10</td>
+        <td>+ 10%</td>
+        <td>07 - 11</td>
+      </tr>
+      <tr>
+        <td>11 - 15</td>
+        <td>+ 12%</td>
+        <td>12 - 17</td>
+      </tr>
+      <tr>
+        <td>16 - 20</td>
+        <td>+ 15%</td>
+        <td>18 - 23</td>
+      </tr>
+      <tr>
+        <td>21 - 25</td>
+        <td>+ 18%</td>
+        <td>25 - 30</td>
+      </tr>
+      <tr>
+        <td>26 - 30</td>
+        <td>+ 21%</td>
+        <td>31 - 36</td>
+      </tr>
+      <tr>
+        <td>31 - 35</td>
+        <td>+ 24%</td>
+        <td>38 - 43</td>
+      </tr>
+      <tr>
+        <td>36 - 40</td>
+        <td>+ 20%</td>
+        <td>43 - 48</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
-| Level Range | % Increase | New Range Rounded |
-|:-----------:|:----------:|:-----------------:|
-| 01 - 05     | + 10%      | 01 - 06           |
-| 06 - 10     | + 10%      | 07 - 11           |
-| 11 - 15     | + 12%      | 12 - 17           |
-| 16 - 20     | + 15%      | 18 - 23           |
-| 21 - 25     | + 18%      | 25 - 30           |
-| 26 - 30     | + 21%      | 31 - 36           |
-| 31 - 35     | + 24%      | 38 - 43           |
-| 36 - 40     | + 20%      | 43 - 48           |
+## 5. Special Events & Encounters
 
-- [Johto Grass Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/johto_grass.asm)
+- [Celebi event restored with new dialogue.](https://github.com/pret/pokecrystal/wiki/Restore-the-GS-Ball-Celebi-Event)
+- [Kanto Legendary Birds.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/wild/flee_mons.asm)
+- Reduced flee chance for Entei and Raikou (100% ~> 10% per turn).
+- Mewtwo and Mew.
 
-| Level Range | % Increase | New Range Rounded |
-|:-----------:|:----------:|:-----------------:|
-| 01 - 02     | + 85%      | 02 - 04           |
-| 03 - 03     | + 55%      | 05 - 05           |
-| 04 - 06     | + 0%       | 04 - 06           |
-| 07 - 10     | + 10%      | 08 - 11           |
-| 11 - 15     | + 12%      | 12 - 17           |
-| 16 - 20     | + 15%      | 18 - 23           |
-| 21 - 25     | + 18%      | 25 - 30           |
-| 26 - 30     | + 21%      | 31 - 36           |
-| 31 - 35     | + 24%      | 38 - 43           |
-| 36 - 40     | + 20%      | 43 - 48           |
+## Additional Information
 
-- [Johto Water Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/johto_water.asm)
+### Questions
 
-| Level Range | New Range |
-|:-----------:|:-----------------:|
-| 01 - 10     | 18 - 20  |
-| 15 - 15     | 25 - 26  |
-| 20 - 20     | 30 - 32  |
-| 35 - 35     | 44 - 46  |
-| 40 - 40     | 50 - 52  |
+- <details>
+  <summary>Where do I find fossil Pokemon?</summary>
+  <p>You can find fossils by smashing rocks with Rock Smash! You can then revive said fossils using an NPC inside the Ruins of Alph Research Center!</p>
+</details>
 
-- [Kanto Grass Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/kanto_grass.asm)
+- <details>
+  <summary>Is it possible to Trade & Battle in this?</summary>
+  <p>Yes! But it requires 2 copies of Mended Crystal to work properly, it will not work with vanilla copies or other ROM hacks.</p>
+</details>
 
-| Level Range | New Range |
-|:-----------:|:-----------------:|
-| 01 - 15     | 36 - 38  |
-| 16 - 20     | 38 - 42  |
-| 21 - 25     | 38 - 42  |
-| 26 - 30     | 42 - 44  |
-| 31 - 45     | 42 - 44  |
-| 36 - 40     | 44 - 46  |
-| 41 - 45     | 44 - 46  |
+- <details>
+  <summary>Are you planning to add more to this ROM hack?</summary>
+  <p>I plan to add more features as the pret wiki updates with additional quality of life improvements, but only if they seem worthwhile.</p>
+  <p>If you encounter any bugs or have suggestions, feel free to submit a pull request, and I will review it.</p>
+  <p>As long as the changes maintain the overall feel of Generation 2, I’m open to adding more!</p>
+</details>
 
-- [Kanto Water Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/kanto_water.asm)
+- <details>
+  <summary>What item are found from smashing rocks?</summary>
+  <ul>
+    <li>Metal Coat</li>
+    <li>Thick Club</li>
+    <li>Nugget</li>
+    <li>Star Piece</li>
+    <li>Big Pearl</li>
+    <li>Dome Fossil</li>
+    <li>Helix Fossil</li>
+    <li>Old Amber</li>
+    <li>Brick Piece</li>
+    <li>Pearl</li>
+  </ul>
+</details>
 
-| Level Range | New Range |
-|:-----------:|:-----------------:|
-| 05 - 15     | 36 - 38  |
-| 20 - 20     | 40 - 42  |
-| 30 - 35     | 42 - 44  |
+- <details>
+  <summary>What rewards can I get from the Battle Tower?</summary>
+  <ul>
+    <li>Master Ball x1</li>
+    <li>Revive x5</li>
+    <li>Max Potion x5</li>
+    <li>Full Restore x5</li>
+    <li>HP Up x5</li>
+    <li>Protein x5</li>
+    <li>Iron x5</li>
+    <li>Carbos x5</li>
+    <li>Calcium x5</li>
+    <li>Rare Candy x5</li>
+    <li>Full Heal x5</li>
+    <li>PP Up x5</li>
+    <li>Berserk Gene x5</li>
+    <li>Normal Box x1</li>
+    <li>Gorgeous Box x1</li>
+    <li>Gold & Silver Leafs x5</li>
+  </ul>
+</details>
+
+- <details>
+  <summary>What are Buena's Password Rewards?</summary>
+  <ul>
+    <li>2 Blue Card points: Ultra Ball, Full Restore</li>
+    <li>3 Blue Card points: Nugget, Rare Candy</li>
+    <li>5 Blue Card points: Protein, Iron, Carbos, Calcium, HP Up</li>
+    <li>6 Blue Card points: PP Up</li>
+    <li>7 Blue Card points: Gold Leaf</li>
+    <li>8 Blue Card points: Silver Leaf</li>
+    <li>9 Blue Card points: Mysteryberry, Gold Berry, Berry Juice, Lucky Punch, Mirage Mail</li>
+  </ul>
+</details>
 
 
-- [Johto Grass Swarm Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](data/wild/swarm_grass.asm)
+### Guides
 
-| Level Range | New Range |
-|:-----------:|:-----------------:|
-| 1 - 4       | 05 - 05  |
-| 10 - 14     | 16 - 18  |
+- [Pokemon location and Evolution Guide.](Encounters%20&%20Evolutions.md)
+- [Build Instructions.](INSTALL.md) 
 
-- [Johto Tree Mons have had buffs to their levels using this table to determine how to increase them. (SUBJECT TO CHANGE):](/data/wild/treemons.asm)
-
-| Level  | New  |
-|:-----------:|:-----------------:|
-| 10     | 15  |
-| 15     | 20  |
-
-- [Modify existing gender formula.](https://github.com/pret/pokecrystal/wiki/Modify-existing-gender-formula)
-
-- [Add 4th Stats Page [Met, DVs, Hidden Power] Thanks getkosiorekt.](https://github.com/pret/pokecrystal/wiki/Add-a-fourth-stats-page)
-
-- Lapras wild level is now 30 rather than 20 to better align with higher wild levels.
-
-- Entei and Raikou both now have only a 10% chance of fleeing per turn instead of 100%.
-
-- Entei and Raikou both now learn Roar at 41.
-
-## Where do I find all 251 Pokemon? 
-
-There is a [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md) list in the repo that tells you the location of all of the adjusted pokemon except mew~!
-
-That one is a secret and can be found by natural playing the game in a very obvious way. (no its not a roaming mon fear not)
-
-## Where do I find fossil Pokemon?
-
-You can find fossils by smashing rocks with rock smash! You can then revive said fossils using a NPC inside the Ruins of Alph Research Center!
-
-## What are these altered evolutions you spoke of?
-
-Pokemon that would normally evolve via trading now can be evolved without any trading using the new item "Link Cord". 
-
-You can purchase the item "Link Cord" at the Goldenrod Department Store 4F.
-
-It works like an evolutionary stone, You can find a complete list here: [**Encounters & Evolutions**](Encounters%20&%20Evolutions.md).
-
-## Is it possible to Trade & Battle in this? 
-
-Yes! But it requires 2 copies of Mended Crystal to work properly, it will not work with vanilla copies or other romhacks.
-
-## Are you going to add more to this romhack?
-
-I plan on adding more as the pret wiki gets updated with more QOL features, but only if I find it worth it. 
-
-If you find any bugs or want to add onto what I've made feel free to submit a pull request and I will check it out :) 
-
-Aslong as it doesnt change the overall feel of gen 2 I am not against adding more!
-
-## To set up the repository, see [INSTALL.md](INSTALL.md).
