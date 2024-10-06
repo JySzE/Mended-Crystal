@@ -51,17 +51,17 @@ Fossils can be found by smashing rocks and revived at the Ruins of Alph Research
 
 ## Evolutions
 
-| **Pokemon** |  **Item**  |
-|:-----------:|:----------:|
-|   Haunter   |  Link Cord |
-|   Machoke   |  Link Cord |
-|   Graveler  |  Link Cord |
-|   Kadabra   |  Link Cord |
-|    Seadra   |  Link Cord |
-|     Onix    |  Link Cord |
-|   Scyther   |  Link Cord |
-|   Slowpoke  |  Link Cord |
-|  Poliwhirl  |  Link Cord |
-|   Porygon   |  Up-Grade  |
-|  To Espeon  |  Sun Stone |
-|  To Umbreon | Moon Stone |
+| **Pokemon** |  **Item**  |    **Evolution**        |
+|:-----------:|:----------:|:----------:|
+|   Haunter   |  Link Cord |      Gengar      |
+|   Machoke   |  Link Cord |      Machamp      |
+|   Graveler  |  Link Cord |     Golem       |
+|   Kadabra   |  Link Cord |      Alakazam      |
+|    Seadra   |  Dragon Scale |      Kingdra      |
+|     Onix    |  Metal Coat |      Steelix      |
+|   Scyther   |  Metal Coat |      Scizor      |
+|   Slowpoke  |  Kings Rock |      Slowking     |
+|  Poliwhirl  |  Kings Rock |      Politoed      |
+|   Porygon   |  Up-Grade  |      Porygon2      |
+|  Eevee |  Sun Stone |     Espeon       |
+|  Eevee | Moon Stone |      Umbreon      |
