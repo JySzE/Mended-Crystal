@@ -94,6 +94,10 @@ ReleaseTheBeasts:
 	changeblock 6, 14, $1b ; ladder
 	reloadmappart
 	closetext
+	setval RAIKOU
+	special UnusedSetSeenMon
+	setval ENTEI
+	special UnusedSetSeenMon	
 	setscene SCENE_BURNEDTOWERB1F_NOOP
 	end
 
