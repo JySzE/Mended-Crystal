@@ -920,8 +920,6 @@ MoonBallMultiplier:
 	ret nz
 
 	inc hl
-	inc hl
-	inc hl
 
 	push bc
 	ld a, BANK("Evolutions and Attacks")
