@@ -414,6 +414,9 @@ DayCareManOutside:
 	call PrintText
 	xor a ; FALSE
 	ld [wScriptVar], a
+	ld hl, wDayCareMan
+	res DAYCAREMAN_HAS_EGG_F, [hl]
+	jp DayCare_InitBreeding
 	ret
 
 .PartyFull:
