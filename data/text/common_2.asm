@@ -822,8 +822,12 @@ _LeftWithDayCareManText::
 	done
 
 _BreedBrimmingWithEnergyText::
-	text "It's brimming with"
-	line "energy."
+	text "It's too similar"
+	line "to @"
+	text_ram wStringBuffer1
+	text "."
+	cont "They'll never"
+	line "produce an Egg."
 	prompt
 
 _BreedNoInterestText::
