@@ -61,6 +61,33 @@ RotatePalettesRight::
 	jr nz, RotatePalettesRight
 	ret
 
+RotateThreePalettesRightFast::
+	ldh a, [hCGB]
+	and a
+	jr z, .dmg
+	ld hl, IncGradGBPalTable_05
+	ld b, 3
+	jr RotatePalettesRightFast
+
+.dmg
+	ld hl, IncGradGBPalTable_13
+	ld b, 3
+RotatePalettesRightFast:
+	push de
+	ld a, [hli]
+	call DmgToCgbBGPals
+	ld a, [hli]
+	ld e, a
+	ld a, [hli]
+	ld d, a
+	call DmgToCgbObjPals
+	ld c, 4
+	call DelayFrames
+	pop de
+	dec b
+	jr nz, RotatePalettesRightFast
+	ret
+
 RotateFourPalettesLeft::
 	ldh a, [hCGB]
 	and a

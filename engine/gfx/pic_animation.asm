@@ -65,9 +65,11 @@ PokeAnims:
 	dw .HOF
 	dw .Egg1
 	dw .Egg2
+	dw .Fast
 
 .Slow:   pokeanim StereoCry, Setup2, Play
 .Normal: pokeanim StereoCry, Setup, Play
+.Fast:   pokeanim StereoCry, SetupFast, Play
 .Menu:   pokeanim CryNoWait, Setup, Play, SetWait, Wait, Idle, Play
 .Trade:  pokeanim Idle, Play2, Idle, Play, SetWait, Wait, Cry, Setup, Play
 .Evolve: pokeanim Idle, Play, SetWait, Wait, CryNoWait, Setup, Play
@@ -140,6 +142,7 @@ PokeAnim_SetupCommands:
 	add_setup_command PokeAnim_Wait
 	add_setup_command PokeAnim_Setup
 	add_setup_command PokeAnim_Setup2
+	add_setup_command PokeAnim_SetupFast
 	add_setup_command PokeAnim_Idle
 	add_setup_command PokeAnim_Play
 	add_setup_command PokeAnim_Play2
@@ -176,6 +179,17 @@ PokeAnim_Setup:
 PokeAnim_Setup2:
 	ld c, FALSE
 	ld b, 4
+	call PokeAnim_InitAnim
+	call PokeAnim_SetVBank1
+	ld a, [wPokeAnimSceneIndex]
+	inc a
+	ld [wPokeAnimSceneIndex], a
+	ret
+
+PokeAnim_SetupFast:
+	ld c, FALSE
+	; The high bit marks half-duration frames in PokeAnim_GetDuration.
+	ld b, $80
 	call PokeAnim_InitAnim
 	call PokeAnim_SetVBank1
 	ld a, [wPokeAnimSceneIndex]
@@ -413,6 +427,9 @@ PokeAnim_End:
 PokeAnim_GetDuration:
 ; a * (1 + [wPokeAnimSpeed] / 16)
 	ld c, a
+	ld a, [wPokeAnimSpeed]
+	bit 7, a
+	jr nz, .fast
 	ld b, 0
 	ld hl, 0
 	ld a, [wPokeAnimSpeed]
@@ -426,6 +443,14 @@ PokeAnim_GetDuration:
 	and $f
 	or h
 	add c
+	ret
+
+.fast
+	ld a, c
+	srl a
+	jr nc, .done
+	inc a
+.done
 	ret
 
 PokeAnim_GetFrame:

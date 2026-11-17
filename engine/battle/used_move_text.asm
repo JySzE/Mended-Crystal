@@ -1,6 +1,21 @@
 DisplayUsedMoveText:
 	ld hl, UsedMoveText
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .print
+	ld a, [wTextboxFlags]
+	push af
+	res FAST_TEXT_DELAY_F, a
+	ld [wTextboxFlags], a
 	call BattleTextbox
+	pop af
+	ld [wTextboxFlags], a
+	jr .wait_bg
+
+.print
+	call BattleTextbox
+
+.wait_bg
 	jp WaitBGMap
 
 UsedMoveText:

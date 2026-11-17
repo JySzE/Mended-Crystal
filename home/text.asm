@@ -908,35 +908,11 @@ TextCommand_PAUSE::
 	ret
 
 TextCommand_SOUND::
-; play a sound effect from TextSFX
-	push bc
-	dec hl
-	ld a, [hli]
-	ld b, a
-	push hl
-	ld hl, TextSFX
-.loop
-	ld a, [hli]
-	cp -1
-	jr z, .done
-	cp b
-	jr z, .play
-	inc hl
-	inc hl
-	jr .loop
-
-.play
 	push de
-	ld e, [hl]
-	inc hl
-	ld d, [hl]
-	call PlaySFX
-	call WaitSFX
+	ld d, h
+	ld e, l
+	farcall TextCommand_SOUND_Banked
 	pop de
-
-.done
-	pop hl
-	pop bc
 	ret
 
 TextCommand_CRY:: ; unreferenced
@@ -950,16 +926,6 @@ TextCommand_CRY:: ; unreferenced
 	pop hl
 	pop bc
 	ret
-
-TextSFX::
-	dbw TX_SOUND_DEX_FANFARE_50_79,  SFX_DEX_FANFARE_50_79
-	dbw TX_SOUND_FANFARE,            SFX_FANFARE
-	dbw TX_SOUND_DEX_FANFARE_20_49,  SFX_DEX_FANFARE_20_49
-	dbw TX_SOUND_ITEM,               SFX_ITEM
-	dbw TX_SOUND_CAUGHT_MON,         SFX_CAUGHT_MON
-	dbw TX_SOUND_DEX_FANFARE_80_109, SFX_DEX_FANFARE_80_109
-	dbw TX_SOUND_SLOT_MACHINE_START, SFX_SLOT_MACHINE_START
-	db -1
 
 TextCommand_DOTS::
 ; wait for button press or 30 frames while printing "…"s

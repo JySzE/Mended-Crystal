@@ -114,7 +114,22 @@ LearnMove:
 
 .learned
 	ld hl, LearnedMoveText
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .print_learned_move
+	ld a, [wTextboxFlags]
+	push af
+	set SKIP_TEXT_SFX_WAIT_F, a
+	ld [wTextboxFlags], a
 	call PrintText
+	pop af
+	ld [wTextboxFlags], a
+	jr .done_learned_move
+
+.print_learned_move
+	call PrintText
+
+.done_learned_move
 	ld b, 1
 	ret
 

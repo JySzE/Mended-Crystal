@@ -1799,6 +1799,7 @@ wGBPrinterBrightness::
 	db
 wOptions2::
 ; bit 1: menu account off/on
+; bit 2: battle animation speed (normal/2x)
 	db
 	ds 2
 wOptionsEnd::
@@ -2306,6 +2307,7 @@ wBattleResult::
 ; bit 6: caught celebi
 ; bit 7: box full
 	db
+wBattleQuickExit:: db
 wUsingItemWithSelect:: db
 
 UNION

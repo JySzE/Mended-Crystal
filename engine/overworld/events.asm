@@ -319,7 +319,29 @@ CheckTileEvent:
 	jr z, .coord_events_disabled
 
 	call CheckCurrentMapCoordEvents
-	jr c, .coord_event
+	jr nc, .coord_events_disabled
+
+	ld hl, wCurCoordEvent + 6
+	ld a, [hli]
+	ld e, a
+	ld a, [hl]
+	ld d, a
+	ld a, d
+	cp -1
+	jr nz, .check_coord_event_flag
+	ld a, e
+	cp -1
+	jr z, .coord_event
+
+.check_coord_event_flag
+	push bc
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	pop bc
+	and a
+	jr z, .coord_event
+	jr .coord_events_disabled
 
 .coord_events_disabled
 	call CheckStepCountScriptFlag

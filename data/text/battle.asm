@@ -261,7 +261,7 @@ BattleText_PluralEnemyAreAboutToUseWillPlayerChangeMon:
 BattleText_EnemySentOut:
 	text "<ENEMY>"
 	line "sent out"
-	cont "@"
+	db "<SCROLL>", "@"
 	text_ram wEnemyMonNickname
 	text "!"
 	done

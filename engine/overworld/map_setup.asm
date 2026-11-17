@@ -185,6 +185,18 @@ FadeMapMusicAndPalettes:
 	ld a, [wMusicFadeID + 1]
 	ld a, $4
 	ld [wMusicFade], a
+	ld a, [wBattleQuickExit]
+	and a
+	jr z, .normal
+	xor a
+	ld [wBattleQuickExit], a
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .normal
+	call RotateThreePalettesRightFast
+	ret
+
+.normal
 	call RotateThreePalettesRight
 	ret
 

@@ -47,7 +47,12 @@ _PlayBattleAnim:
 	call BattleAnimDelayFrame
 	call BattleAnimDelayFrame
 	call BattleAnimDelayFrame
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr nz, .done
+.wait_sfx
 	call WaitSFX
+.done
 	ret
 
 BattleAnimRunScript:
@@ -307,8 +312,44 @@ RunBattleAnimCommand:
 .not_done_with_anim
 	cp anim_obj_command
 	jr nc, .do_anim
-
 	ld [wBattleAnimDelay], a
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .wait_set
+	ld a, [wFXAnimID]
+	cp LOW(ANIM_SEND_OUT_MON)
+	jr nz, .wait_set
+	ld a, [wFXAnimID + 1]
+	cp HIGH(ANIM_SEND_OUT_MON)
+	jr nz, .wait_set
+	ld a, [wBattleAnimDelay]
+	cp 128
+	jr nz, .halve_wait
+	ld a, [wBattleMode]
+	cp TRAINER_BATTLE
+	jr nz, .quarter_wait
+	ldh a, [hBattleTurn]
+	and a
+	jr nz, .fast_trainer_sendout
+	ld a, [wBattleHasJustStarted]
+	and a
+	jr z, .quarter_wait
+.fast_trainer_sendout
+	ld a, 12 ; match the faster trainer send-out deformation
+	jr .store_wait
+.quarter_wait
+	ld a, [wBattleAnimDelay]
+	srl a
+	srl a
+	jr .store_wait
+.halve_wait
+	cp 32
+	jr c, .wait_set
+	srl a
+.store_wait
+	ld [wBattleAnimDelay], a
+
+.wait_set
 	ret
 
 .do_anim

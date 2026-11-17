@@ -138,6 +138,17 @@ ShortAnim_UpdateVariables:
 	ld a, c
 	add [hl]
 	ld [hl], a
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .calculate
+	ld a, [wNewHPBarPixels]
+	cp [hl]
+	jr z, .calculate
+	ld a, c
+	add [hl]
+	ld [hl], a
+
+.calculate
 	call ShortHPBar_CalcPixelFrame
 	and a
 	ret
@@ -167,6 +178,39 @@ LongAnim_UpdateVariables:
 	ld [wCurHPAnimOldHP], a
 	ld a, h
 	ld [wCurHPAnimOldHP + 1], a
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .updated
+	ld hl, wCurHPAnimOldHP + 2
+	ld a, [wCurHPAnimOldHP]
+	cp [hl]
+	jr nz, .advance_again
+	inc hl
+	ld a, [wCurHPAnimOldHP + 1]
+	cp [hl]
+	jr z, .updated
+
+.advance_again
+	push de
+	ld hl, wCurHPAnimOldHP
+	ld a, [hli]
+	ld e, a
+	ld a, [hl]
+	ld d, a
+	ld l, e
+	ld h, d
+	add hl, bc
+	ld a, l
+	ld [wCurHPAnimOldHP], a
+	ld a, h
+	ld [wCurHPAnimOldHP + 1], a
+	pop de
+
+.updated
+	ld a, [wCurHPAnimOldHP]
+	ld l, a
+	ld a, [wCurHPAnimOldHP + 1]
+	ld h, a
 	push hl
 	push de
 	push bc
@@ -415,3 +459,115 @@ ShortHPBar_CalcPixelFrame:
 	ld a, [wCurHPAnimMaxHP]
 	ld [wCurHPAnimOldHP], a
 	ret
+
+AnimateFastExpBar::
+.loop
+	inc b
+	inc b
+	ld a, b
+	cp c
+	jr c, .draw
+	ld b, c
+
+.draw
+	farcall DrawExpBar
+	ld a, b
+	cp c
+	jr nz, .loop
+	ret
+
+TextCommand_SOUND_Banked::
+	push bc
+	ld h, d
+	ld l, e
+	dec hl
+	ld a, [hli]
+	ld b, a
+	push hl
+	ld hl, TextSFX
+.loop
+	ld a, [hli]
+	cp -1
+	jr z, .done
+	cp b
+	jr z, .play
+	inc hl
+	inc hl
+	jr .loop
+
+.play
+	push de
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	call PlaySFX
+	ld a, [wTextboxFlags]
+	bit SKIP_TEXT_SFX_WAIT_F, a
+	jr nz, .skip_wait
+	call WaitSFX
+.skip_wait
+	pop de
+
+.done
+	pop hl
+	pop bc
+	ret
+
+TextSFX:
+	dbw TX_SOUND_DEX_FANFARE_50_79,  SFX_DEX_FANFARE_50_79
+	dbw TX_SOUND_FANFARE,            SFX_FANFARE
+	dbw TX_SOUND_DEX_FANFARE_20_49,  SFX_DEX_FANFARE_20_49
+	dbw TX_SOUND_ITEM,               SFX_ITEM
+	dbw TX_SOUND_CAUGHT_MON,         SFX_CAUGHT_MON
+	dbw TX_SOUND_DEX_FANFARE_80_109, SFX_DEX_FANFARE_80_109
+	dbw TX_SOUND_SLOT_MACHINE_START, SFX_SLOT_MACHINE_START
+	db -1
+
+PlayEnemyVictoryAnimation::
+	ld a, [wInBattleTowerBattle]
+	bit 0, a
+	ret nz
+	ld a, [wLinkMode]
+	and a
+	ret nz
+	ld a, [wEnemyMonHP]
+	ld b, a
+	ld a, [wEnemyMonHP + 1]
+	or b
+	ret z
+	ld a, [wEnemyMonStatus]
+	and 1 << FRZ | SLP_MASK
+	ret nz
+	ld a, [wTempEnemyMonSpecies]
+	ld [wCurPartySpecies], a
+	hlcoord 12, 0
+	ld d, 0
+	ld e, ANIM_MON_SLOW
+	predef AnimateFrontpic
+	call WaitBGMap
+	ret
+
+PlayEnemyMonFrontpicAndCry::
+	ld a, [wTempEnemyMonSpecies]
+	ld [wCurPartySpecies], a
+	ld a, [wEnemyMonHP]
+	ld b, a
+	ld a, [wEnemyMonHP + 1]
+	or b
+	ret z
+	ld a, [wEnemyMonStatus]
+	and 1 << FRZ | SLP_MASK
+	ret nz
+	farcall CheckBattleScene
+	jr c, .cry_no_anim
+	hlcoord 12, 0
+	ld d, 0
+	ld e, ANIM_MON_SLOW
+	predef AnimateFrontpic
+	ret
+
+.cry_no_anim
+	ld a, $f
+	ld [wCryTracks], a
+	ld a, [wTempEnemyMonSpecies]
+	jp PlayStereoCry

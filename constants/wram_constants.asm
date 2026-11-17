@@ -58,6 +58,7 @@ DEF NUM_FRAMES EQU const_value
 	const_def
 	const FAST_TEXT_DELAY_F ; 0
 	const NO_TEXT_DELAY_F   ; 1
+	const SKIP_TEXT_SFX_WAIT_F ; 2
 
 ; wGBPrinterBrightness::
 DEF GBPRINTER_LIGHTEST EQU $00
@@ -69,6 +70,7 @@ DEF GBPRINTER_DARKEST  EQU $7f
 ; wOptions2::
 	const_def
 	const MENU_ACCOUNT ; 0
+	const BATTLE_ANIM_SPEED ; 1
 
 ; wWalkingDirection::
 	const_def -1

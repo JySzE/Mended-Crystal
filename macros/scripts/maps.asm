@@ -73,10 +73,15 @@ MACRO coord_event
 ;\2: y: top to bottom, starts at 0
 ;\3: scene id: a SCENE_* constant; controlled by setscene/setmapscene
 ;\4: script pointer
+; optional event flag; skip this event after the flag is set
 	db \3, \2, \1
 	db 0 ; filler
 	dw \4
-	dw 0 ; filler
+	if _NARG >= 5
+		dw \5
+	else
+		dw -1
+	endc
 	DEF {_NUM_COORD_EVENTS} += 1
 ENDM
 

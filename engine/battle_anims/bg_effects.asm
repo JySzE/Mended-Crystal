@@ -1940,7 +1940,40 @@ BattleBGEffect_BetaSendOutMon2: ; unused
 	ld a, [hl]
 	and a
 	jr z, .done
+	ld d, a
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .normal_speed
+	ld a, [wBattleMode]
+	cp TRAINER_BATTLE
+	jr nz, .fast_speed
+	ldh a, [hBattleTurn]
+	and a
+	jr nz, .fast_trainer_speed
+	ld a, [wBattleHasJustStarted]
+	and a
+	jr z, .fast_speed
+.fast_trainer_speed
+	ld a, d
+	sub 6
+	jr nc, .store_trainer_speed
+	xor a
+.store_trainer_speed
+	ld [hl], a
+	ld a, d
+	jr .deform
+
+.fast_speed
+	ld a, d
+	sub 4
+	ld [hl], a
+	ld a, d
+	jr .deform
+
+.normal_speed
 	dec [hl]
+	ld a, d
+.deform
 	srl a
 	srl a
 	srl a

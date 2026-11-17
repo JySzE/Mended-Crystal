@@ -18,6 +18,10 @@ PrintLetterDelay::
 	bit NO_TEXT_DELAY_F, a
 	ret z
 
+	ld a, [wOptions]
+	and %111
+	ret z
+
 	push hl
 	push de
 	push bc

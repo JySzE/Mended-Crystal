@@ -203,7 +203,19 @@ BattleTextbox::
 
 StdBattleTextbox::
 ; Open a textbox and print battle text at 20:hl.
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .print
+	ld a, [wTextboxFlags]
+	push af
+	res FAST_TEXT_DELAY_F, a
+	ld [wTextboxFlags], a
+	call .print
+	pop af
+	ld [wTextboxFlags], a
+	ret
 
+.print
 	ldh a, [hROMBank]
 	push af
 

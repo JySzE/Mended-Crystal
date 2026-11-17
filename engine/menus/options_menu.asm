@@ -1,14 +1,15 @@
 ; GetOptionPointer.Pointers indexes
 	const_def
-	const OPT_TEXT_SPEED    ; 0
-	const OPT_BATTLE_SCENE  ; 1
-	const OPT_BATTLE_STYLE  ; 2
-	const OPT_SOUND         ; 3
-	const OPT_PRINT         ; 4
-	const OPT_MENU_ACCOUNT  ; 5
-	const OPT_FRAME         ; 6
-	const OPT_CANCEL        ; 7
-DEF NUM_OPTIONS EQU const_value ; 8
+	const OPT_BATTLE_ANIM_SPEED ; 0
+	const OPT_TEXT_SPEED        ; 1
+	const OPT_BATTLE_SCENE      ; 2
+	const OPT_BATTLE_STYLE      ; 3
+	const OPT_SOUND             ; 4
+	const OPT_PRINT             ; 5
+	const OPT_MENU_ACCOUNT      ; 6
+	const OPT_FRAME             ; 7
+	const OPT_CANCEL            ; 8
+DEF NUM_OPTIONS EQU const_value ; 9
 
 _Option:
 	call ClearJoypad
@@ -21,8 +22,11 @@ _Option:
 	ld b, SCREEN_HEIGHT - 2
 	ld c, SCREEN_WIDTH - 2
 	call Textbox
-	hlcoord 2, 2
+	hlcoord 2, 3
 	ld de, StringOptions
+	call PlaceString
+	hlcoord 2, 1
+	ld de, StringBattleAnimSpeed
 	call PlaceString
 	xor a
 	ld [wJumptableIndex], a
@@ -75,27 +79,24 @@ _Option:
 	ret
 
 StringOptions:
-	db "TEXT SPEED<LF>"
-	db "        :<LF>"
-	db "BATTLE SCENE<LF>"
-	db "        :<LF>"
-	db "BATTLE STYLE<LF>"
-	db "        :<LF>"
-	db "SOUND<LF>"
-	db "        :<LF>"
-	db "PRINT<LF>"
-	db "        :<LF>"
-	db "MENU ACCOUNT<LF>"
-	db "        :<LF>"
-	db "FRAME<LF>"
-	db "        :TYPE<LF>"
+	db "TEXT SPEED: <LF><LF>"
+	db "BATTLE SCENE: <LF><LF>"
+	db "STYLE: <LF><LF>"
+	db "SOUND: <LF><LF>"
+	db "PRINT: <LF><LF>"
+	db "MENU ACCOUNT: <LF><LF>"
+	db "FRAME: TYPE <LF>"
 	db "CANCEL@"
+
+StringBattleAnimSpeed:
+	db "BATTLE ANIM: @"
 
 GetOptionPointer:
 	jumptable .Pointers, wJumptableIndex
 
 .Pointers:
 ; entries correspond to OPT_* constants
+	dw Options_BattleAnimSpeed
 	dw Options_TextSpeed
 	dw Options_BattleScene
 	dw Options_BattleStyle
@@ -104,6 +105,38 @@ GetOptionPointer:
 	dw Options_MenuAccount
 	dw Options_Frame
 	dw Options_Cancel
+
+Options_BattleAnimSpeed:
+	ld hl, wOptions2
+	ldh a, [hJoyPressed]
+	bit D_LEFT_F, a
+	jr nz, .Toggle
+	bit D_RIGHT_F, a
+	jr z, .Display
+
+.Toggle:
+	bit BATTLE_ANIM_SPEED, [hl]
+	jr nz, .SetNormal
+	set BATTLE_ANIM_SPEED, [hl]
+	jr .Display
+
+.SetNormal:
+	res BATTLE_ANIM_SPEED, [hl]
+
+.Display:
+	bit BATTLE_ANIM_SPEED, [hl]
+	ld de, .TwoX
+	jr nz, .Place
+	ld de, .OneX
+
+.Place:
+	hlcoord 15, 1
+	call PlaceString
+	and a
+	ret
+
+.OneX: db "1X@"
+.TwoX: db "2X@"
 
 	const_def
 	const OPT_TEXT_SPEED_FAST ; 0
@@ -153,7 +186,7 @@ Options_TextSpeed:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 11, 3
+	hlcoord 14, 3
 	call PlaceString
 	and a
 	ret
@@ -232,7 +265,7 @@ Options_BattleScene:
 	ld de, .Off
 
 .Display:
-	hlcoord 11, 5
+	hlcoord 16, 5
 	call PlaceString
 	and a
 	ret
@@ -270,7 +303,7 @@ Options_BattleStyle:
 	ld de, .Set
 
 .Display:
-	hlcoord 11, 7
+	hlcoord 9, 7
 	call PlaceString
 	and a
 	ret
@@ -315,7 +348,7 @@ Options_Sound:
 	ld de, .Stereo
 
 .Display:
-	hlcoord 11, 9
+	hlcoord 9, 9
 	call PlaceString
 	and a
 	ret
@@ -369,7 +402,7 @@ Options_Print:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 11, 11
+	hlcoord 9, 11
 	call PlaceString
 	and a
 	ret
@@ -455,7 +488,7 @@ Options_MenuAccount:
 	ld de, .On
 
 .Display:
-	hlcoord 11, 13
+	hlcoord 16, 13
 	call PlaceString
 	and a
 	ret
@@ -487,7 +520,7 @@ Options_Frame:
 	ld [hl], a
 UpdateFrame:
 	ld a, [wTextboxFrame]
-	hlcoord 16, 15 ; where on the screen the number is drawn
+	hlcoord 14, 15 ; where on the screen the number is drawn
 	add "1"
 	ld [hl], a
 	call LoadFontsExtra
@@ -519,7 +552,7 @@ OptionsControl:
 	ld a, [hl]
 	cp OPT_CANCEL ; maximum option index
 	jr nz, .CheckMenuAccount
-	ld [hl], OPT_TEXT_SPEED ; first option
+	ld [hl], OPT_BATTLE_ANIM_SPEED ; first option
 	scf
 	ret
 
@@ -544,7 +577,7 @@ OptionsControl:
 	ret
 
 .NotFrame:
-	and a ; OPT_TEXT_SPEED, minimum option index
+	and a ; OPT_BATTLE_ANIM_SPEED, minimum option index
 	jr nz, .Decrease
 	ld [hl], NUM_OPTIONS ; decrements to OPT_CANCEL, maximum option index
 
@@ -562,9 +595,17 @@ Options_UpdateCursorPosition:
 	add hl, de
 	dec c
 	jr nz, .loop
-	hlcoord 1, 2
-	ld bc, 2 * SCREEN_WIDTH
 	ld a, [wJumptableIndex]
+	cp OPT_CANCEL
+	jr z, .Cancel
+	hlcoord 1, 1
+	ld bc, 2 * SCREEN_WIDTH
 	call AddNTimes
+	jr .Place
+
+.Cancel:
+	hlcoord 1, SCREEN_HEIGHT - 2
+
+.Place:
 	ld [hl], "▶"
 	ret

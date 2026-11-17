@@ -26,6 +26,7 @@ Here’s a summary of the features and improvements:
 - [Link Cord for trade evolutions available at Goldenrod Dept. Store.](https://github.com/UberMedic7/patched-crystal/blob/c0f43e61025627343a8153f11653817ebd9623cc/data/items/marts.asm#L127)
 - [Smashing rocks now yields items, including fossils.](https://github.com/pret/pokecrystal/wiki/Smashing-rocks-has-a-chance-to-contain-items)
 - [New battle rewards from Battle Tower and Buena’s Password.](https://github.com/UberMedic7/patched-crystal/blob/Version3.0/data/trainers/parties.asm)
+- Added an opponent taunt after a white out in any battle.
 - [New Berry Pocket for Berries and Apricorns.](https://github.com/pret/pokecrystal/wiki/Add-a-new-Pack-pocket#10-update-the-crystal-only-pack-engine)
 - [Move Relearner NPC added.](https://github.com/pret/pokecrystal/wiki/Add-a-Move-Reminder)
 - [Correct grammar for plural trainers like Twins.](https://github.com/pret/pokecrystal/wiki/Correct-grammar-for-plural-trainers-like-Twins)
@@ -40,6 +41,7 @@ Here’s a summary of the features and improvements:
 - [Kurt makes Poké Balls instantly.](https://github.com/pret/pokecrystal/wiki/Kurt-Makes-Pokeballs-Instantly)
 - [Simplified clock reset (Down + B at title screen).](https://github.com/pret/pokecrystal/wiki/Simplify-the-Clock-Reset-Procedure)
 - [Instant text scrolling speed set as new default.](https://github.com/pret/pokecrystal/wiki/Add-a-new-text-scrolling-speed)
+- Optional 2× battle sequence speed setting (1× or 2×), configurable in the Options menu.
 - [Removed save delay (overwrite confirmation retained).](https://github.com/pret/pokecrystal/wiki/Remove-the-artificial-save-delay)
 - [Automatically reuse Repel.](https://github.com/pret/pokecrystal/wiki/Automatically-reuse-Repel)
 - [Change the speed of healing at a Pokemon Center.](https://github.com/pret/pokecrystal/wiki/Tips-and-tricks#change-the-speed-of-healing-at-a-pok%C3%A9mon-center)

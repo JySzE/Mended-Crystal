@@ -522,14 +522,34 @@ CheckSFX::
 	ret
 
 TerminateExpBarSound::
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr nz, .fast
+	ld hl, wChannel5Flags1
 	xor a
-	ld [wChannel5Flags1], a
+	ld [hl], a
 	ld [wPitchSweep], a
 	ldh [rNR10], a
 	ldh [rNR11], a
 	ldh [rNR12], a
 	ldh [rNR13], a
 	ldh [rNR14], a
+	ret
+
+.fast
+	ld hl, wChannel5Flags1
+	res SOUND_CHANNEL_ON, [hl]
+	xor a
+	ldh [rNR11], a
+	ld a, $8
+	ldh [rNR12], a
+	xor a
+	ldh [rNR13], a
+	ld a, $80
+	ldh [rNR14], a
+	xor a
+	ld [wPitchSweep], a
+	ldh [rNR10], a
 	ret
 
 ChannelsOff::

@@ -6,6 +6,7 @@ DoBattle:
 	ld [wBattleParticipantsIncludingFainted], a
 	ld [wBattlePlayerAction], a
 	ld [wBattleEnded], a
+	ld [wBattleQuickExit], a
 	inc a
 	ld [wBattleHasJustStarted], a
 	ld hl, wOTPartyMon1HP
@@ -43,6 +44,12 @@ DoBattle:
 
 .wild
 	ld c, 40
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .wait
+	srl c
+	srl c
+.wait
 	call DelayFrames
 
 .player_2
@@ -2058,12 +2065,22 @@ HandleEnemyMonFaint:
 	ld a, $1
 	ldh [hBGMapMode], a
 	ld c, 60
+	ld a, [wBattleMode]
+	cp WILD_BATTLE
+	jr nz, .wait
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .wait
+	srl c
+.wait
 	call DelayFrames
 
 	ld a, [wBattleMode]
 	dec a
 	jr nz, .trainer
 
+	ld a, TRUE
+	ld [wBattleQuickExit], a
 	ld a, 1
 	ld [wBattleEnded], a
 	ret
@@ -2587,7 +2604,11 @@ HandlePlayerMonFaint:
 	call CheckPlayerPartyForFitMon
 	ld a, d
 	and a
-	jp z, LostBattle
+	jr nz, .has_fit_mon
+	farcall PlayEnemyVictoryAnimation
+	jp LostBattle
+
+.has_fit_mon
 	ld hl, wEnemyMonHP
 	ld a, [hli]
 	or [hl]
@@ -3028,6 +3049,11 @@ MonFaintedAnimation:
 	ld de, .Spaces
 	call PlaceString
 	ld c, 2
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .wait
+	srl c
+.wait
 	call DelayFrames
 	pop hl
 	pop de
@@ -3058,6 +3084,11 @@ SlideBattlePicOut:
 	dec b
 	jr nz, .loop2
 	ld c, 2
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .wait
+	srl c
+.wait
 	call DelayFrames
 	pop hl
 	pop bc
@@ -3518,7 +3549,7 @@ ClearEnemyMonBox:
 ShowBattleTextEnemySentOut:
 	callfar Battle_GetTrainerName
 	ld hl, BattleText_EnemySentOut
-	call StdBattleTextbox
+	call PrintBattleIntroText
 	jp WaitBGMap
 
 ShowSetEnemyMonAndSendOutAnimation:
@@ -3547,26 +3578,7 @@ ShowSetEnemyMonAndSendOutAnimation:
 	call Call_PlayBattleAnim
 
 .not_shiny
-	ld bc, wTempMonSpecies
-	farcall CheckFaintedFrzSlp
-	jr c, .skip_cry
-
-	farcall CheckBattleScene
-	jr c, .cry_no_anim
-
-	hlcoord 12, 0
-	ld d, $0
-	ld e, ANIM_MON_SLOW
-	predef AnimateFrontpic
-	jr .skip_cry
-
-.cry_no_anim
-	ld a, $f
-	ld [wCryTracks], a
-	ld a, [wTempEnemyMonSpecies]
-	call PlayStereoCry
-
-.skip_cry
+	farcall PlayEnemyMonFrontpicAndCry
 	call UpdateEnemyHUD
 	ld a, $1
 	ldh [hBGMapMode], a
@@ -3823,6 +3835,15 @@ TryToRunAwayFromBattle:
 	call StdBattleTextbox
 	call WaitSFX
 	call LoadTilemapToTempTilemap
+	ld a, [wBattleMode]
+	cp WILD_BATTLE
+	jr nz, .no_flee_fade
+	ld a, [wLinkMode]
+	and a
+	jr nz, .no_flee_fade
+	ld a, TRUE
+	ld [wBattleQuickExit], a
+.no_flee_fade
 	scf
 	ret
 
@@ -4044,8 +4065,20 @@ SendOutPlayerMon:
 	jr c, .statused
 	ld a, $f0
 	ld [wCryTracks], a
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .wait_for_cry
+	ld a, [wBattleHasJustStarted]
+	and a
+	jr nz, .play_cry_without_wait
+.wait_for_cry
 	ld a, [wCurPartySpecies]
 	call PlayStereoCry
+	jr .statused
+
+.play_cry_without_wait
+	ld a, [wCurPartySpecies]
+	call PlayStereoCry2
 
 .statused
 	call UpdatePlayerHUD
@@ -7522,51 +7555,67 @@ AnimateExpBar:
 	ret
 
 .LoopBarAnimation:
-	ld d, 3
+	ld d, 2
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .normal
+	dec d
+	farcall AnimateFastExpBar
+	jr .end_animation
+
+.normal
+	inc d
 	dec b
 .anim_loop
 	inc b
-	push bc
-	push de
-	hlcoord 17, 11
-	call PlaceExpBar
-	pop de
-	ld a, $1
-	ldh [hBGMapMode], a
-	ld c, d
-	call DelayFrames
-	xor a
-	ldh [hBGMapMode], a
-	pop bc
+	call DrawExpBar
 	ld a, c
 	cp b
 	jr z, .end_animation
 	inc b
-	push bc
-	push de
-	hlcoord 17, 11
-	call PlaceExpBar
-	pop de
-	ld a, $1
-	ldh [hBGMapMode], a
-	ld c, d
-	call DelayFrames
-	xor a
-	ldh [hBGMapMode], a
+	call DrawExpBar
 	dec d
 	jr nz, .min_number_of_frames
 	ld d, 1
 .min_number_of_frames
-	pop bc
 	ld a, c
 	cp b
 	jr nz, .anim_loop
+
 .end_animation
 	ld a, $1
 	ldh [hBGMapMode], a
 	ret
 
+DrawExpBar::
+	push bc
+	push de
+	hlcoord 17, 11
+	call PlaceExpBar
+	pop de
+	ld a, $1
+	ldh [hBGMapMode], a
+	ld c, d
+	call DelayFrames
+	xor a
+	ldh [hBGMapMode], a
+	pop bc
+	ret
+
 SendOutMonText:
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .choose_text
+	ld a, [wTextboxFlags]
+	push af
+	res FAST_TEXT_DELAY_F, a
+	ld [wTextboxFlags], a
+	call .choose_text
+	pop af
+	ld [wTextboxFlags], a
+	ret
+
+.choose_text
 	ld a, [wLinkMode]
 	and a
 	jr z, .not_linked
@@ -8017,7 +8066,6 @@ BattleIntro:
 	call DisableSpriteUpdates
 	farcall ClearBattleRAM
 	call InitEnemy
-	call BackUpBGMap2
 	ld b, SCGB_BATTLE_GRAYSCALE
 	call GetSGBLayout
 	ld hl, rLCDC
@@ -8879,8 +8927,7 @@ InitBattleDisplay:
 	hlcoord 1, 5
 	lb bc, 3, 7
 	call ClearBox
-	call LoadStandardFont
-	call _LoadBattleFontsHPBar
+	farcall LoadFrame
 	call .BlankBGMap
 	xor a
 	ldh [hMapAnims], a
@@ -8892,6 +8939,23 @@ InitBattleDisplay:
 	xor a
 	ldh [hBGMapMode], a
 	farcall BattleIntroSlidingPics
+	; The window map is hidden during the slide-in.
+	call BackUpBGMap2
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr nz, .fonts_deferred
+	call LoadStandardFont
+	farcall LoadBattleFontsOnly
+.fonts_deferred
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .load_hp_bar
+	ld a, [wBattleMode]
+	cp TRAINER_BATTLE
+	jr z, .hp_bar_deferred
+.load_hp_bar
+	call _LoadHPBar
+.hp_bar_deferred
 	ld a, $1
 	ldh [hBGMapMode], a
 	ld a, $31
@@ -8908,6 +8972,16 @@ InitBattleDisplay:
 	ld b, SCGB_BATTLE_COLORS
 	call GetSGBLayout
 	call SetPalettes
+	ld a, [wBattleMode]
+	cp TRAINER_BATTLE
+	jr nz, .done
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .done
+	call _LoadHPBar
+	call LoadStandardFont
+	farcall LoadBattleFontsOnly
+.done
 	ld a, $90
 	ldh [hWY], a
 	xor a
@@ -9035,18 +9109,28 @@ BattleStartMessage:
 
 	ld de, SFX_SHINE
 	call PlaySFX
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr nz, .shine_nonblocking
 	call WaitSFX
+.shine_nonblocking
 
 	ld c, 20
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .wait
+	srl c
+	srl c
+.wait
 	call DelayFrames
 
 	farcall Battle_GetTrainerName
 
 	ld hl, WantToBattlePluralText
 	call IsPluralTrainer
-	jr z, .PlaceBattleStartText
+	jp z, .PlaceBattleStartText
 	ld hl, WantsToBattleText
-	jr .PlaceBattleStartText
+	jp .PlaceBattleStartText
 
 .wild
 	call BattleCheckEnemyShininess
@@ -9069,8 +9153,13 @@ BattleStartMessage:
 	jr c, .cry_no_anim
 
 	hlcoord 12, 0
-	ld d, $0
 	ld e, ANIM_MON_NORMAL
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .animate_frontpic
+	ld e, ANIM_MON_FAST
+.animate_frontpic
+	ld d, $0
 	predef AnimateFrontpic
 	jr .skip_cry ; cry is played during the animation
 
@@ -9081,6 +9170,15 @@ BattleStartMessage:
 	call PlayStereoCry
 
 .skip_cry
+	ld a, [wBattleMode]
+	cp WILD_BATTLE
+	jp nz, .fonts_loaded
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jp z, .fonts_loaded
+	call LoadStandardFont
+	farcall LoadBattleFontsOnly
+.fonts_loaded
 	ld a, [wBattleType]
 	cp BATTLETYPE_FISH
 	jr nz, .NotFishing
@@ -9103,7 +9201,7 @@ BattleStartMessage:
 	push hl
 	farcall BattleStart_TrainerHuds
 	pop hl
-	call StdBattleTextbox
+	call PrintBattleIntroText
 
 	call IsMobileBattle2
 	ret nz
@@ -9112,6 +9210,22 @@ BattleStartMessage:
 	farcall Mobile_PrintOpponentBattleMessage
 
 	ret
+
+PrintBattleIntroText:
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .normal
+	ld a, [wTextboxFlags]
+	push af
+	res FAST_TEXT_DELAY_F, a
+	ld [wTextboxFlags], a
+	call StdBattleTextbox
+	pop af
+	ld [wTextboxFlags], a
+	ret
+
+.normal
+	jp StdBattleTextbox
 	
 GetWeatherImage:
 	ld a, [wBattleWeather]

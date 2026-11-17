@@ -23,13 +23,30 @@ DoBattleTransition:
 	push af
 	vc_hook Reduce_battle_transition_flashing
 	ld [hl], $1
+	ld b, 0
 
 .loop
 	ld a, [wJumptableIndex]
 	bit 7, a ; BATTLETRANSITION_END?
 	jr nz, .done
+	push bc
 	call BattleTransitionJumptable
+	pop bc
+	ld a, [wJumptableIndex]
+	bit 7, a
+	jr nz, .loop
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .delay
+	ld a, b
+	xor 1
+	ld b, a
+	jr nz, .loop
+
+.delay
+	push bc
 	call DelayFrame
+	pop bc
 	jr .loop
 
 .done
@@ -416,7 +433,11 @@ endr
 	ld a, 1
 	ldh [hBGMapMode], a
 	call DelayFrame
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr nz, .increment
 	call DelayFrame
+.increment
 	ld hl, wBattleTransitionCounter
 	inc [hl]
 	ret
@@ -424,8 +445,6 @@ endr
 .end
 	ld a, 1
 	ldh [hBGMapMode], a
-	call DelayFrame
-	call DelayFrame
 	call DelayFrame
 	xor a
 	ldh [hBGMapMode], a
@@ -561,8 +580,6 @@ StartTrainerBattle_SpeckleToBlack:
 .done
 	ld a, $1
 	ldh [hBGMapMode], a
-	call DelayFrame
-	call DelayFrame
 	call DelayFrame
 	xor a
 	ldh [hBGMapMode], a
@@ -789,6 +806,8 @@ StartTrainerBattle_DrawSineWave:
 StartTrainerBattle_ZoomToBlack:
 	vc_hook Stop_reducing_battle_transition_flashing_ZoomToBlack
 	farcall RespawnPlayerAndOpponent
+	ld a, 1
+	ld [wBattleTransitionCounter], a
 	ld de, .boxes
 
 .loop
@@ -809,6 +828,15 @@ StartTrainerBattle_ZoomToBlack:
 	xor a
 	ldh [hBGMapMode], a
 	call .Copy
+	ld a, [wOptions2]
+	bit BATTLE_ANIM_SPEED, a
+	jr z, .wait
+	ld a, [wBattleTransitionCounter]
+	xor 1
+	ld [wBattleTransitionCounter], a
+	jr nz, .loop
+
+.wait
 	call WaitBGMap
 	jr .loop
 
